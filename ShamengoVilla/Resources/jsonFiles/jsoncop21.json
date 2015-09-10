@@ -1,0 +1,203 @@
+{
+  "fiches":[
+    {
+      "innovName": "Potager Vertical",
+      "pionnerName" : "Peggy Pascal",
+      "innovNumber": 1,
+      "category" : "Food",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Je cultive un potager vertical",
+      "pionnerName" : "Britta Riley",
+      "innovNumber": 2,
+      "category" : "Food",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Pour nous reconnecter à la terre, cette citadine a inventé un potager malin qui se suspend à nos fenêtres. Grâce à cette technique, nous pouvons cultiver des plantes aromatiques, salades et fruits rouges, même dans les plus petits studios. \nCraquant.",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/97-britta-riley",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Loliware",
+      "pionnerName" : "Chelsea Briganti",
+      "innovNumber": 3,
+      "category" : "Food",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.loliware.com/about/",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Wikipearl",
+      "pionnerName" : "David Edwards",
+      "innovNumber": 4,
+      "category" : "Food",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Pour éviter l’avalanche de produits phytosanitaires dans les rizières, Takao a trouvé l’arme fatale :  Des canards ! Ces palmipèdes se régalent de tous les parasites, génèrent de l’engrais et égaient le paysage pour le bonheur de tous. \nRéjouissant.",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.loliware.com/about/",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Mes champignons poussent grâce à votre petit noir sur le zinc",
+      "pionnerName" : "Cédric Péchard",
+      "innovNumber": 5,
+      "category" : "Food",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Saviez-vous que le marc de café, est l’un des meilleurs substrats agricoles au monde ? Cédric s’en sert pour faire pousser des pleurotes en ville. L’une des initiatives de l’économie circulaire les plus prometteuses qu’il soit. \nA votre café et vos fourchettes !",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/167-cedric-pechard",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Chewing-Gum Chizca",
+      "pionnerName" : "Manuele Aldrete",
+      "innovNumber": 6,
+      "category" : "Food",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/167-cedric-pechard",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Mon eau sèche reverdit les déserts",
+      "pionnerName" : "Philippe Ouaki di Giorno",
+      "innovNumber": 7,
+      "category" : "Water",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Grâce à l’innovation révolutionnaire de cet agronome, il existe enfin un moyen de maintenir l’eau de pluie à la racine des plantes. Un produit dégradable naturellement à découvrir absolument. \nMagique ! ",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/164-philippe-ouaki-di-giorno",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Je dépollue les sols grâce aux plantes",
+      "pionnerName" : "Thierry Jacquet",
+      "innovNumber": 8,
+      "category" : "Water",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Qui aurait cru que certaines plantes pouvaient détruire jusqu’à 99% des agents toxiques contenus dans les sols, tout en restant saines ? Après 10 ans de recherches, Thierry a trouvé la solution pour décontaminer les sols avec un procédé économique et écologique. La Chine et le Brésil ont déjà adopté cette arme de dépollution massive. \nA qui le tour ? ",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/146-thierry-jacquet",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Je purifie l’eau grâce à l’énergie solaire",
+      "pionnerName" : "Petra Wadström",
+      "innovNumber": 9,
+      "category" : "Water",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Son invention ressemble à un simple jerrican. Elle est pourtant le fruit d’une longue recherche technologique. Son pouvoir : transformer en quelques heures une eau infestée de bactéries en eau potable. \nMagique.",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/86-petra-wadstrom",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    },
+    
+    {
+      "innovName": "Nous transformons l’eau des marres en eau potable",
+      "pionnerName" : "François Jaquenoud & Lo Chay",
+      "innovNumber": 10,
+      "category" : "Water",
+      "starred": false,
+      "beaconMajor": "0123456789",
+      "textFields": {
+        "en bref": "Permettre à des populations très pauvres d’avoir accès à une eau potable bon marché, c’est le pari mené à un train d’enfer par ce duo franco-cambodgien. Cerise sur le gâteau : ce projet sanitaire est développé par des micro-entrepreneurs locaux. ",
+        "innovation": "",
+        "pionner": ""
+      },
+      "path": {
+        "ShamengoLink": "http://www.shamengo.com/fr/pionnier/58-francois-jacquenoud-amp-lo-chay",
+        "pioneerPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovPicture": "C:/Bla/Bla/Bla/Bla",
+        "innovVideo": "C:/Bla/Bla/Bla/Bla"
+      }
+    }
+  ]
+}
