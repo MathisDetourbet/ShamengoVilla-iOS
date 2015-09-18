@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bPl-Hc-wp0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bPl-Hc-wp0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -16,18 +16,19 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="XlO-eB-Q8Q" kind="relationship" relationship="viewControllers" id="Fd1-Q9-m8m"/>
-                        <segue destination="dZJ-oY-6de" kind="relationship" relationship="viewControllers" id="yOb-0b-wfi"/>
+                        <segue destination="8ui-BA-mSj" kind="relationship" relationship="viewControllers" id="Fd1-Q9-m8m"/>
+                        <segue destination="3gK-ua-W8W" kind="relationship" relationship="viewControllers" id="IRx-AM-xo1"/>
+                        <segue destination="WnW-AA-CCb" kind="relationship" relationship="viewControllers" id="LdY-Gb-9i6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZZ-Pw-Oh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-308" y="64"/>
+            <point key="canvasLocation" x="-512" y="201"/>
         </scene>
         <!--SearchInnovations-->
         <scene sceneID="Fsy-rt-dg3">
             <objects>
-                <viewController id="dZJ-oY-6de" userLabel="SearchInnovations" customClass="SVInnovationsListingViewController" sceneMemberID="viewController">
+                <viewController id="dZJ-oY-6de" userLabel="SearchInnovations" customClass="SVSearchInnovationsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WWd-G8-qXZ"/>
                         <viewControllerLayoutGuide type="bottom" id="BP7-iv-5uA"/>
@@ -36,37 +37,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6ME-N4-mmV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-9R-Ebi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idInnovationCell" id="zUn-e7-azy" customClass="SVInnovationTableViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="idInnovationCell" rowHeight="70" id="zOO-Ic-E9i" customClass="SVInnovationTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zUn-e7-azy" id="WGN-KY-FPY">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zOO-Ic-E9i" id="4vX-NZ-aXc">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-oc-Uod" userLabel="innovationTitleLabel">
+                                                    <rect key="frame" x="113" y="0.0" width="152" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="grp-aT-AER"/>
+                                                        <constraint firstAttribute="width" constant="152" id="iUp-c0-q7I"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultInnovationPicture" translatesAutoresizingMaskIntoConstraints="NO" id="unV-3F-NuO" userLabel="innovationImageView">
+                                                    <rect key="frame" x="8" y="-2" width="97" height="69"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="97" id="S0h-JG-mUf"/>
+                                                        <constraint firstAttribute="height" constant="69" id="xxV-Jq-VgK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQJ-cV-AcY" userLabel="pionnerNameLabel">
+                                                    <rect key="frame" x="113" y="48" width="152" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="OuS-xh-x4v"/>
+                                                        <constraint firstAttribute="width" constant="152" id="rmg-1r-mA3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRl-pv-GPK" userLabel="innovationIDLabel">
+                                                    <rect key="frame" x="237" y="5" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="H4L-fG-NQO"/>
+                                                        <constraint firstAttribute="height" constant="21" id="LxP-kC-tHr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QRl-pv-GPK" firstAttribute="top" secondItem="4vX-NZ-aXc" secondAttribute="top" constant="5" id="0v4-1d-SQD"/>
+                                                <constraint firstItem="unV-3F-NuO" firstAttribute="top" secondItem="4vX-NZ-aXc" secondAttribute="top" constant="-2" id="2oj-ys-67a"/>
+                                                <constraint firstAttribute="trailing" secondItem="QRl-pv-GPK" secondAttribute="trailing" constant="8" id="38e-53-S0b"/>
+                                                <constraint firstItem="eQJ-cV-AcY" firstAttribute="top" secondItem="Nw9-oc-Uod" secondAttribute="bottom" id="LZq-Xt-j1h"/>
+                                                <constraint firstItem="unV-3F-NuO" firstAttribute="leading" secondItem="4vX-NZ-aXc" secondAttribute="leading" constant="8" id="QML-yZ-ads"/>
+                                                <constraint firstItem="eQJ-cV-AcY" firstAttribute="leading" secondItem="unV-3F-NuO" secondAttribute="trailing" constant="8" id="YL8-Zg-wcX"/>
+                                                <constraint firstItem="Nw9-oc-Uod" firstAttribute="leading" secondItem="unV-3F-NuO" secondAttribute="trailing" constant="8" id="r8J-hm-OnB"/>
+                                                <constraint firstItem="Nw9-oc-Uod" firstAttribute="top" secondItem="4vX-NZ-aXc" secondAttribute="top" id="yLV-2l-78J"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="4vX-NZ-aXc" id="z5w-5n-TdK"/>
+                                            <outlet property="innovationIDLabel" destination="QRl-pv-GPK" id="DEs-Ik-jDj"/>
+                                            <outlet property="innovationImageView" destination="unV-3F-NuO" id="1Yq-X9-yc8"/>
+                                            <outlet property="innovationTitleLabel" destination="Nw9-oc-Uod" id="dUv-yj-Han"/>
+                                            <outlet property="pionnerNameLabel" destination="eQJ-cV-AcY" id="LrB-9r-3Tt"/>
+                                            <segue destination="80L-CK-VS0" kind="push" id="wXx-KP-Shv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="dZJ-oY-6de" id="1Hx-ga-kSq"/>
-                                    <outlet property="delegate" destination="dZJ-oY-6de" id="6tW-PQ-IK8"/>
+                                    <outlet property="dataSource" destination="dZJ-oY-6de" id="FHe-hS-Y3U"/>
+                                    <outlet property="delegate" destination="dZJ-oY-6de" id="WnM-N1-Bqu"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6ME-N4-mmV" firstAttribute="leading" secondItem="rYD-eF-QTp" secondAttribute="leadingMargin" constant="-16" id="JBU-dI-AgO"/>
-                            <constraint firstItem="BP7-iv-5uA" firstAttribute="top" secondItem="6ME-N4-mmV" secondAttribute="bottom" constant="-49" id="YTi-AP-Gjh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6ME-N4-mmV" secondAttribute="trailing" constant="-16" id="ZFQ-SC-TPm"/>
-                            <constraint firstItem="6ME-N4-mmV" firstAttribute="top" secondItem="WWd-G8-qXZ" secondAttribute="bottom" constant="-20" id="hZ0-tb-JEs"/>
+                            <constraint firstItem="QOM-9R-Ebi" firstAttribute="top" secondItem="rYD-eF-QTp" secondAttribute="top" id="3ES-gm-KJI"/>
+                            <constraint firstItem="BP7-iv-5uA" firstAttribute="top" secondItem="QOM-9R-Ebi" secondAttribute="bottom" id="RQU-yL-fDP"/>
+                            <constraint firstAttribute="trailing" secondItem="QOM-9R-Ebi" secondAttribute="trailing" id="d1r-Rg-vbH"/>
+                            <constraint firstItem="QOM-9R-Ebi" firstAttribute="leading" secondItem="rYD-eF-QTp" secondAttribute="leading" id="ySL-j3-CQm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Wd8-rx-z1Y"/>
+                    <navigationItem key="navigationItem" title="Index" id="g46-wI-kRZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="QOM-9R-Ebi" id="BI6-EA-Wzf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwe-Nb-dyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99" y="445"/>
+            <point key="canvasLocation" x="512" y="920"/>
         </scene>
         <!--BeaconInnovations-->
         <scene sceneID="IiH-2T-tlc">
@@ -80,49 +142,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-Ay-PA0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-Ay-PA0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idInnovationCell" id="TtX-jC-HZq" customClass="SVInnovationTableViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="idInnovationCell" rowHeight="70" id="TtX-jC-HZq" customClass="SVInnovationTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TtX-jC-HZq" id="qxu-t8-bh7">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-WP-Wex" userLabel="innovationTitleLabel">
-                                                    <rect key="frame" x="98" y="1" width="152" height="41"/>
+                                                    <rect key="frame" x="113" y="0.0" width="152" height="48"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="41" id="9Zu-Xs-mUU"/>
-                                                        <constraint firstAttribute="width" constant="152" id="V1V-cE-CWE"/>
+                                                        <constraint firstAttribute="height" constant="48" id="HUz-Dr-xvb"/>
+                                                        <constraint firstAttribute="width" constant="152" id="cpy-be-U1J"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kvW-rv-wVz">
-                                                    <rect key="frame" x="5" y="1" width="41" height="41"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultInnovationPicture" translatesAutoresizingMaskIntoConstraints="NO" id="kvW-rv-wVz" userLabel="innovationImageView">
+                                                    <rect key="frame" x="8" y="-2" width="97" height="69"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="41" id="KIl-ef-tiE"/>
-                                                        <constraint firstAttribute="width" constant="41" id="ny8-ch-FFo"/>
+                                                        <constraint firstAttribute="height" constant="69" id="Bqw-gn-pSG"/>
+                                                        <constraint firstAttribute="width" constant="97" id="JN3-G9-vjD"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFP-52-X4Z" userLabel="pionnerNameLabel">
+                                                    <rect key="frame" x="113" y="48" width="152" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Qtf-Ma-rfm"/>
+                                                        <constraint firstAttribute="width" constant="152" id="zhz-nH-FEP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMc-JX-TQF" userLabel="innovationIDLabel">
-                                                    <rect key="frame" x="270" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="237" y="5" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="miW-Cu-kWT"/>
+                                                        <constraint firstAttribute="width" constant="42" id="xrm-fk-mcY"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kvW-rv-wVz" firstAttribute="leading" secondItem="qxu-t8-bh7" secondAttribute="leadingMargin" constant="-3" id="1se-zf-xqq"/>
-                                                <constraint firstItem="vMc-JX-TQF" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="topMargin" constant="3" id="5Oa-Jj-WQD"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kvW-rv-wVz" secondAttribute="bottom" constant="-7" id="ASe-Ya-hFE"/>
-                                                <constraint firstItem="XaL-WP-Wex" firstAttribute="leading" secondItem="kvW-rv-wVz" secondAttribute="trailing" constant="52" id="Psw-0E-ExK"/>
-                                                <constraint firstItem="XaL-WP-Wex" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="topMargin" constant="-7" id="Wod-xe-8Ua"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="vMc-JX-TQF" secondAttribute="bottom" constant="3" id="h7Q-Tj-DzH"/>
-                                                <constraint firstItem="vMc-JX-TQF" firstAttribute="trailing" secondItem="qxu-t8-bh7" secondAttribute="trailingMargin" id="tPg-FY-fGW"/>
-                                                <constraint firstItem="kvW-rv-wVz" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="topMargin" constant="-7" id="zhk-Qz-D6O"/>
+                                                <constraint firstAttribute="trailing" secondItem="vMc-JX-TQF" secondAttribute="trailing" constant="8" id="0SV-ip-NpL"/>
+                                                <constraint firstItem="kvW-rv-wVz" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="top" constant="-2" id="8w2-zh-Lrv"/>
+                                                <constraint firstItem="XaL-WP-Wex" firstAttribute="leading" secondItem="kvW-rv-wVz" secondAttribute="trailing" constant="8" id="B6i-hZ-TM6"/>
+                                                <constraint firstItem="vMc-JX-TQF" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="top" constant="5" id="Lja-H2-3fw"/>
+                                                <constraint firstItem="kvW-rv-wVz" firstAttribute="leading" secondItem="qxu-t8-bh7" secondAttribute="leading" constant="8" id="Mom-zo-NfD"/>
+                                                <constraint firstItem="XaL-WP-Wex" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="top" id="Nwl-n3-tsk"/>
+                                                <constraint firstItem="hFP-52-X4Z" firstAttribute="leading" secondItem="kvW-rv-wVz" secondAttribute="trailing" constant="8" id="eVr-bY-EnO"/>
+                                                <constraint firstItem="hFP-52-X4Z" firstAttribute="top" secondItem="XaL-WP-Wex" secondAttribute="bottom" id="nP5-b7-WAe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -130,32 +207,117 @@
                                             <outlet property="innovationIDLabel" destination="vMc-JX-TQF" id="f87-uS-7kJ"/>
                                             <outlet property="innovationImageView" destination="kvW-rv-wVz" id="o2j-Cg-bhB"/>
                                             <outlet property="innovationTitleLabel" destination="XaL-WP-Wex" id="yOa-7C-6A3"/>
+                                            <outlet property="pionnerNameLabel" destination="hFP-52-X4Z" id="OhJ-id-v6f"/>
+                                            <segue destination="80L-CK-VS0" kind="push" id="69l-lB-o9d"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XlO-eB-Q8Q" id="jxe-RX-HBT"/>
+                                    <outlet property="delegate" destination="XlO-eB-Q8Q" id="EYX-oi-irV"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fA7-Ay-PA0" firstAttribute="leading" secondItem="lu0-81-bsY" secondAttribute="leadingMargin" constant="-16" id="EFD-bh-TfW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fA7-Ay-PA0" secondAttribute="trailing" constant="-16" id="U2b-go-6CC"/>
-                            <constraint firstItem="iDf-yP-K7F" firstAttribute="top" secondItem="fA7-Ay-PA0" secondAttribute="bottom" constant="-49" id="bfv-Qq-vrM"/>
-                            <constraint firstItem="fA7-Ay-PA0" firstAttribute="top" secondItem="thP-wl-nZM" secondAttribute="bottom" constant="-20" id="eCs-jZ-ox9"/>
+                            <constraint firstItem="iDf-yP-K7F" firstAttribute="top" secondItem="fA7-Ay-PA0" secondAttribute="bottom" id="C9x-Nc-CTB"/>
+                            <constraint firstItem="fA7-Ay-PA0" firstAttribute="top" secondItem="lu0-81-bsY" secondAttribute="top" id="GFh-Dc-8Iv"/>
+                            <constraint firstAttribute="trailing" secondItem="fA7-Ay-PA0" secondAttribute="trailing" id="XIQ-O7-0Xt"/>
+                            <constraint firstItem="fA7-Ay-PA0" firstAttribute="leading" secondItem="lu0-81-bsY" secondAttribute="leading" id="x1O-TK-5Ke"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FL7-5r-vhd"/>
+                    <navigationItem key="navigationItem" title="A proximité" id="OZn-lL-wuo"/>
                     <connections>
                         <outlet property="tableView" destination="fA7-Ay-PA0" id="ehz-Fk-qKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLs-vW-pyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="-228"/>
+            <point key="canvasLocation" x="512" y="-494"/>
+        </scene>
+        <!--InnovationCardViewController-->
+        <scene sceneID="SI1-mq-6Ef">
+            <objects>
+                <viewController title="InnovationCardViewController" id="80L-CK-VS0" customClass="SVInnovationCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dlm-4L-XBz"/>
+                        <viewControllerLayoutGuide type="bottom" id="DVm-8b-mAm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7GC-eL-4XM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="IDq-fr-YbB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbS-rF-zUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="201"/>
+        </scene>
+        <!--Shamengo Scene-->
+        <scene sceneID="UaW-Uq-imT">
+            <objects>
+                <viewController title="Shamengo Scene" id="3gK-ua-W8W" customClass="SVShamengoTabViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vfr-bm-SyH"/>
+                        <viewControllerLayoutGuide type="bottom" id="sew-Sx-fau"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7cg-EM-cF4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shamengo" id="EJg-ph-HMu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXO-Jj-ItQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="201"/>
+        </scene>
+        <!--BeaconNavigationController-->
+        <scene sceneID="sf7-Es-YS6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ui-BA-mSj" userLabel="BeaconNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="A proximité" id="FL7-5r-vhd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqi-Ij-UeG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XlO-eB-Q8Q" kind="relationship" relationship="rootViewController" id="cgu-lR-Tf6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOR-hb-zEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="-494"/>
+        </scene>
+        <!--SearchNavigationController-->
+        <scene sceneID="WqB-F3-Aq4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WnW-AA-CCb" userLabel="SearchNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Wd8-rx-z1Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hCg-Y8-a0h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dZJ-oY-6de" kind="relationship" relationship="rootViewController" id="lOE-ff-5D2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1q-OA-2h3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="920"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
+    <resources>
+        <image name="defaultInnovationPicture" width="545" height="301"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wXx-KP-Shv"/>
+    </inferredMetricsTieBreakers>
 </document>

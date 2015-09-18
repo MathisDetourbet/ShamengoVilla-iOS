@@ -14,32 +14,37 @@
 @property (weak, nonatomic) IBOutlet UILabel *innovationTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *innovationIDLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *innovationImageView;
+@property (weak, nonatomic) IBOutlet UILabel *pionnerNameLabel;
 
 @end
 
 @implementation SVInnovationTableViewCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     // Initialization code
 }
 
-- (void)prepareForReuse {
+- (void)prepareForReuse
+{
     [super prepareForReuse];
-    
 }
 
-- (void)displayInnovation:(SVInnovation *)innovation forIndexPath:(NSIndexPath *)indexPath {
-    self.innovationTitleLabel.text = innovation.innovationName;
+- (void)displayInnovation:(SVInnovation *)innovation forIndexPath:(NSIndexPath *)indexPath
+{
+    self.innovationTitleLabel.text = [NSString stringWithFormat:@"\"%@\"", innovation.innovationName];
     self.innovationIDLabel.text = [NSString stringWithFormat:@"%ld", (long)innovation.innovationId];
+    self.pionnerNameLabel.text = innovation.pionnerName;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
-    
     // Configure the view for the selected state
 }
 
-- (void)layoutSubviews {
+- (void)layoutSubviews
+{
     [super layoutSubviews];
 }
 

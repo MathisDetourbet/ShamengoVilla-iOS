@@ -12,13 +12,13 @@
 
 @property (strong, nonatomic) NSString *innovationName;
 @property (strong, nonatomic) NSString *pionnerName;
+@property (strong, nonatomic) NSString *pionnerCountry;
 @property (assign, nonatomic) NSInteger innovationId;
 @property (strong, nonatomic) NSString *category;
 @property (assign, nonatomic) BOOL starred;
 @property (strong, nonatomic) NSString *beaconMajor;
-@property (strong, nonatomic) NSString *enBrefTextField;
-@property (strong, nonatomic) NSString *innovationTextField;
-@property (strong, nonatomic) NSString *pionnerTextField;
+@property (strong, nonatomic) NSString *beaconMinor;
+@property (strong, nonatomic) NSString *innovDescription;
 @property (strong, nonatomic) NSString *shamengoPath;
 @property (strong, nonatomic) NSString *pionnerImageName;
 @property (strong, nonatomic) NSString *innovationImageName;

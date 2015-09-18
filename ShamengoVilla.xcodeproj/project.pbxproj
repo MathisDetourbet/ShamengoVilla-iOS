@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		670216AA1B879E4900EF0840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 670216AC1B879E4900EF0840 /* Localizable.strings */; };
 		670216B11B87A1E400EF0840 /* SVInnovationsListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216B01B87A1E400EF0840 /* SVInnovationsListingViewController.m */; };
-		670216B41B87A46C00EF0840 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216B31B87A46C00EF0840 /* SVSearchInnovationsViewController.m */; };
 		670216B91B87A4D800EF0840 /* SVBeaconInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216B81B87A4D800EF0840 /* SVBeaconInnovationsViewController.m */; };
 		670216BD1B87A6DD00EF0840 /* SVInnovationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216BC1B87A6DD00EF0840 /* SVInnovationsManager.m */; };
 		670216C01B87A89900EF0840 /* SVInnovation.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216BF1B87A89900EF0840 /* SVInnovation.m */; };
@@ -17,10 +16,15 @@
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
 		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
-		67357C621B7B47DB00E39187 /* jsoncop21.json in Resources */ = {isa = PBXBuildFile; fileRef = 67357C611B7B47DB00E39187 /* jsoncop21.json */; };
+		673A85891BA6C7A500606094 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 673A85881BA6C7A500606094 /* jsoncop21_fr.json */; };
+		6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */; };
+		6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */; };
+		676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A21BAC1CA60016854B /* MediaPlayer.framework */; };
+		676BE3A51BAC1CAE0016854B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A41BAC1CAE0016854B /* CoreLocation.framework */; };
 		679297CB1B77CC7600703F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CA1B77CC7600703F1B /* main.m */; };
 		679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CD1B77CC7600703F1B /* SVAppDelegate.m */; };
 		679297E51B77CC7600703F1B /* ShamengoVillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297E41B77CC7600703F1B /* ShamengoVillaTests.m */; };
+		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +43,6 @@
 		670216AD1B879E4D00EF0840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		670216AF1B87A1E400EF0840 /* SVInnovationsListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationsListingViewController.h; sourceTree = "<group>"; };
 		670216B01B87A1E400EF0840 /* SVInnovationsListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationsListingViewController.m; sourceTree = "<group>"; };
-		670216B21B87A46C00EF0840 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVSearchInnovationsViewController.h; path = ../SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
-		670216B31B87A46C00EF0840 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVSearchInnovationsViewController.m; path = ../SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
 		670216B71B87A4D800EF0840 /* SVBeaconInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVBeaconInnovationsViewController.h; sourceTree = "<group>"; };
 		670216B81B87A4D800EF0840 /* SVBeaconInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVBeaconInnovationsViewController.m; sourceTree = "<group>"; };
 		670216BB1B87A6DD00EF0840 /* SVInnovationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationsManager.h; sourceTree = "<group>"; };
@@ -52,7 +54,13 @@
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67357C5E1B7B3F6100E39187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		67357C611B7B47DB00E39187 /* jsoncop21.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21.json; sourceTree = "<group>"; };
+		673A85881BA6C7A500606094 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
+		6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
+		6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
+		6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVShamengoTabViewController.h; sourceTree = "<group>"; };
+		6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVShamengoTabViewController.m; sourceTree = "<group>"; };
+		676BE3A21BAC1CA60016854B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		676BE3A41BAC1CAE0016854B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		679297C51B77CC7600703F1B /* ShamengoVilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShamengoVilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		679297C91B77CC7600703F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679297CA1B77CC7600703F1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +69,8 @@
 		679297DE1B77CC7600703F1B /* ShamengoVillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamengoVillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		679297E31B77CC7600703F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679297E41B77CC7600703F1B /* ShamengoVillaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShamengoVillaTests.m; sourceTree = "<group>"; };
+		679B06F91BA7410400AFF21A /* SVInnovationCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationCardViewController.h; sourceTree = "<group>"; };
+		679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationCardViewController.m; sourceTree = "<group>"; };
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676BE3A51BAC1CAE0016854B /* CoreLocation.framework in Frameworks */,
+				676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +128,8 @@
 		670216B61B87A4B700EF0840 /* SearchInnovationsTab */ = {
 			isa = PBXGroup;
 			children = (
-				670216B21B87A46C00EF0840 /* SVSearchInnovationsViewController.h */,
-				670216B31B87A46C00EF0840 /* SVSearchInnovationsViewController.m */,
+				6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */,
+				6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */,
 			);
 			path = SearchInnovationsTab;
 			sourceTree = "<group>";
@@ -160,6 +172,8 @@
 		67357C561B7B3E0900E39187 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
+				679B06F81BA7410400AFF21A /* InnovationCardViewController */,
+				6757B8EB1BA5D9D7002B6912 /* ShamengoTab */,
 				670216B51B87A4B700EF0840 /* BeaconInnovationsTab */,
 				670216B61B87A4B700EF0840 /* SearchInnovationsTab */,
 			);
@@ -197,14 +211,25 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				67357C611B7B47DB00E39187 /* jsoncop21.json */,
+				673A85881BA6C7A500606094 /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
+			sourceTree = "<group>";
+		};
+		6757B8EB1BA5D9D7002B6912 /* ShamengoTab */ = {
+			isa = PBXGroup;
+			children = (
+				6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */,
+				6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */,
+			);
+			path = ShamengoTab;
 			sourceTree = "<group>";
 		};
 		679297BC1B77CC7600703F1B = {
 			isa = PBXGroup;
 			children = (
+				676BE3A41BAC1CAE0016854B /* CoreLocation.framework */,
+				676BE3A21BAC1CA60016854B /* MediaPlayer.framework */,
 				679297C71B77CC7600703F1B /* ShamengoVilla */,
 				679297E11B77CC7600703F1B /* ShamengoVillaTests */,
 				679297C61B77CC7600703F1B /* Products */,
@@ -267,6 +292,15 @@
 				67357C561B7B3E0900E39187 /* ViewsControllers */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		679B06F81BA7410400AFF21A /* InnovationCardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				679B06F91BA7410400AFF21A /* SVInnovationCardViewController.h */,
+				679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */,
+			);
+			path = InnovationCardViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,8 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
+				673A85891BA6C7A500606094 /* jsoncop21_fr.json in Resources */,
 				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
-				67357C621B7B47DB00E39187 /* jsoncop21.json in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
 				67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */,
 			);
@@ -371,12 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670216B41B87A46C00EF0840 /* SVSearchInnovationsViewController.m in Sources */,
 				670216B11B87A1E400EF0840 /* SVInnovationsListingViewController.m in Sources */,
 				670216C71B87AE4C00EF0840 /* NSDictionary+Utils.m in Sources */,
+				679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */,
 				670216B91B87A4D800EF0840 /* SVBeaconInnovationsViewController.m in Sources */,
+				6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */,
 				670216BD1B87A6DD00EF0840 /* SVInnovationsManager.m in Sources */,
 				67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */,
+				6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */,
 				679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */,
 				670216C01B87A89900EF0840 /* SVInnovation.m in Sources */,
 				679297CB1B77CC7600703F1B /* main.m in Sources */,
@@ -497,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

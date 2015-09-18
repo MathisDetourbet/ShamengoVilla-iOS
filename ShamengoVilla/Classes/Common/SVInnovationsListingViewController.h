@@ -13,4 +13,6 @@
 @property (strong, nonatomic) NSMutableArray *innovationsList;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+- (void)loadJSONData;
+
 @end

@@ -8,6 +8,6 @@
 
 #import "SVInnovationsListingViewController.h"
 
-@interface SVSearchInnovationsViewController : SVInnovationsListingViewController
+@interface SVSearchInnovationsViewController : SVInnovationsListingViewController <UISearchBarDelegate>
 
 @end

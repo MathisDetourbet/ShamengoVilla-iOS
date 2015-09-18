@@ -24,7 +24,7 @@
 
 - (void)loadInnovations {
     
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21" ofType:@"json"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     NSError *error = nil;
     NSDictionary *jsonDico = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];

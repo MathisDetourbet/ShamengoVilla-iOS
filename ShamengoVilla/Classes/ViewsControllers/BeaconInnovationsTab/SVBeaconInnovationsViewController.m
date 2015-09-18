@@ -19,11 +19,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshInnovationsList)];
+    refresh.tintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = refresh;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)refreshInnovationsList
+{
+    
 }
 
 @end

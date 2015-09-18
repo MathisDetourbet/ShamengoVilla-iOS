@@ -10,4 +10,5 @@
 
 @interface SVBeaconInnovationsViewController : SVInnovationsListingViewController
 
+
 @end
