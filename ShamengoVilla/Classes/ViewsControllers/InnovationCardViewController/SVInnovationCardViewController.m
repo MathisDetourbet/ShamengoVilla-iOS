@@ -11,8 +11,8 @@
 
 @interface SVInnovationCardViewController ()
 
-@property (strong, nonatomic) MPMoviePlayerViewController *moviePlayer;
-@property (strong, nonatomic) SVInnovation *innovation;
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+@property (weak, nonatomic) IBOutlet UIImageView *pionnerImageView;
 
 @end
 
@@ -31,12 +31,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.pionnerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.innovation.pionnerImageName]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)playVideo:(UIButton *)sender {
+    
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"KantaHani30secpourtest" ofType:@"mp4"];
+    NSURL *videoURL = [NSURL URLWithString:videoPath];
+    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    self.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
+    self.moviePlayer.fullscreen = YES;
+    self.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
+    self.moviePlayer.shouldAutoplay = YES;
+    [self.moviePlayer.view setFrame:self.view.frame];
+    [self.view addSubview:self.moviePlayer.view];
+    [self.moviePlayer prepareToPlay];
+    [self.moviePlayer play];
 }
 
 /*

@@ -16,7 +16,7 @@
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
 		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
-		673A85891BA6C7A500606094 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 673A85881BA6C7A500606094 /* jsoncop21_fr.json */; };
+		6741DC181BB60CA000855FAA /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 6741DC171BB60CA000855FAA /* jsoncop21_fr.json */; settings = {ASSET_TAGS = (); }; };
 		6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */; };
 		6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */; };
 		676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A21BAC1CA60016854B /* MediaPlayer.framework */; };
@@ -25,6 +25,7 @@
 		679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CD1B77CC7600703F1B /* SVAppDelegate.m */; };
 		679297E51B77CC7600703F1B /* ShamengoVillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297E41B77CC7600703F1B /* ShamengoVillaTests.m */; };
 		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
+		67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */; settings = {ASSET_TAGS = (); }; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +55,7 @@
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67357C5E1B7B3F6100E39187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		673A85881BA6C7A500606094 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
+		6741DC171BB60CA000855FAA /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
 		6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
 		6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVShamengoTabViewController.h; sourceTree = "<group>"; };
@@ -71,6 +72,8 @@
 		679297E41B77CC7600703F1B /* ShamengoVillaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShamengoVillaTests.m; sourceTree = "<group>"; };
 		679B06F91BA7410400AFF21A /* SVInnovationCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationCardViewController.h; sourceTree = "<group>"; };
 		679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationCardViewController.m; sourceTree = "<group>"; };
+		67A9D8151BAC896800E57AC1 /* SVNavSChemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVNavSChemeManager.h; sourceTree = "<group>"; };
+		67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVNavSChemeManager.m; sourceTree = "<group>"; };
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +142,8 @@
 			children = (
 				670216BB1B87A6DD00EF0840 /* SVInnovationsManager.h */,
 				670216BC1B87A6DD00EF0840 /* SVInnovationsManager.m */,
+				67A9D8151BAC896800E57AC1 /* SVNavSChemeManager.h */,
+				67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -150,6 +155,13 @@
 				670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		671D459D1BAF59AC000C7795 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		67357C541B7B3E0900E39187 /* Constants */ = {
@@ -183,6 +195,7 @@
 		67357C571B7B3E4D00E39187 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				671D459D1BAF59AC000C7795 /* Videos */,
 				670216A71B879DF900EF0840 /* Translation */,
 				67357C601B7B3FD200E39187 /* jsonFiles */,
 				67357C581B7B3E9000E39187 /* Images */,
@@ -211,7 +224,7 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				673A85881BA6C7A500606094 /* jsoncop21_fr.json */,
+				6741DC171BB60CA000855FAA /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -347,7 +360,7 @@
 		679297BD1B77CC7600703F1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Efrei;
 				TargetAttributes = {
 					679297C41B77CC7600703F1B = {
@@ -384,10 +397,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
-				673A85891BA6C7A500606094 /* jsoncop21_fr.json in Resources */,
 				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
 				67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */,
+				6741DC181BB60CA000855FAA /* jsoncop21_fr.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				670216B11B87A1E400EF0840 /* SVInnovationsListingViewController.m in Sources */,
+				67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */,
 				670216C71B87AE4C00EF0840 /* NSDictionary+Utils.m in Sources */,
 				679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */,
 				670216B91B87A4D800EF0840 /* SVBeaconInnovationsViewController.m in Sources */,
@@ -470,6 +484,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -536,6 +551,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efrei.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -547,6 +563,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efrei.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -565,6 +582,7 @@
 				);
 				INFOPLIST_FILE = ShamengoVillaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efrei.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShamengoVilla.app/ShamengoVilla";
 			};
@@ -580,6 +598,7 @@
 				);
 				INFOPLIST_FILE = ShamengoVillaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efrei.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShamengoVilla.app/ShamengoVilla";
 			};

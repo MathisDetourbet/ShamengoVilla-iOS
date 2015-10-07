@@ -11,6 +11,8 @@
 
 @interface SVInnovationCardViewController : UIViewController
 
+@property (strong, nonatomic) SVInnovation *innovation;
+
 - (id)initWithInnovation:(SVInnovation *)innov;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "SVAppDelegate.h"
 #import "SVInnovationsManager.h"
+#import "SVNavSChemeManager.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[SVInnovationsManager sharedManager] loadInnovations];
+    [[SVNavSChemeManager manager] initRootViewController];
     
     return YES;
 }

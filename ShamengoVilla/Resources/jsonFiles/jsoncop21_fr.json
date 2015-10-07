@@ -1,33 +1,63 @@
 {
   "fiches": [
+  	{
+      "innovName": "J'échange vos déchets contre de la nourriture bio",
+      "pioneerName": "Martha Delgado",
+      "pionneerCountry": "Mexico - Mexique",
+      "innovNumber": 1,
+      "category": "Alimentation",
+      "starred": false,
+      "beaconMajor": "123",
+      "beaconMinor": "123",
+      "description": "Pour sensibiliser les habitants de Mexico à la montagne de déchets qu'ils produisent, Martha les invite à venir 'vendre' leurs déchets non organiques en échange de légumes bio cultivés autour de Mexico. Une initiative qui cartonne.",
+      "pioneerPicture": "pioneer01.png",
+      "innovPicture": "innov01.png",
+      "innovVideo": "video01.mp4",
+      "ShamengoLink": "http://www.shamengo.com/fr/pionnier/189-martha-delgado"
+    },
+    {
+      "innovName": "Je dépollue les sols grâce aux plantes",
+      "pioneerName": "Thierry Jacquet",
+      "pionneerCountry": "La Brosse-Montceaux - France",
+      "innovNumber": 2,
+      "category": "Eau",
+      "starred": false,
+      "beaconMajor": "123",
+      "beaconMinor": "123",
+      "description": "Qui aurait cru que certaines plantes pouvaient détruire jusqu’à 99% des agents toxiques contenus dans les sols, tout en restant saines ? Après 10 ans de recherches, Thierry a trouvé la solution pour décontaminer les sols avec un procédé économique et écologique. La Chine et le Brésil ont déjà adopté cette arme de dépollution massive. \nA qui le tour ?",
+      "pioneerPicture": "pioneer02.png",
+      "innovPicture": "innov02.png",
+      "innovVideo": "video02.mp4",
+      "ShamengoLink": "http://www.shamengo.com/fr/pionnier/146-thierry-jacquet"
+    },
     {
       "innovName": "Potager Vertical",
       "pioneerName": "Peggy Pascal",
       "pionneerCountry": "",
-      "innovNumber": 1,
-      "category": "Nourriture",
+      "innovNumber": 881,
+      "category": "Alimentation",
       "starred": false,
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer01.jpg",
-      "innovPicture": "innov01.jpg",
-      "innovVideo": "video01.jpg",
+      "pioneerPicture": "pioneer01.png",
+      "innovPicture": "innov01.png",
+      "innovVideo": "video01.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/"
     },
     {
       "innovName": "Je cultive un potager vertical",
       "pioneerName": "Britta Riley",
-      "pionneerCountry": "Brooklyn - United States",
-      "innovNumber": 2,
-      "category": "Nourriture",
+      "pionneerCountry": "Brooklyn - Etats Unis",
+      "innovNumber": 882,
+      "category": "Alimentation",
       "starred": false,
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Pour nous reconnecter à la terre, cette citadine a inventé un potager malin qui se suspend à nos fenêtres. Grâce à cette technique, nous pouvons cultiver des plantes aromatiques, salades et fruits rouges, même dans les plus petits studios. \nCraquant.",
-      "pioneerPicture": "pioneer02.jpg",
-      "innovPicture": "innov02.jpg",
-      "innovVideo": "video02.jpg",
+      "pioneerPicture": "pioneer02.png",
+      "innovPicture": "innov02.png",
+      "innovVideo": "video02.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/97-britta-riley"
     },
     {
@@ -35,14 +65,14 @@
       "pioneerName": "Chelsea Briganti",
       "pionneerCountry": "",
       "innovNumber": 3,
-      "category": "Nourriture",
+      "category": "Alimentation",
       "starred": false,
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer03.jpg",
-      "innovPicture": "innov03.jpg",
-      "innovVideo": "video03.jpg",
+      "pioneerPicture": "pioneer03.png",
+      "innovPicture": "innov03.png",
+      "innovVideo": "video03.mp4",
       "ShamengoLink": "http://www.loliware.com/about/"
     },
     {
@@ -50,14 +80,14 @@
       "pioneerName": "David Edwards",
       "pionneerCountry": "",
       "innovNumber": 4,
-      "category": "Nourriture",
+      "category": "Alimentation",
       "starred": false,
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer04.jpg",
-      "innovPicture": "innov04.jpg",
-      "innovVideo": "video04.jpg",
+      "pioneerPicture": "pioneer04.png",
+      "innovPicture": "innov04.png",
+      "innovVideo": "video04.mp4",
       "ShamengoLink": "http://www.wikipearl.com/#wikipearl"
     },
     {
@@ -65,14 +95,14 @@
       "pioneerName": "Cédric Péchard",
       "pionneerCountry": "Versailles - France",
       "innovNumber": 5,
-      "category": "Nourriture",
+      "category": "Alimentation",
       "starred": false,
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Saviez-vous que le marc de café, est l’un des meilleurs substrats agricoles au monde ? Cédric s’en sert pour faire pousser des pleurotes en ville. L’une des initiatives de l’économie circulaire les plus prometteuses qu’il soit. \nA votre café et vos fourchettes !",
-      "pioneerPicture": "pioneer05.jpg",
-      "innovPicture": "innov05.jpg",
-      "innovVideo": "video05.jpg",
+      "pioneerPicture": "pioneer05.png",
+      "innovPicture": "innov05.png",
+      "innovVideo": "video05.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/167-cedric-pechard"
     },
     {
@@ -80,14 +110,14 @@
       "pioneerName": "Manuele Aldrete",
       "pionneerCountry": "",
       "innovNumber": 6,
-      "category": "Nourriture",
+      "category": "Alimentation",
       "starred": false,
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer06.jpg",
-      "innovPicture": "innov06.jpg",
-      "innovVideo": "video06.jpg",
+      "pioneerPicture": "pioneer06.png",
+      "innovPicture": "innov06.png",
+      "innovVideo": "video06.mp4",
       "ShamengoLink": ""
     },
     {
@@ -100,9 +130,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Grâce à l’innovation révolutionnaire de cet agronome, il existe enfin un moyen de maintenir l’eau de pluie à la racine des plantes. Un produit dégradable naturellement à découvrir absolument. \nMagique !",
-      "pioneerPicture": "pioneer07.jpg",
-      "innovPicture": "innov07.jpg",
-      "innovVideo": "video07.jpg",
+      "pioneerPicture": "pioneer07.png",
+      "innovPicture": "innov07.png",
+      "innovVideo": "video07.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/164-philippe-ouaki-di-giorno"
     },
     {
@@ -115,9 +145,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Qui aurait cru que certaines plantes pouvaient détruire jusqu’à 99% des agents toxiques contenus dans les sols, tout en restant saines ? Après 10 ans de recherches, Thierry a trouvé la solution pour décontaminer les sols avec un procédé économique et écologique. La Chine et le Brésil ont déjà adopté cette arme de dépollution massive. \nA qui le tour ?",
-      "pioneerPicture": "pioneer08.jpg",
-      "innovPicture": "innov08.jpg",
-      "innovVideo": "video08.jpg",
+      "pioneerPicture": "pioneer08.png",
+      "innovPicture": "innov08.png",
+      "innovVideo": "video08.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/146-thierry-jacquet"
     },
     {
@@ -130,9 +160,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Son invention ressemble à un simple jerrican. Elle est pourtant le fruit d’une longue recherche technologique. Son pouvoir : transformer en quelques heures une eau infestée de bactéries en eau potable. \nMagique.",
-      "pioneerPicture": "pioneer09.jpg",
-      "innovPicture": "innov09.jpg",
-      "innovVideo": "video09.jpg",
+      "pioneerPicture": "pioneer09.png",
+      "innovPicture": "innov09.png",
+      "innovVideo": "video09.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/86-petra-wadstrom"
     },
     {
@@ -145,9 +175,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Permettre à des populations très pauvres d’avoir accès à une eau potable bon marché, c’est le pari mené à un train d’enfer par ce duo franco-cambodgien. \nCerise sur le gâteau : ce projet sanitaire est développé par des micro-entrepreneurs locaux.",
-      "pioneerPicture": "pioneer10.jpg",
-      "innovPicture": "innov10.jpg",
-      "innovVideo": "video10.jpg",
+      "pioneerPicture": "pioneer10.png",
+      "innovPicture": "innov10.png",
+      "innovVideo": "video10.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/58-francois-jacquenoud-amp-lo-chay"
     },
     {
@@ -160,9 +190,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer11.jpg",
-      "innovPicture": "innov11.jpg",
-      "innovVideo": "video11.jpg",
+      "pioneerPicture": "pioneer11.png",
+      "innovPicture": "innov11.png",
+      "innovVideo": "video11.mp4",
       "ShamengoLink": ""
     },
     {
@@ -175,9 +205,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer12.jpg",
-      "innovPicture": "innov12.jpg",
-      "innovVideo": "video12.jpg",
+      "pioneerPicture": "pioneer12.png",
+      "innovPicture": "innov12.png",
+      "innovVideo": "video12.mp4",
       "ShamengoLink": ""
     },
     {
@@ -190,9 +220,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Il y a 30 ans, cette mère de famille découvre incrédule que personne n’utilise la cuisson solaire en Afrique. Il n’en fallait pas plus à cette pionnière pour évangéliser les femmes africaines avec son four solaire.",
-      "pioneerPicture": "pioneer13.jpg",
-      "innovPicture": "innov13.jpg",
-      "innovVideo": "video13.jpg",
+      "pioneerPicture": "pioneer13.png",
+      "innovPicture": "innov13.png",
+      "innovVideo": "video13.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/137-beverly-blum"
     },
     {
@@ -205,9 +235,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Fabricant de jarres traditionnelles en argile, ce potier indien a eu l’idée d’améliorer sa technique en fabriquant sur le même principe des réfrigérateurs. La température intérieure y est de 15 à 20 degrés inférieurs à la température extérieure. Rafraichissant !",
-      "pioneerPicture": "pioneer14.jpg",
-      "innovPicture": "innov14.jpg",
-      "innovVideo": "video14.jpg",
+      "pioneerPicture": "pioneer14.png",
+      "innovPicture": "innov14.png",
+      "innovVideo": "video14.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/163-mansukhlal-prajapati"
     },
     {
@@ -220,9 +250,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer15.jpg",
-      "innovPicture": "innov15.jpg",
-      "innovVideo": "video15.jpg",
+      "pioneerPicture": "pioneer15.png",
+      "innovPicture": "innov15.png",
+      "innovVideo": "video15.mp4",
       "ShamengoLink": ""
     },
     {
@@ -235,9 +265,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer16.jpg",
-      "innovPicture": "innov16.jpg",
-      "innovVideo": "video16.jpg",
+      "pioneerPicture": "pioneer16.png",
+      "innovPicture": "innov16.png",
+      "innovVideo": "video16.mp4",
       "ShamengoLink": ""
     },
     {
@@ -250,9 +280,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Cet ingénieur a mis au point un dispositif qui permet de connaître en temps réel le coût  de sa consommation électrique. Grâce aux options de son système, il devient très facile de faire la chasse au gaspi et de réaliser ainsi de substantielles économies.",
-      "pioneerPicture": "pioneer17.jpg",
-      "innovPicture": "innov17.jpg",
-      "innovVideo": "video17.jpg",
+      "pioneerPicture": "pioneer17.png",
+      "innovPicture": "innov17.png",
+      "innovVideo": "video17.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/133-pilgrim-beart"
     },
     {
@@ -265,9 +295,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Ce géant de l’entrepreneuriat social a libéré un million d’intouchables dont le métier consistait jusqu’alors à vider à mains nues des toilettes d’un autre âge. Celles qu’il installe en remplacement sont des modèles open source ultra-écologiques dont l’Occident pourrait s’inspirer.",
-      "pioneerPicture": "pioneer18.jpg",
-      "innovPicture": "innov18.jpg",
-      "innovVideo": "video18.jpg",
+      "pioneerPicture": "pioneer18.png",
+      "innovPicture": "innov18.png",
+      "innovVideo": "video18.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/63-bindeswhar-pathak"
     },
     {
@@ -280,9 +310,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer19.jpg",
-      "innovPicture": "innov19.jpg",
-      "innovVideo": "video20.jpg",
+      "pioneerPicture": "pioneer19.png",
+      "innovPicture": "innov19.png",
+      "innovVideo": "video20.mp4",
       "ShamengoLink": ""
     },
     {
@@ -295,9 +325,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer20.jpg",
-      "innovPicture": "innov20.jpg",
-      "innovVideo": "video20.jpg",
+      "pioneerPicture": "pioneer20.png",
+      "innovPicture": "innov20.png",
+      "innovVideo": "video20.mp4",
       "ShamengoLink": ""
     },
     {
@@ -310,9 +340,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Peut-on produire et distribuer de l’énergie verte pour alimenter les besoins de la population à grande échelle ? Cette mère de famille le prouve avec brio et s’apprête à conquérir le monde. \nContagieux.",
-      "pioneerPicture": "pioneer21.jpg",
-      "innovPicture": "innov21.jpg",
-      "innovVideo": "video21.jpg",
+      "pioneerPicture": "pioneer21.png",
+      "innovPicture": "innov21.png",
+      "innovVideo": "video21.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/112-ursula-sladek"
     },
     {
@@ -325,9 +355,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer22.jpg",
-      "innovPicture": "innov22.jpg",
-      "innovVideo": "video22.jpg",
+      "pioneerPicture": "pioneer22.png",
+      "innovPicture": "innov22.png",
+      "innovVideo": "video22.mp4",
       "ShamengoLink": ""
     },
     {
@@ -340,9 +370,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "",
-      "pioneerPicture": "pioneer23.jpg",
-      "innovPicture": "innov23.jpg",
-      "innovVideo": "video23.jpg",
+      "pioneerPicture": "pioneer23.png",
+      "innovPicture": "innov23.png",
+      "innovVideo": "video23.mp4",
       "ShamengoLink": ""
     },
     {
@@ -355,9 +385,9 @@
       "beaconMajor": "123",
       "beaconMinor": "123",
       "description": "Parce que plus d’un milliard de personnes n’ont pas accès à l’électricité et presque autant ont peu suivi l’école, Bunker a décidé de concilier les deux en aidant des va-nu-pieds à devenir ingénieurs solaires, pour apporter la lumière dans leurs villages. \nUn géant de l’entrepreneuriat social !",
-      "pioneerPicture": "pioneer24.jpg",
-      "innovPicture": "innov24.jpg",
-      "innovVideo": "video24.jpg",
+      "pioneerPicture": "pioneer24.png",
+      "innovPicture": "innov24.png",
+      "innovVideo": "video24.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/170-bunker-roy-i-created-the-barefoot-college"
     }
   ]
