@@ -13,6 +13,13 @@
 
 @property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
 @property (weak, nonatomic) IBOutlet UIImageView *pionnerImageView;
+@property (weak, nonatomic) IBOutlet UILabel *pioneerNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *innovDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *innovIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *innovCategoryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pioneerCountryLabel;
+
+- (void)buildUI;
 
 @end
 
@@ -31,8 +38,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.view.backgroundColor = [UIColor whiteColor];
-    self.pionnerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.innovation.pionnerImageName]];
+    [self buildUI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +48,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)buildUI {
+    
+    self.innovIDLabel.text = [NSString stringWithFormat:@"%lu", self.innovation.innovationId];
+    self.innovCategoryLabel.text = [NSString stringWithFormat:@"%@", self.innovation.innovCategory];
+    
+    self.innovDescriptionLabel.text = [NSString stringWithFormat:@"%@", self.innovation.innovDescription];
+    self.innovDescriptionLabel.numberOfLines = 0;
+    self.innovDescriptionLabel.textAlignment = NSTextAlignmentJustified;
+    
+    self.pioneerNameLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerName];
+    self.pioneerCountryLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerCountry];
+    self.pionnerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.innovation.pionnerImageName]];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                                                   initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                   target:self
+                                                                   action:@selector(shareAction)];
+}
 
 - (IBAction)playVideo:(UIButton *)sender {
     
@@ -54,6 +80,13 @@
     [self.view addSubview:self.moviePlayer.view];
     [self.moviePlayer prepareToPlay];
     [self.moviePlayer play];
+}
+
+- (void)shareAction {
+    
+    NSArray *activityItems = @[UIActivityTypeMail, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, UIActivityTypeMessage];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 /*

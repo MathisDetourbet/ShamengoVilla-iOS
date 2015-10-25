@@ -21,13 +21,13 @@
         self.pionnerName = [properties objectForKeyNotNull:@"pioneerName" expectedClass:[NSString class]];
         self.pionnerCountry = [properties objectForKeyNotNull:@"pionneerCountry" expectedClass:[NSString class]];
         self.innovationId = [[properties objectForKeyNotNull:@"innovNumber" expectedClass:[NSNumber class]] integerValue];
-        self.category = [properties objectForKeyNotNull:@"category" expectedClass:[NSString class]];
+        self.innovCategory = [properties objectForKeyNotNull:@"category" expectedClass:[NSString class]];
         self.starred = [[properties objectForKeyNotNull:@"starred" expectedClass:[NSNumber class]] boolValue];
         self.beaconMajor = [properties objectForKeyNotNull:@"beaconMajor" expectedClass:[NSString class]];
         self.beaconMinor = [properties objectForKeyNotNull:@"beaconMinor" expectedClass:[NSString class]];
         self.innovDescription = [properties objectForKeyNotNull:@"description" expectedClass:[NSString class]];
         self.pionnerImageName = [properties objectForKeyNotNull:@"pioneerPicture" expectedClass:[NSString class]];
-        self.innovationImageName = [properties objectForKeyNotNull:@"innovVideo" expectedClass:[NSString class]];
+        self.innovationImageName = [properties objectForKeyNotNull:@"innovPicture" expectedClass:[NSString class]];
         self.innovationMoviePath = [properties objectForKeyNotNull:@"innovVideo" expectedClass:[NSString class]];
         self.shamengoPath = [properties objectForKeyNotNull:@"ShamengoLink" expectedClass:[NSString class]];
     }

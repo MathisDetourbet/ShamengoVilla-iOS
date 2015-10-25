@@ -44,7 +44,7 @@
                     [self.innovationsList addObject:innovation];
                 }
             }
-            NSLog(@"Innovations are loaded with %lu innovations", (unsigned long)self.innovationsList.count);
+            NSLog(@"%lu innovations loaded", (unsigned long)self.innovationsList.count);
             
         } else {
             NSLog(@"### Error : there is no innovation in json file");

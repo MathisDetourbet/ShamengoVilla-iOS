@@ -14,7 +14,7 @@
 @property (strong, nonatomic) NSString *pionnerName;
 @property (strong, nonatomic) NSString *pionnerCountry;
 @property (assign, nonatomic) NSInteger innovationId;
-@property (strong, nonatomic) NSString *category;
+@property (strong, nonatomic) NSString *innovCategory;
 @property (assign, nonatomic) BOOL starred;
 @property (strong, nonatomic) NSString *beaconMajor;
 @property (strong, nonatomic) NSString *beaconMinor;

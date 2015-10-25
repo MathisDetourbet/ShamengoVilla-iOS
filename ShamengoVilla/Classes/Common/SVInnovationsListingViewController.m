@@ -73,7 +73,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SVInnovation *innovToPresent = [self.innovationsList objectAtIndex:indexPath.row];
-    //SVInnovationCardViewController *innovCard = [[SVInnovationCardViewController alloc] initWithInnovation:innovToPresent];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SVInnovationCardViewController *innovCard = [storyboard instantiateViewControllerWithIdentifier:@"idInnovCardViewController"];
     innovCard.innovation = innovToPresent;

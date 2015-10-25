@@ -35,6 +35,11 @@
     self.innovationTitleLabel.text = [NSString stringWithFormat:@"\"%@\"", innovation.innovationName];
     self.innovationIDLabel.text = [NSString stringWithFormat:@"%ld", (long)innovation.innovationId];
     self.pionnerNameLabel.text = innovation.pionnerName;
+    
+    // A supprimer lorsque toutes les images seront dispo !
+    if ([innovation.innovationImageName isEqualToString:@"innov01.png"] || [innovation.innovationImageName isEqualToString:@"innov02.png"]) {
+        self.innovationImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", innovation.innovationImageName]];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

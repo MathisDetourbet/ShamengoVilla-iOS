@@ -9,8 +9,11 @@
 #import "SVAppDelegate.h"
 #import "SVInnovationsManager.h"
 #import "SVNavSChemeManager.h"
+#import <EstimoteSDK/EstimoteSDK.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () <ESTBeaconManagerDelegate>
+
+@property (nonatomic) ESTBeaconManager *beaconManager;
 
 @end
 
@@ -19,10 +22,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // Load innovations in the memory
     [[SVInnovationsManager sharedManager] loadInnovations];
     [[SVNavSChemeManager manager] initRootViewController];
     
+    // Initialization Beacon Manager
+    self.beaconManager = [ESTBeaconManager new];
+    self.beaconManager.delegate = self;
+    [self.beaconManager requestAlwaysAuthorization];
+    
+    [self.beaconManager startMonitoringForRegion:[[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"85FC11DD-4CCA-4B27-AFB3-876854BB5C3B"] major:1385 identifier:@"first beacon region"]];
+    
+    [[UIApplication sharedApplication]
+     registerUserNotificationSettings:[UIUserNotificationSettings
+                                       settingsForTypes:UIUserNotificationTypeAlert
+                                       categories:nil]];
+    
     return YES;
+}
+
+- (void)beaconManager:(id)manager didDetermineState:(CLRegionState)state forRegion:(CLBeaconRegion *)region {
+    [self.beaconManager requestStateForRegion:region];
+}
+
+- (void)beaconManager:(id)manager didEnterRegion:(CLBeaconRegion *)region {
+    
+    UILocalNotification *notification = [UILocalNotification new];
+    notification.alertBody =
+        @"Your gate closes in 47 minutes. "
+        "Current security wait time is 15 minutes, "
+        "and it's a 5 minute walk from security to the gate. "
+        "Looks like you've got plenty of time!";
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
