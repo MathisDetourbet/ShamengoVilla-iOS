@@ -17,7 +17,6 @@
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
 		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
-		6741DC181BB60CA000855FAA /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 6741DC171BB60CA000855FAA /* jsoncop21_fr.json */; settings = {ASSET_TAGS = (); }; };
 		6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */; };
 		6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */; };
 		676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A21BAC1CA60016854B /* MediaPlayer.framework */; };
@@ -26,6 +25,7 @@
 		679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CD1B77CC7600703F1B /* SVAppDelegate.m */; };
 		679297E51B77CC7600703F1B /* ShamengoVillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297E41B77CC7600703F1B /* ShamengoVillaTests.m */; };
 		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
+		67A1B4491BE2942A00955211 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 672FCA6F1BE28D7500574161 /* jsoncop21_fr.json */; };
 		67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */; settings = {ASSET_TAGS = (); }; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
 		67F908871BD6812B003E1D47 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F908861BD6812B003E1D47 /* CoreBluetooth.framework */; };
@@ -54,10 +54,10 @@
 		670216BF1B87A89900EF0840 /* SVInnovation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovation.m; sourceTree = "<group>"; };
 		670216C51B87AE4C00EF0840 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
 		670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		672FCA6F1BE28D7500574161 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67357C5E1B7B3F6100E39187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6741DC171BB60CA000855FAA /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
 		6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
 		6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVShamengoTabViewController.h; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 		67B146EE1BD019BF009E8538 /* video01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video01.mp4; sourceTree = "<group>"; };
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
+		67B9EE421BE28FEC009992E4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		67F908861BD6812B003E1D47 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7B1851889EEFE0924154C6FB /* Pods-ShamengoVilla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.release.xcconfig"; sourceTree = "<group>"; };
 		B2A66B287B220D83D4EB0092 /* Pods-ShamengoVilla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.debug.xcconfig"; sourceTree = "<group>"; };
@@ -253,7 +254,7 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				6741DC171BB60CA000855FAA /* jsoncop21_fr.json */,
+				672FCA6F1BE28D7500574161 /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -414,6 +415,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 679297BC1B77CC7600703F1B;
 			productRefGroup = 679297C61B77CC7600703F1B /* Products */;
@@ -431,11 +433,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A1B4491BE2942A00955211 /* jsoncop21_fr.json in Resources */,
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
 				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
 				67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */,
-				6741DC181BB60CA000855FAA /* jsoncop21_fr.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +541,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				670216AD1B879E4D00EF0840 /* en */,
+				67B9EE421BE28FEC009992E4 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -583,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -620,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
