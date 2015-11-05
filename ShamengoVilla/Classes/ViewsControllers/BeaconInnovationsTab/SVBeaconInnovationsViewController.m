@@ -10,11 +10,13 @@
 #import "SVInnovationsManager.h"
 #import "SVInnovation.h"
 #import <EstimoteSDK/EstimoteSDK.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface SVBeaconInnovationsViewController () <ESTBeaconManagerDelegate>
+@interface SVBeaconInnovationsViewController () <ESTBeaconManagerDelegate, CBCentralManagerDelegate, UIAlertViewDelegate>
 
-@property (nonatomic) ESTBeaconManager *beaconManager;
-@property (nonatomic) CLBeaconRegion *beaconRegion;
+@property (nonatomic) ESTBeaconManager  *beaconManager;
+@property (nonatomic) CLBeaconRegion    *beaconRegion;
+@property (nonatomic) CBCentralManager  *bluetoothManager;
 
 - (void)initBeaconManager;
 - (NSArray *)innovationsNearBeacon:(CLBeacon *)beacon;
@@ -28,7 +30,9 @@
     
     self.innovationsList = nil;
     [self.tableView reloadData];
+    self.tableView.hidden = YES;
     
+    [self detectBluetooth];
     [self initBeaconManager];
     [self buildUI];
 }
@@ -67,19 +71,11 @@
                         initWithProximityUUID:[[NSUUID alloc]
                         initWithUUIDString:@"85FC11DD-4CCA-4B27-AFB3-876854BB5C3B"]
                         identifier:@"ranged region"];
-    
-    // NSLocationAlwaysUsageDescription in Info.plist
-    // [self.beaconManager requestAlwaysAuthorization];
-    // NSLocationWhenInUseUsageDescription in Info.plist
     [self.beaconManager requestWhenInUseAuthorization];
-    
-//    [[UIApplication sharedApplication]
-//     registerUserNotificationSettings:[UIUserNotificationSettings
-//                                       settingsForTypes:UIUserNotificationTypeAlert
-//                                       categories:nil]];
 }
 
 - (NSArray *)innovationsNearBeacon:(CLBeacon *)beacon {
+    
     NSString *beaconMajor = [NSString stringWithFormat:@"%@", beacon.major];
     NSMutableArray *innovationsNearBeacon = [NSMutableArray new];
     NSArray *innovationsJSON = [NSArray arrayWithArray:[[SVInnovationsManager sharedManager] innovationsList]];
@@ -97,34 +93,54 @@
 #pragma mark - ESTBeaconManager Delegate
 
 - (void)beaconManager:(id)manager didRangeBeacons:(NSArray<CLBeacon *> *)beacons inRegion:(CLBeaconRegion *)region {
+    
     CLBeacon *nearestBeacon = beacons.firstObject;
     
     if (nearestBeacon) {
         self.innovationsList = [NSMutableArray arrayWithArray:[self innovationsNearBeacon:nearestBeacon]];
         [self.tableView reloadData];
-        
-        NSLog(@"innovations detected : %@", self.innovationsList);
+        self.tableView.hidden = NO;
+    } else {
+        self.tableView.hidden = YES;
     }
 }
-
-//- (void)beaconManager:(id)manager didDetermineState:(CLRegionState)state forRegion:(CLBeaconRegion *)region {
-//    [self.beaconManager requestStateForRegion:region];
-//}
-//
-//- (void)beaconManager:(id)manager didEnterRegion:(CLBeaconRegion *)region {
-//    
-//    UILocalNotification *notification = [UILocalNotification new];
-//    notification.alertBody =
-//    @"Your gate closes in 47 minutes. "
-//    "Current security wait time is 15 minutes, "
-//    "and it's a 5 minute walk from security to the gate. "
-//    "Looks like you've got plenty of time!";
-//    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-//}
 
 - (void)refreshInnovationsList
 {
     
+}
+
+
+#pragma mark - Bluetooth Detection Methods
+
+- (void)detectBluetooth
+{
+    if (!self.bluetoothManager)
+    {
+        // Put on main queue so we can call UIAlertView from delegate callbacks.
+        self.bluetoothManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue()];
+    }
+    [self centralManagerDidUpdateState:self.bluetoothManager]; // Show initial state
+}
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+    NSString *stateString = nil;
+    switch (self.bluetoothManager.state)
+    {
+        case CBCentralManagerStateResetting: stateString = @"The connection with the system service was momentarily lost, update imminent."; break;
+        case CBCentralManagerStateUnsupported: stateString = @"The platform doesn't support Bluetooth Low Energy."; break;
+        case CBCentralManagerStateUnauthorized: stateString = @"The app is not authorized to use Bluetooth Low Energy."; break;
+        case CBCentralManagerStatePoweredOff: stateString = @"Bluetooth is currently powered off."; break;
+        case CBCentralManagerStatePoweredOn: stateString = @"Bluetooth is currently powered on and available to use."; break;
+        default: stateString = @"State unknown, update imminent."; break;
+    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bluetooth state"
+                                                     message:stateString
+                                                    delegate:nil
+                                           cancelButtonTitle:@"Ok"
+                                      otherButtonTitles:nil];
+    //[alert show];
 }
 
 @end

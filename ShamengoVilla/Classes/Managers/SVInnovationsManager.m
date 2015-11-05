@@ -24,7 +24,15 @@
 
 - (void)loadInnovations {
     
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
+    NSString *jsonPath = nil;
+    NSString *deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
+    
+    if ([deviceLanguage isEqualToString:@"fr-FR"]) {
+        jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
+    } else {
+        jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_en" ofType:@"json"];
+    }
+    
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     NSError *error = nil;
     NSDictionary *jsonDico = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];

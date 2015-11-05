@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *pioneerCountryLabel;
 
 - (void)buildUI;
+- (void)doneButtonClicked;
+- (void)shareAction;
 
 @end
 
@@ -61,25 +63,55 @@
     self.pioneerCountryLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerCountry];
     self.pionnerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.innovation.pionnerImageName]];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-                                                                   initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                                   target:self
-                                                                   action:@selector(shareAction)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                           target:self
+                                                                                           action:@selector(shareAction)];
 }
 
 - (IBAction)playVideo:(UIButton *)sender {
     
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"KantaHani30secpourtest" ofType:@"mp4"];
-    NSURL *videoURL = [NSURL URLWithString:videoPath];
+    NSString *movieNameJSON = [[NSString alloc] initWithFormat:@"%@", self.innovation.innovationMoviePath];
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:movieNameJSON ofType:@""];
+    NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
+    
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
     self.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
     self.moviePlayer.fullscreen = YES;
     self.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
     self.moviePlayer.shouldAutoplay = YES;
+    
     [self.moviePlayer.view setFrame:self.view.frame];
+    [self.moviePlayer.view setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:self.moviePlayer.view];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.moviePlayer.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.f constant:0.f]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.moviePlayer.view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.f constant:0.f]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.moviePlayer.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.f constant:0.f]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.moviePlayer.view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.f constant:0.f]];
+
     [self.moviePlayer prepareToPlay];
     [self.moviePlayer play];
+    
+    self.navigationController.navigationBarHidden = YES;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(doneButtonClicked:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:nil];
+}
+
+- (void)doneButtonClicked:(NSNotification *)notification {
+    NSNumber *reason = [notification.userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+    
+    if ([reason intValue] == MPMovieFinishReasonUserExited) {
+        [self.moviePlayer stop];
+        [self.moviePlayer.view removeFromSuperview];
+        self.navigationController.navigationBarHidden = NO;
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:MPMoviePlayerPlaybackDidFinishNotification
+                                                      object:nil];
+    }
 }
 
 - (void)shareAction {

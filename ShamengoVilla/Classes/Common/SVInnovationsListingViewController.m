@@ -33,8 +33,8 @@
 
 #pragma mark - Load JSON Data
 
-- (void)loadJSONData
-{
+- (void)loadJSONData {
+    
     SVInnovationsManager *manager = [SVInnovationsManager sharedManager];
     if (manager.innovationsList == nil) {
         [manager loadInnovations];
@@ -47,8 +47,7 @@
 
 #pragma mark - UITableView Datasource methods
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.innovationsList count];
 }
 
@@ -56,27 +55,32 @@
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     SVInnovationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idInnovationCell"];
+    
     if (!cell) {
         cell = [[SVInnovationTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idInnovationCell"];
     }
+    
     [cell setNeedsLayout];
     [cell layoutSubviews];
-    
     [cell displayInnovation:((SVInnovation *)[self.innovationsList objectAtIndex:indexPath.row]) forIndexPath:indexPath];
     
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+#pragma mark - UITableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     SVInnovation *innovToPresent = [self.innovationsList objectAtIndex:indexPath.row];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SVInnovationCardViewController *innovCard = [storyboard instantiateViewControllerWithIdentifier:@"idInnovCardViewController"];
     innovCard.innovation = innovToPresent;
     [self.navigationController pushViewController:innovCard animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
