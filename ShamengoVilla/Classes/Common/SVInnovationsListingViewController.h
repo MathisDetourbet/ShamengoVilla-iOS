@@ -10,9 +10,10 @@
 
 @interface SVInnovationsListingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) NSMutableArray *innovationsList;
+@property (strong, nonatomic) NSArray *resultInnovList;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (void)loadJSONData;
+- (void)hideTabBar;
 
 @end

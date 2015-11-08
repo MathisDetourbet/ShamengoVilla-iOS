@@ -8,27 +8,30 @@
 
 #import "SVInnovationCardViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "SVAppDelegate.h"
 
 @interface SVInnovationCardViewController ()
 
-@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
-@property (weak, nonatomic) IBOutlet UIImageView *pionnerImageView;
-@property (weak, nonatomic) IBOutlet UILabel *pioneerNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *innovDescriptionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *innovIDLabel;
-@property (weak, nonatomic) IBOutlet UILabel *innovCategoryLabel;
-@property (weak, nonatomic) IBOutlet UILabel *pioneerCountryLabel;
+@property (strong, nonatomic) MPMoviePlayerController   *moviePlayer;
+@property (strong, nonatomic) UITabBarController        *tabBarController;
+
+@property (weak, nonatomic) IBOutlet UIImageView        *pionnerImageView;
+@property (weak, nonatomic) IBOutlet UILabel            *pioneerNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel            *innovDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel            *innovIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel            *innovCategoryLabel;
+@property (weak, nonatomic) IBOutlet UILabel            *pioneerCountryLabel;
 
 - (void)buildUI;
-- (void)doneButtonClicked;
+- (void)doneButtonClicked:(NSNotification *)notification;
 - (void)shareAction;
 
 @end
 
 @implementation SVInnovationCardViewController
 
-- (id)initWithInnovation:(SVInnovation *)innov
-{
+- (id)initWithInnovation:(SVInnovation *)innov {
+    
     self = [super init];
     
     if (self) {
@@ -43,6 +46,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self buildUI];
+    self.tabBarController = (UITabBarController*)[[(SVAppDelegate *)[[UIApplication sharedApplication]delegate] window] rootViewController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,22 +55,40 @@
 }
 
 - (void)buildUI {
-    
+    // ID
     self.innovIDLabel.text = [NSString stringWithFormat:@"%lu", self.innovation.innovationId];
+    
+    // Category
     self.innovCategoryLabel.text = [NSString stringWithFormat:@"%@", self.innovation.innovCategory];
     
-    self.innovDescriptionLabel.text = [NSString stringWithFormat:@"%@", self.innovation.innovDescription];
+    // Description
     self.innovDescriptionLabel.numberOfLines = 0;
     self.innovDescriptionLabel.textAlignment = NSTextAlignmentJustified;
+    NSMutableParagraphStyle *paragraphStyles = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyles.firstLineHeadIndent = 1.f;
+    paragraphStyles.alignment = NSTextAlignmentJustified;
+    NSDictionary *attributes = @{NSParagraphStyleAttributeName: paragraphStyles};
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", self.innovation.innovDescription] attributes: attributes];
+    self.innovDescriptionLabel.attributedText = attributedString;
     
+    // Pioneer Name
     self.pioneerNameLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerName];
+    
+    // Pioneer Country
     self.pioneerCountryLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerCountry];
+    
+    // Pioneer Image
     self.pionnerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.innovation.pionnerImageName]];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                                            target:self
                                                                                            action:@selector(shareAction)];
 }
+
+
+/*********************************************************************/
+#pragma mark - MPMoviePlayer Controls Methods
+/*********************************************************************/
 
 - (IBAction)playVideo:(UIButton *)sender {
     
@@ -75,11 +97,10 @@
     NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
     
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-    self.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
-    self.moviePlayer.fullscreen = YES;
-    self.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
-    self.moviePlayer.shouldAutoplay = YES;
-    
+    [self.moviePlayer setMovieSourceType:MPMovieSourceTypeFile];
+    [self.moviePlayer setFullscreen:YES];
+    [self.moviePlayer setControlStyle:MPMovieControlStyleFullscreen];
+    [self.moviePlayer setShouldAutoplay:YES];
     [self.moviePlayer.view setFrame:self.view.frame];
     [self.moviePlayer.view setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:self.moviePlayer.view];
@@ -93,6 +114,7 @@
     [self.moviePlayer play];
     
     self.navigationController.navigationBarHidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(doneButtonClicked:)
@@ -101,12 +123,14 @@
 }
 
 - (void)doneButtonClicked:(NSNotification *)notification {
+    
     NSNumber *reason = [notification.userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
     
     if ([reason intValue] == MPMovieFinishReasonUserExited) {
         [self.moviePlayer stop];
         [self.moviePlayer.view removeFromSuperview];
         self.navigationController.navigationBarHidden = NO;
+        self.tabBarController.tabBar.hidden = NO;
         
         [[NSNotificationCenter defaultCenter] removeObserver:self
                                                         name:MPMoviePlayerPlaybackDidFinishNotification
@@ -120,15 +144,5 @@
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     [self presentViewController:activityVC animated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -23,15 +23,15 @@
 
 - (void)initRootViewController
 {
-    UIWindow * window = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).window;
+    UIWindow * window = ((SVAppDelegate *)[[UIApplication sharedApplication] delegate]).window;
     window.rootViewController = [window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"idTabBarSV"];
 }
 
 - (void)changeRootViewController:(UIViewController *)viewController
 {
-    UIView *snapShot = [((AppDelegate *)([UIApplication sharedApplication].delegate)).window snapshotViewAfterScreenUpdates:YES];
+    UIView *snapShot = [((SVAppDelegate *)([UIApplication sharedApplication].delegate)).window snapshotViewAfterScreenUpdates:YES];
     [viewController.view addSubview:snapShot];
-    ((AppDelegate *)([UIApplication sharedApplication].delegate)).window.rootViewController = viewController;
+    ((SVAppDelegate *)([UIApplication sharedApplication].delegate)).window.rootViewController = viewController;
     [snapShot removeFromSuperview];
 }
 

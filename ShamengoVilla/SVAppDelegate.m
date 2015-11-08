@@ -9,12 +9,17 @@
 #import "SVAppDelegate.h"
 #import "SVInnovationsManager.h"
 #import "SVNavSChemeManager.h"
+#import <RZTransitions/RZTransitionsManager.h>
+#import <RZTransitions/RZCardSlideAnimationController.h>
+#import <RZTransitions/RZCirclePushAnimationController.h>
+#import <RZZoomAlphaAnimationController.h>
+#import <RZBaseSwipeInteractionController.h>
 
-@interface AppDelegate ()
+@interface SVAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SVAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -22,6 +27,11 @@
     // Load innovations in the memory
     [[SVInnovationsManager sharedManager] loadInnovations];
     [[SVNavSChemeManager manager] initRootViewController];
+    
+    id<RZAnimationControllerProtocol> presentDismissAnimationController = [[RZZoomAlphaAnimationController alloc] init];
+    id<RZAnimationControllerProtocol> pushPopAnimationController = [[RZCardSlideAnimationController alloc] init];
+    [[RZTransitionsManager shared] setDefaultPresentDismissAnimationController:presentDismissAnimationController];
+    [[RZTransitionsManager shared] setDefaultPushPopAnimationController:pushPopAnimationController];
     
     return YES;
 }

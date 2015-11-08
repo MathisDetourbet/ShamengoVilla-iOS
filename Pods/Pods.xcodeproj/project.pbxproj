@@ -7,217 +7,312 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01FB6327B01E34EE2D1D16A7F7312FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		4E912A407CF1D16159ADC696314FAFB0 /* Pods-ShamengoVilla-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A91226D7A1C88CF8C932F6A9F69839 /* Pods-ShamengoVilla-dummy.m */; };
+		03CB59A581E6A40DD8B78437C3925AA0 /* RZUniqueTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0FAA120B883958DE0B9664EEDE95D1 /* RZUniqueTransition.m */; };
+		0409AF878FCB78F0CD08B69EE15B3431 /* RZZoomBlurAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B01B0FECE4137A6BA2881A43F3B8AE2 /* RZZoomBlurAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089663589D4782E07D48A7FF3D7E5115 /* RZUniqueTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 674771BA8DEA98AEF2E5F702D193EA2B /* RZUniqueTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1225562E10D057226DD0FB8D6E5F423F /* RZTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CADD0A90951F54C1B996C9563A00C66 /* RZTransitions-dummy.m */; };
+		14898255895DFEB2A8B9E326B33E2271 /* RZAnimationControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B6EA584BB0B948D208050ECBEE5400 /* RZAnimationControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		240CF1CAB8414CCE8DB4A3B78609E358 /* RZZoomBlurAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2899FC98170FC31973EE5782791B279 /* RZZoomBlurAnimationController.m */; };
+		289904A873426CB1C8FEF260D8604EA6 /* RZZoomPushAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E10DB1E72CB6EBF4F6B5BE68A3F790B /* RZZoomPushAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CDA8572D6B7874B221484D73B0742D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
+		2F0CB29E593D78A4981EA685415D9ADD /* RZSegmentControlMoveFadeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FE6FFD0BA3A0806AC93175097A586E /* RZSegmentControlMoveFadeAnimationController.m */; };
+		40F3C668CCC4EFE51C48734A2CE57CEE /* RZTransitionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AA3B805312B221D7470DC918D5C76 /* RZTransitionsManager.m */; };
+		424336F8A01F89D5FD1FDA650D351BD6 /* RZBaseSwipeInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F4DB29874B858D9ED187AA4DFD7AB9 /* RZBaseSwipeInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47804DA3EA0AF3BB1BFDA2F53FB8C715 /* RZRectZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2008057AD1381359C060E07264B6F4FB /* RZRectZoomAnimationController.m */; };
+		49EB7623878BA917E78D25AA6C7CF909 /* RZTransitionInteractionControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CCF681D1B0FF41CB83A3FEF7EE2D9BE /* RZTransitionInteractionControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		501B7697BD29F123155F1407987A8D38 /* RZCirclePushAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0AB265ED3F30D235912EA3904CF6A3 /* RZCirclePushAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		522A415682C70D71F5E0CD41FFF88206 /* RZCardSlideAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A971D3EA980FF37840A8E48D0459B585 /* RZCardSlideAnimationController.m */; };
+		5B1A6AF6649334DCC680471FC9A30DE4 /* RZPinchInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B43D0F194F8474B5594D4524E9F6100 /* RZPinchInteractionController.m */; };
+		5B80B6D8454829B84569DE0570711098 /* RZCirclePushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5CC52C295EE47C10AD1C7521FE1BE8 /* RZCirclePushAnimationController.m */; };
+		5F93A95BCA134A3655FC1EAE9AF27690 /* RZOverscrollInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552EF959B3220EA3771E15F49EA03F0 /* RZOverscrollInteractionController.m */; };
+		60982F8B8BB53D598B8B8E4A4090EEA2 /* RZTransitionsAnimationControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = A50348B97BFD6EF8155AC948A777B373 /* RZTransitionsAnimationControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D7C8F107F854ECC64B9A423DB8FE66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		68E61BDDBF3AFBB1A9F381CB6ACBB4F6 /* RZCardSlideAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D995A7FEA91BE4FC677B622E912E00 /* RZCardSlideAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C7028B049A3645254862155FCB30C1E /* RZHorizontalInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A7098076717641334B8543B3071BD74 /* RZHorizontalInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713CE7D361395CE1DD2EA97C5263810A /* RZRectZoomAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F4AC461FDC5EDB3E9A72D23F2B491E1 /* RZRectZoomAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76FC677301ED4A95E94CC38B22236986 /* RZPinchInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4742257CD3329B15EC73C73CE007706E /* RZPinchInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77144BB20C80375E6A0354CE79D93A82 /* RZTransitionsInteractionControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE6006FC4F24253D5605B62529C8A46 /* RZTransitionsInteractionControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78288C205E8B95FBA44661019866EF60 /* RZVerticalSwipeInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CD130A2ADDE0A0744BA3C7CA3DD96F /* RZVerticalSwipeInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BBBCD87B11A20E9A94604627FF3EB86 /* RZShrinkZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D25F0558A76AC3B368DCA60B0CCC8B /* RZShrinkZoomAnimationController.m */; };
+		7BEF2B206E578D849763A2184048D848 /* UIImage+RZTransitionsSnapshotHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA0423B504C93C1CDAB5C57BF59EDFD /* UIImage+RZTransitionsSnapshotHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82BDAF02535D1787206BDB1F3E0F320D /* RZOverscrollInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CA88E58464074B2D43CF6F87B6E051 /* RZOverscrollInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		880B4635B2F6238FA24EF85E8594E485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
+		8F898E6D54191C6C426F1DA32DA357AE /* Pods-ShamengoVilla-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A91226D7A1C88CF8C932F6A9F69839 /* Pods-ShamengoVilla-dummy.m */; };
+		95538B3484FBEA9075B10A2D6588D646 /* RZShrinkZoomAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71FAA728E789EE76A1BD7A0E38BFC576 /* RZShrinkZoomAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A956E8E4067E1CA6CD61356535E15D0D /* RZZoomAlphaAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1649813A4768825392B329CB266E2 /* RZZoomAlphaAnimationController.m */; };
+		AE33E3C1F7CFF6A8D993A8B1AB418F61 /* RZSegmentControlMoveFadeAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042BDFA8C8A6A3998E5485E85E1697B3 /* RZSegmentControlMoveFadeAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA535141E20F619BE34CB003859ECCD /* RZTransitionAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FFFF2F4EC141733183647F358DA52B9 /* RZTransitionAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8F5059A0379E87934A44977804EE625 /* RZTransitionsNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E22FAF1B86450816701C4AA2C1A7DFAA /* RZTransitionsNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA02DB7B53B65D78028BE2F399B80338 /* RZHorizontalInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA81FAD309103F2DF6FE10692C864F6 /* RZHorizontalInteractionController.m */; };
+		CC956BBE5EDB1313F22123506E899E73 /* RZTransitionsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9094519842CE13C4E21243876F5746A8 /* RZTransitionsNavigationController.m */; };
+		D19DED21FFCD9760E1CAA7AC98B3D8B4 /* RZTransitionsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E32DC47666E4F15D40EC10A63B24EB40 /* RZTransitionsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFE20DAA4EAF57064B28FB7A595B959F /* RZBaseSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5866EEA36B6E97F368BC2691DF4E214 /* RZBaseSwipeInteractionController.m */; };
+		E094B83961BF353A43211983053B8160 /* RZZoomPushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E6302A093B169A1B2CE3E1F77E1B42 /* RZZoomPushAnimationController.m */; };
+		E7150F557475274E98C4EDE5D8389F39 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 128BD155AD7C9FF2578F286549F3B716 /* UIImage+RZTransitionsSnapshotHelpers.m */; };
+		F0AC423F9C2ECCF606C8ABD88F7EB29D /* RZVerticalSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E25DA1017500A92B8385BC2BC73A43 /* RZVerticalSwipeInteractionController.m */; };
+		F1B0BB8BB40FB4397528E1E79B6924BA /* UIImage+RZTransitionsFastImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A83CEA13C74E2E9707E60D7C6B67 /* UIImage+RZTransitionsFastImageBlur.m */; };
+		F76530E3D223120750D40B10E8A4600E /* RZZoomAlphaAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = AF26628E476ED1C95D4ECB9BFA17E26D /* RZZoomAlphaAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC38BA40AAC51E9C11E65E821FCABCE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		FEB032F49BF238AB3EE3EBD835BF7EAD /* UIImage+RZTransitionsFastImageBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8E59D9F6221FD2546BDCF3F79710C9 /* UIImage+RZTransitionsFastImageBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE9F2BF5C26A7F27E737542852ECBBB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD256AE4EA6A7B21E0FC556825A472CC;
+			remoteInfo = RZTransitions;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0069E727099228E09492475C74E8B43E /* ESTNearableSettingBootVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingBootVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingBootVersion.h; sourceTree = "<group>"; };
-		064FE6622B123BDF381E9C3B63F95110 /* ESTUtilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTUtilityManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTUtilityManager.h; sourceTree = "<group>"; };
-		07B631A44923B16EEF17C7BEC9419CD1 /* ESTEddystoneFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilter.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilter.h; sourceTree = "<group>"; };
-		08A317CC1461A3DE82FAEB1F039CF475 /* ESTNearableSettingAppVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingAppVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingAppVersion.h; sourceTree = "<group>"; };
-		108C511A7ECE302D85C644FCE89644E0 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = EstimoteSDK/EstimoteSDK.framework; sourceTree = "<group>"; };
-		11F14B14C0D0A45B47F5B2D2DEB42751 /* ESTRequestCancelPendingSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestCancelPendingSettings.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestCancelPendingSettings.h; sourceTree = "<group>"; };
-		15319D8A96887E02FA2D9AFBC3AC65C3 /* ESTBluetoothBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBluetoothBeacon.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBluetoothBeacon.h; sourceTree = "<group>"; };
-		16199869963E1B4F9F6A94BD20F228B8 /* ESTProximityRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTProximityRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTProximityRule.h; sourceTree = "<group>"; };
-		1858A9EAE33A77EA9FF765EFD76AE47D /* ESTRequestGetBeaconsDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeaconsDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeaconsDetails.h; sourceTree = "<group>"; };
-		19FC31FC31887EE5702E923C1F50545B /* ESTRequestAssignGPSLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestAssignGPSLocation.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestAssignGPSLocation.h; sourceTree = "<group>"; };
-		1E4FB6901A3A5A4ACADD67268A75C3F3 /* ESTRequestRegisterDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestRegisterDevice.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestRegisterDevice.h; sourceTree = "<group>"; };
-		2114EA7F25CA1ACFDDB44E9615778A98 /* ESTEddystoneFilterURLDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterURLDomain.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURLDomain.h; sourceTree = "<group>"; };
-		216EACABE06C4729926D93C26858C31B /* EstimoteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EstimoteSDK.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/EstimoteSDK.h; sourceTree = "<group>"; };
-		244882E595B2785B7025302C7FDB4268 /* ESTRequestDelete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestDelete.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestDelete.h; sourceTree = "<group>"; };
-		27A38272155A8DAF709F26AAF3D4F76F /* ESTTemperatureRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTemperatureRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTemperatureRule.h; sourceTree = "<group>"; };
-		2A289D312295B4C7EFDA8D6A0684B67D /* ESTRequestGetJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetJSON.h; sourceTree = "<group>"; };
-		2F777925C85BC0B43AEC22C31068CF4D /* ESTBulkUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBulkUpdater.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBulkUpdater.h; sourceTree = "<group>"; };
-		3096C3D539CBB2D63C66375C0E4DD5E2 /* ESTEddystone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystone.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystone.h; sourceTree = "<group>"; };
-		3175EEC769B109F48DF64D26624B048B /* ESTDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDevice.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDevice.h; sourceTree = "<group>"; };
-		32FB7F4C0253031394CBC469D5B5FA6D /* ESTRequestGetNearables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetNearables.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetNearables.h; sourceTree = "<group>"; };
-		37310EAC0AE75AE1A00078C94491B1D5 /* ESTDateRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDateRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDateRule.h; sourceTree = "<group>"; };
-		382C6064EFCC5FDDC65C64E1824B20CD /* ESTDeviceConnectable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceConnectable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceConnectable.h; sourceTree = "<group>"; };
+		035A68E0A4B4F51670572EBAF962468F /* ESTDeviceNearableSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceNearableSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceNearableSettingProtocol.h; sourceTree = "<group>"; };
+		042BDFA8C8A6A3998E5485E85E1697B3 /* RZSegmentControlMoveFadeAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZSegmentControlMoveFadeAnimationController.h; path = RZTransitions/Transitions/RZSegmentControlMoveFadeAnimationController.h; sourceTree = "<group>"; };
+		04E17898F4B60B91C94A2CBE5A2CC37B /* libRZTransitions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRZTransitions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FA49D1EAB665246F283118829C5D45 /* ESTDateRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDateRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDateRule.h; sourceTree = "<group>"; };
+		0867F7B20D2ED6B0FCA3EAE31D690EF4 /* ESTNearableSettingBroadcastingPower.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingBroadcastingPower.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingBroadcastingPower.h; sourceTree = "<group>"; };
+		0A6AA3B805312B221D7470DC918D5C76 /* RZTransitionsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZTransitionsManager.m; path = RZTransitions/Managers/RZTransitionsManager.m; sourceTree = "<group>"; };
+		0E776F2677DE2F4E63A34A686B11FF4B /* ESTBeaconManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconManagerDelegate.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManagerDelegate.h; sourceTree = "<group>"; };
+		0F8E59D9F6221FD2546BDCF3F79710C9 /* UIImage+RZTransitionsFastImageBlur.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RZTransitionsFastImageBlur.h"; path = "RZTransitions/Utilities/UIImage+RZTransitionsFastImageBlur.h"; sourceTree = "<group>"; };
+		128BD155AD7C9FF2578F286549F3B716 /* UIImage+RZTransitionsSnapshotHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RZTransitionsSnapshotHelpers.m"; path = "RZTransitions/Utilities/UIImage+RZTransitionsSnapshotHelpers.m"; sourceTree = "<group>"; };
+		129BAD3A075A2258DDD407BA51845688 /* ESTNearableRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableRule.h; sourceTree = "<group>"; };
+		16FC19D67C1C1D894062390B411224D0 /* ESTNearableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableManager.h; sourceTree = "<group>"; };
+		184FBC736A8ECF35EC57504533CB48CB /* ESTRequestPatchJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPatchJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPatchJSON.h; sourceTree = "<group>"; };
+		1B01B0FECE4137A6BA2881A43F3B8AE2 /* RZZoomBlurAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZZoomBlurAnimationController.h; path = RZTransitions/Transitions/RZZoomBlurAnimationController.h; sourceTree = "<group>"; };
+		1D0AB265ED3F30D235912EA3904CF6A3 /* RZCirclePushAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZCirclePushAnimationController.h; path = RZTransitions/Transitions/RZCirclePushAnimationController.h; sourceTree = "<group>"; };
+		1E10DB1E72CB6EBF4F6B5BE68A3F790B /* RZZoomPushAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZZoomPushAnimationController.h; path = RZTransitions/Transitions/RZZoomPushAnimationController.h; sourceTree = "<group>"; };
+		1FED6835C32364B1CCC5716398834345 /* ESTMotionRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTMotionRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTMotionRule.h; sourceTree = "<group>"; };
+		2008057AD1381359C060E07264B6F4FB /* RZRectZoomAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZRectZoomAnimationController.m; path = RZTransitions/Transitions/RZRectZoomAnimationController.m; sourceTree = "<group>"; };
+		20B0A2132CABE9F15B95E154567CC615 /* ESTSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSettingProtocol.h; sourceTree = "<group>"; };
+		2188690D60A294E4E5A26723E92398E2 /* ESTTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTrigger.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTrigger.h; sourceTree = "<group>"; };
+		232DA634C19628008ED6A18F994B7E5C /* ESTBeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManager.h; sourceTree = "<group>"; };
+		23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		285FBE8DC00D2BA6E35EEC6B216B7C2A /* ESTDeviceSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceSettingProtocol.h; sourceTree = "<group>"; };
+		2B43D0F194F8474B5594D4524E9F6100 /* RZPinchInteractionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZPinchInteractionController.m; path = RZTransitions/Interactors/RZPinchInteractionController.m; sourceTree = "<group>"; };
+		2F4AC461FDC5EDB3E9A72D23F2B491E1 /* RZRectZoomAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZRectZoomAnimationController.h; path = RZTransitions/Transitions/RZRectZoomAnimationController.h; sourceTree = "<group>"; };
+		2FFFF2F4EC141733183647F358DA52B9 /* RZTransitionAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZTransitionAction.h; path = RZTransitions/Data/RZTransitionAction.h; sourceTree = "<group>"; };
+		32F4DB29874B858D9ED187AA4DFD7AB9 /* RZBaseSwipeInteractionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZBaseSwipeInteractionController.h; path = RZTransitions/Interactors/RZBaseSwipeInteractionController.h; sourceTree = "<group>"; };
+		38EF7AA36C0E2EE1F1704C5841E52D81 /* ESTBeaconFirmwareVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconFirmwareVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconFirmwareVO.h; sourceTree = "<group>"; };
 		39D8C910274717098C4A04338AD20B0F /* Pods-ShamengoVilla-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShamengoVilla-resources.sh"; sourceTree = "<group>"; };
-		3C949D05F5C5F87E4E1BBB5D689B8DB1 /* ESTBeaconConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconConnection.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconConnection.h; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3F1E5E0A3EDD1A69BC52EFBF6F889231 /* ESTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTConfig.h; sourceTree = "<group>"; };
-		40975C1750F4595E00FACB1BA907E634 /* ESTRequestBeaconColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconColor.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconColor.h; sourceTree = "<group>"; };
-		4139ACB256A73A8F1B7A7F8BE97F7EDA /* ESTEddystoneTelemetry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneTelemetry.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneTelemetry.h; sourceTree = "<group>"; };
-		42424C1BAF5D08D780FB379529886760 /* ESTBeaconFirmwareVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconFirmwareVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconFirmwareVO.h; sourceTree = "<group>"; };
-		4787ECBCC58F3FA18A75A9EDAA555497 /* ESTMotionRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTMotionRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTMotionRule.h; sourceTree = "<group>"; };
-		48609B1466A4F9F640AC2B54A08A086A /* ESTRequestGetSettingsHistory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetSettingsHistory.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetSettingsHistory.h; sourceTree = "<group>"; };
-		4AAEB47017E4F20B1942CA45A011D99D /* ESTNearableSettingHardwareVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingHardwareVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingHardwareVersion.h; sourceTree = "<group>"; };
-		4F40986A701C8F700A882A654E993E1B /* ESTDeviceNearableSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceNearableSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceNearableSettingProtocol.h; sourceTree = "<group>"; };
-		4FEA1F858C66F1DB7D19D3F6657B15EC /* ESTFirmwareInfoVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTFirmwareInfoVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTFirmwareInfoVO.h; sourceTree = "<group>"; };
-		5449D11C1E3365D95058CA80F7045F74 /* ESTRequestBeaconDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconDetails.h; sourceTree = "<group>"; };
-		548DF6C0C8C9133B197574BF2AF567EE /* ESTBeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManager.h; sourceTree = "<group>"; };
-		57E46793AEF064225A6D9EC0532262FB /* ESTCloudManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTCloudManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTCloudManager.h; sourceTree = "<group>"; };
-		58EA13E7C916D45124A36B1E2F8EA2B1 /* ESTNearableSettingAdvertisingIntervalStill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingAdvertisingIntervalStill.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingAdvertisingIntervalStill.h; sourceTree = "<group>"; };
-		5B6E2F5C375D5E9ED44D93AF7701C0E4 /* ESTNearableSettingBroadcastingPower.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingBroadcastingPower.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingBroadcastingPower.h; sourceTree = "<group>"; };
+		3D41332ECECD5A774B80D24F95BA2923 /* ESTRequestBeaconDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconDetails.h; sourceTree = "<group>"; };
+		3EF2FEFFE35F4783068CFD6C9564B00D /* ESTEddystoneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneManager.h; sourceTree = "<group>"; };
+		3F5CC52C295EE47C10AD1C7521FE1BE8 /* RZCirclePushAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZCirclePushAnimationController.m; path = RZTransitions/Transitions/RZCirclePushAnimationController.m; sourceTree = "<group>"; };
+		4010668A29C26DF7599F5CE1462A63BC /* ESTEddystoneUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneUID.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneUID.h; sourceTree = "<group>"; };
+		4049BA5BBED2829A9C64BFE939049CB4 /* ESTUtilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTUtilityManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTUtilityManager.h; sourceTree = "<group>"; };
+		417871E1A4B76B33870EAF49D737F87E /* ESTProximityRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTProximityRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTProximityRule.h; sourceTree = "<group>"; };
+		41BD81BA9E1C5EF8BE341F6BFC69E195 /* ESTRequestBeaconMac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconMac.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconMac.h; sourceTree = "<group>"; };
+		438B7A0D7B4FBBD8F94EED2170F59FFD /* ESTFirmwareInfoVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTFirmwareInfoVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTFirmwareInfoVO.h; sourceTree = "<group>"; };
+		4742257CD3329B15EC73C73CE007706E /* RZPinchInteractionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZPinchInteractionController.h; path = RZTransitions/Interactors/RZPinchInteractionController.h; sourceTree = "<group>"; };
+		4844F8D02F09E27B05A8C3365DC4ADD6 /* ESTRequestGetPendingSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetPendingSettings.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetPendingSettings.h; sourceTree = "<group>"; };
+		4C23240726CC10B97A266ED2AB006399 /* ESTOrientationRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTOrientationRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTOrientationRule.h; sourceTree = "<group>"; };
+		50E9AA718C65276566FF069F2C0271D1 /* ESTRequestCancelPendingSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestCancelPendingSettings.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestCancelPendingSettings.h; sourceTree = "<group>"; };
+		516C6FB1353CB430D87F5C684BC7690C /* RZTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZTransitions-prefix.pch"; sourceTree = "<group>"; };
+		51D25F0558A76AC3B368DCA60B0CCC8B /* RZShrinkZoomAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZShrinkZoomAnimationController.m; path = RZTransitions/Transitions/RZShrinkZoomAnimationController.m; sourceTree = "<group>"; };
+		52D68DA0DD40A99ADE4679FA0F0098C6 /* ESTTemperatureRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTemperatureRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTemperatureRule.h; sourceTree = "<group>"; };
+		53966319328745748689192FD8268866 /* ESTRequestGetBeaconsDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeaconsDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeaconsDetails.h; sourceTree = "<group>"; };
+		56FE6FFD0BA3A0806AC93175097A586E /* RZSegmentControlMoveFadeAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZSegmentControlMoveFadeAnimationController.m; path = RZTransitions/Transitions/RZSegmentControlMoveFadeAnimationController.m; sourceTree = "<group>"; };
+		5D0FAA120B883958DE0B9664EEDE95D1 /* RZUniqueTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZUniqueTransition.m; path = RZTransitions/Data/RZUniqueTransition.m; sourceTree = "<group>"; };
+		5F5F40256D3B70BAB8BE339ADA942409 /* ESTCloudManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTCloudManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTCloudManager.h; sourceTree = "<group>"; };
+		6552EF959B3220EA3771E15F49EA03F0 /* RZOverscrollInteractionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZOverscrollInteractionController.m; path = RZTransitions/Interactors/RZOverscrollInteractionController.m; sourceTree = "<group>"; };
 		6720028EFC6A03B25200DDD9FADEB017 /* Pods-ShamengoVilla-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShamengoVilla-acknowledgements.plist"; sourceTree = "<group>"; };
-		6A88CE8EAC79BBB202F86179A9FCCD6C /* ESTRequestBeaconMac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconMac.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconMac.h; sourceTree = "<group>"; };
-		6E6A2F3A50B031643E80BCA95594E13B /* ESTNotificationTransporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNotificationTransporter.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationTransporter.h; sourceTree = "<group>"; };
-		6E9EB2BB3697A30B89A8380D9AE46BB0 /* ESTBeaconVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconVO.h; sourceTree = "<group>"; };
-		6F01B0FE8C308561A7C7CA38265C6CB6 /* ESTRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRule.h; sourceTree = "<group>"; };
-		726E64D314E0FCCC78D24950EF3ACEC7 /* ESTBeaconUpdateConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconUpdateConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateConfig.h; sourceTree = "<group>"; };
-		73CA418127C7BF0E6AEDCC762577DB70 /* ESTDeviceSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceSettingProtocol.h; sourceTree = "<group>"; };
-		7583D10C1761580594EEDDC95F9D701C /* ESTEddystoneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneManager.h; sourceTree = "<group>"; };
-		7ECA1CA0E9F6386F0DADC406829FF5CE /* ESTCloudSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTCloudSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTCloudSettingProtocol.h; sourceTree = "<group>"; };
-		7F0159DEDF53C1E0B19779201C6B4AD5 /* ESTEddystoneUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneUID.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneUID.h; sourceTree = "<group>"; };
-		8550CBBDC84569F0BEAE8C6E90C500F1 /* ESTNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearable.h; sourceTree = "<group>"; };
-		85BABBEDA5E75538862D8FC475355E1E /* ESTNotificationSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNotificationSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationSettingProtocol.h; sourceTree = "<group>"; };
-		8878574E5AE4AF87895E1D74006E9B64 /* ESTDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDefinitions.h; sourceTree = "<group>"; };
-		951946B7A029C7A445F39175A4375E2A /* ESTSimulatedNearableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSimulatedNearableManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSimulatedNearableManager.h; sourceTree = "<group>"; };
-		A69ADCCB20CC3A49B95538DAFA878D13 /* ESTRequestGetPendingSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetPendingSettings.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetPendingSettings.h; sourceTree = "<group>"; };
+		674771BA8DEA98AEF2E5F702D193EA2B /* RZUniqueTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZUniqueTransition.h; path = RZTransitions/Data/RZUniqueTransition.h; sourceTree = "<group>"; };
+		67D1A83CEA13C74E2E9707E60D7C6B67 /* UIImage+RZTransitionsFastImageBlur.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RZTransitionsFastImageBlur.m"; path = "RZTransitions/Utilities/UIImage+RZTransitionsFastImageBlur.m"; sourceTree = "<group>"; };
+		69D59E8497C63989746EDA68C186F5BE /* ESTRequestBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBase.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBase.h; sourceTree = "<group>"; };
+		6D66ADC57788DB9BB67AB0E624730C31 /* ESTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTConfig.h; sourceTree = "<group>"; };
+		71FAA728E789EE76A1BD7A0E38BFC576 /* RZShrinkZoomAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZShrinkZoomAnimationController.h; path = RZTransitions/Transitions/RZShrinkZoomAnimationController.h; sourceTree = "<group>"; };
+		73D7DB1DB367FD34F97F1818AFA62266 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = EstimoteSDK/EstimoteSDK.framework; sourceTree = "<group>"; };
+		73DEEDB5EACA1E852D4EFE5C6693381D /* ESTNearableSettingHardwareVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingHardwareVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingHardwareVersion.h; sourceTree = "<group>"; };
+		745C92E7DACB65737B29A241C571B7CB /* ESTNearableSettingAppVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingAppVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingAppVersion.h; sourceTree = "<group>"; };
+		767386879F56480315FCC0CF1C676512 /* ESTNearableVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableVO.h; sourceTree = "<group>"; };
+		78AFF34AB79493490DD58B805636F18C /* ESTNearableSettingBootVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingBootVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingBootVersion.h; sourceTree = "<group>"; };
+		7A7098076717641334B8543B3071BD74 /* RZHorizontalInteractionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZHorizontalInteractionController.h; path = RZTransitions/Interactors/RZHorizontalInteractionController.h; sourceTree = "<group>"; };
+		7C4FE5A8D63C03CAB280119527619B19 /* ESTRequestGetSettingsHistory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetSettingsHistory.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetSettingsHistory.h; sourceTree = "<group>"; };
+		7CADD0A90951F54C1B996C9563A00C66 /* RZTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RZTransitions-dummy.m"; sourceTree = "<group>"; };
+		7CCF681D1B0FF41CB83A3FEF7EE2D9BE /* RZTransitionInteractionControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZTransitionInteractionControllerProtocol.h; path = RZTransitions/Interactors/RZTransitionInteractionControllerProtocol.h; sourceTree = "<group>"; };
+		7DA81FAD309103F2DF6FE10692C864F6 /* RZHorizontalInteractionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZHorizontalInteractionController.m; path = RZTransitions/Interactors/RZHorizontalInteractionController.m; sourceTree = "<group>"; };
+		7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FF204C3D96315142470A0EC59BDB393 /* ESTBluetoothBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBluetoothBeacon.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBluetoothBeacon.h; sourceTree = "<group>"; };
+		897711F604D6AB4EEBFC0ECD0BF3C0BE /* ESTNotificationSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNotificationSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationSettingProtocol.h; sourceTree = "<group>"; };
+		8AA0423B504C93C1CDAB5C57BF59EDFD /* UIImage+RZTransitionsSnapshotHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RZTransitionsSnapshotHelpers.h"; path = "RZTransitions/Utilities/UIImage+RZTransitionsSnapshotHelpers.h"; sourceTree = "<group>"; };
+		8EB8A6C4895AAEC2015366F67CE518CC /* ESTCloudSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTCloudSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTCloudSettingProtocol.h; sourceTree = "<group>"; };
+		9094519842CE13C4E21243876F5746A8 /* RZTransitionsNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZTransitionsNavigationController.m; path = RZTransitions/Components/RZTransitionsNavigationController.m; sourceTree = "<group>"; };
+		90B6EA584BB0B948D208050ECBEE5400 /* RZAnimationControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZAnimationControllerProtocol.h; path = RZTransitions/Transitions/RZAnimationControllerProtocol.h; sourceTree = "<group>"; };
+		9190398FA9FFDF059D9C790AAB4474A8 /* ESTRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRule.h; sourceTree = "<group>"; };
+		95E6302A093B169A1B2CE3E1F77E1B42 /* RZZoomPushAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZZoomPushAnimationController.m; path = RZTransitions/Transitions/RZZoomPushAnimationController.m; sourceTree = "<group>"; };
+		95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		970E2A67965BAA653ECFDECB94CF3210 /* ESTNearableDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableDefinitions.h; sourceTree = "<group>"; };
+		9A4DBB4EF3D50A50747B30C9D978A79F /* ESTEddystoneTelemetry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneTelemetry.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneTelemetry.h; sourceTree = "<group>"; };
+		9DDFF9A1FFA94E56756DC79942524D95 /* ESTRequestAssignGPSLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestAssignGPSLocation.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestAssignGPSLocation.h; sourceTree = "<group>"; };
+		9F4740126321198AE7877416A0BF40E1 /* ESTSimulatedNearableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSimulatedNearableManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSimulatedNearableManager.h; sourceTree = "<group>"; };
+		9FB1A8D6B863FF6F737426EACEF5C470 /* ESTRequestGetJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetJSON.h; sourceTree = "<group>"; };
+		A0286F2909567A6D40F7229B54EDA0BE /* ESTEddystone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystone.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystone.h; sourceTree = "<group>"; };
+		A309A6F4006BCBA2C006BEE3CB048D69 /* ESTNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearable.h; sourceTree = "<group>"; };
+		A50348B97BFD6EF8155AC948A777B373 /* RZTransitionsAnimationControllers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZTransitionsAnimationControllers.h; path = RZTransitions/Transitions/RZTransitionsAnimationControllers.h; sourceTree = "<group>"; };
+		A5376E4B11598DF710F5183FAAF96FF4 /* ESTRequestBeaconColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconColor.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconColor.h; sourceTree = "<group>"; };
+		A87F4FB43418E3693A12C53519052B71 /* ESTDeviceConnectable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceConnectable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceConnectable.h; sourceTree = "<group>"; };
+		A8D0A9A8250751ACEEA337FAD2354EE2 /* ESTBeaconVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconVO.h; sourceTree = "<group>"; };
+		A971D3EA980FF37840A8E48D0459B585 /* RZCardSlideAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZCardSlideAnimationController.m; path = RZTransitions/Transitions/RZCardSlideAnimationController.m; sourceTree = "<group>"; };
+		AA24F800A5DD1759EEFF9F6816ECA765 /* ESTDeviceNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceNearable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceNearable.h; sourceTree = "<group>"; };
+		AAFD8AE90FE76F6DBC9BBA414A0574E2 /* ESTRequestGetNearables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetNearables.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetNearables.h; sourceTree = "<group>"; };
+		AD43C67730FC46C628F6CAB88ECEEF10 /* ESTDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDefinitions.h; sourceTree = "<group>"; };
+		ADE6006FC4F24253D5605B62529C8A46 /* RZTransitionsInteractionControllers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZTransitionsInteractionControllers.h; path = RZTransitions/Interactors/RZTransitionsInteractionControllers.h; sourceTree = "<group>"; };
 		AEF128398F1DF59239D31403BEA73F3D /* Pods-ShamengoVilla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShamengoVilla.debug.xcconfig"; sourceTree = "<group>"; };
-		B23A1CF12339EFC380C50B5D5EFBAF9C /* ESTRequestPutJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPutJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPutJSON.h; sourceTree = "<group>"; };
-		B29A6386A208A92848B002A4D894AB3B /* ESTEddystoneFilterURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterURL.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURL.h; sourceTree = "<group>"; };
-		B956044E75C04AFF322AE023B14E6D8A /* ESTRequestBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBase.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBase.h; sourceTree = "<group>"; };
+		AF26628E476ED1C95D4ECB9BFA17E26D /* RZZoomAlphaAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZZoomAlphaAnimationController.h; path = RZTransitions/Transitions/RZZoomAlphaAnimationController.h; sourceTree = "<group>"; };
+		B0599EFF589055FDDE4C4DF3C73A0D96 /* RZTransitions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RZTransitions.xcconfig; sourceTree = "<group>"; };
+		B340CB9213F3F27A213F5E9EB0CB783D /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		B4CD130A2ADDE0A0744BA3C7CA3DD96F /* RZVerticalSwipeInteractionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZVerticalSwipeInteractionController.h; path = RZTransitions/Interactors/RZVerticalSwipeInteractionController.h; sourceTree = "<group>"; };
+		B7507AA3631D5A15D9E201C519A2D69E /* ESTBeaconConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconConnection.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconConnection.h; sourceTree = "<group>"; };
+		B7DBFF9B7B35F44F49D243AD1F6B7DD5 /* ESTNearableSettingAdvertisingIntervalStill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingAdvertisingIntervalStill.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingAdvertisingIntervalStill.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C1F3702673DDFCC669AF094193E5A1BC /* ESTTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTrigger.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTrigger.h; sourceTree = "<group>"; };
-		C35086113C958C3E369299C0217C3E62 /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		C2899FC98170FC31973EE5782791B279 /* RZZoomBlurAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZZoomBlurAnimationController.m; path = RZTransitions/Transitions/RZZoomBlurAnimationController.m; sourceTree = "<group>"; };
 		C6A91226D7A1C88CF8C932F6A9F69839 /* Pods-ShamengoVilla-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShamengoVilla-dummy.m"; sourceTree = "<group>"; };
-		C9EFAF85D2BC538E9225FA0448B4B24D /* ESTDeviceNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceNearable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceNearable.h; sourceTree = "<group>"; };
-		CC156F5F42631B30B6DB12170A8F9B08 /* ESTOrientationRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTOrientationRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTOrientationRule.h; sourceTree = "<group>"; };
-		D1D4BAA227FDB6FAB1B5396A441DB506 /* ESTEddystoneFilterUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterUID.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterUID.h; sourceTree = "<group>"; };
+		C6E25DA1017500A92B8385BC2BC73A43 /* RZVerticalSwipeInteractionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZVerticalSwipeInteractionController.m; path = RZTransitions/Interactors/RZVerticalSwipeInteractionController.m; sourceTree = "<group>"; };
+		CAF28AE024CD402C256EB1ADD3FAE37F /* libPods-ShamengoVilla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShamengoVilla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC9F32A50044CC98A195B3DCEFC35C3 /* ESTRequestPutJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPutJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPutJSON.h; sourceTree = "<group>"; };
+		CD0A93672658248046201A7A47A67E4A /* ESTDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDevice.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDevice.h; sourceTree = "<group>"; };
+		CE7B5CDB73FF4DE44E693CF9AC94552D /* ESTRequestPostJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPostJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPostJSON.h; sourceTree = "<group>"; };
+		CFBA8389933DFAF1CB956233128AD9FD /* ESTEddystoneFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilter.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilter.h; sourceTree = "<group>"; };
+		D0D995A7FEA91BE4FC677B622E912E00 /* RZCardSlideAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZCardSlideAnimationController.h; path = RZTransitions/Transitions/RZCardSlideAnimationController.h; sourceTree = "<group>"; };
+		D2943333F9242CF46024CBBAC2EC3DA9 /* ESTEddystoneFilterURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterURL.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURL.h; sourceTree = "<group>"; };
+		D5866EEA36B6E97F368BC2691DF4E214 /* RZBaseSwipeInteractionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZBaseSwipeInteractionController.m; path = RZTransitions/Interactors/RZBaseSwipeInteractionController.m; sourceTree = "<group>"; };
 		D8F4633F71D0DA038D0E30F4D324FFE8 /* Pods-ShamengoVilla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShamengoVilla.release.xcconfig"; sourceTree = "<group>"; };
-		D945F980061D72C1F5C6B0161EB72A5C /* ESTRequestPostJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPostJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPostJSON.h; sourceTree = "<group>"; };
-		DC4CF372BF2DC8F7F8F2E55D3B0942B1 /* libPods-ShamengoVilla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShamengoVilla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCBA9A0F4D4C6B52C2766CC8D9B5C468 /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconUpdateInfo.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
-		E032787D79B365C22BEFF87FDD90444B /* ESTBeaconManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconManagerDelegate.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManagerDelegate.h; sourceTree = "<group>"; };
-		E1E6143E3A229E4056CE8622C6EC85B8 /* ESTRequestGetBeacons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeacons.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeacons.h; sourceTree = "<group>"; };
-		E7B154443F6EB14D55E54A0F297F36B6 /* ESTTriggerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTriggerManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTriggerManager.h; sourceTree = "<group>"; };
+		E0611577BD88A1E65030D95110CD9D69 /* ESTRequestDelete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestDelete.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestDelete.h; sourceTree = "<group>"; };
+		E1BA5B88EF5F8FD9D1C00E43EF65CBBA /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconUpdateInfo.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		E1CA88E58464074B2D43CF6F87B6E051 /* RZOverscrollInteractionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZOverscrollInteractionController.h; path = RZTransitions/Interactors/RZOverscrollInteractionController.h; sourceTree = "<group>"; };
+		E22FAF1B86450816701C4AA2C1A7DFAA /* RZTransitionsNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZTransitionsNavigationController.h; path = RZTransitions/Components/RZTransitionsNavigationController.h; sourceTree = "<group>"; };
+		E2C1649813A4768825392B329CB266E2 /* RZZoomAlphaAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZZoomAlphaAnimationController.m; path = RZTransitions/Transitions/RZZoomAlphaAnimationController.m; sourceTree = "<group>"; };
+		E32DC47666E4F15D40EC10A63B24EB40 /* RZTransitionsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZTransitionsManager.h; path = RZTransitions/Managers/RZTransitionsManager.h; sourceTree = "<group>"; };
+		E42285706EB5CB91C1DA0CE8AED845AB /* ESTEddystoneFilterURLDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterURLDomain.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURLDomain.h; sourceTree = "<group>"; };
+		E6D0F1A3A14AD110736C13EAE4D0DF3C /* ESTRequestGetBeacons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeacons.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeacons.h; sourceTree = "<group>"; };
+		E864E8348EE64198A57E4BD847E7127E /* ESTBulkUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBulkUpdater.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBulkUpdater.h; sourceTree = "<group>"; };
 		E8A289CA46F40AE36580337A65F04529 /* Pods-ShamengoVilla-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShamengoVilla-frameworks.sh"; sourceTree = "<group>"; };
-		E9D34C1701775643904CDDEF300B0826 /* ESTNearableRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableRule.h; sourceTree = "<group>"; };
-		EA14ED50C3542BC5EB7EE561C29AE921 /* ESTRequestPatchJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPatchJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPatchJSON.h; sourceTree = "<group>"; };
-		F27FBD72E94A152B852E4B7BCA418CF0 /* ESTSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSettingProtocol.h; sourceTree = "<group>"; };
-		F525F08ED5C0B00A5596C3D5DAA67D0D /* ESTNearableVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableVO.h; sourceTree = "<group>"; };
-		F6F627ABA46082770735C101C6A3A925 /* ESTNearableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableManager.h; sourceTree = "<group>"; };
+		F1CC07A716F6DAB878632C3AB0E1A80E /* ESTEddystoneFilterUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterUID.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterUID.h; sourceTree = "<group>"; };
+		F2FE8114FBEE82C38F60F512A723E1D4 /* ESTTriggerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTriggerManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTriggerManager.h; sourceTree = "<group>"; };
+		F46138F4A542E97B12B88FE3BA10A27C /* EstimoteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EstimoteSDK.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/EstimoteSDK.h; sourceTree = "<group>"; };
+		F5978F05C9BA7D3D588AF4B57B66015A /* ESTBeaconUpdateConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconUpdateConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateConfig.h; sourceTree = "<group>"; };
+		F6F1C4643A45B460D098B58A54D0A915 /* ESTNotificationTransporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNotificationTransporter.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationTransporter.h; sourceTree = "<group>"; };
 		F93D1A427A9B81D59965F23F25415AF7 /* Pods-ShamengoVilla-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShamengoVilla-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FCA25B0C8CD6B9A6DD0385A3E7CDDC4C /* ESTSecureBeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSecureBeaconManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSecureBeaconManager.h; sourceTree = "<group>"; };
-		FD325E49E90AED23DF3EE9A3EDC2551D /* ESTNearableDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableDefinitions.h; sourceTree = "<group>"; };
+		F9E65FC60B7BFCB8247D3D540973B313 /* ESTSecureBeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSecureBeaconManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSecureBeaconManager.h; sourceTree = "<group>"; };
+		FFE1D88ED9F68260C92F5C103E796C7D /* ESTRequestRegisterDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestRegisterDevice.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestRegisterDevice.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F898F14662ABCCCE0768A38BD172A49D /* Frameworks */ = {
+		398DFD86616299E607193B1944C4E53C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01FB6327B01E34EE2D1D16A7F7312FDF /* Foundation.framework in Frameworks */,
+				FC38BA40AAC51E9C11E65E821FCABCE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58909D7D3573D22D99ECEEDF035D8709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDA8572D6B7874B221484D73B0742D6 /* CoreGraphics.framework in Frameworks */,
+				66D7C8F107F854ECC64B9A423DB8FE66 /* Foundation.framework in Frameworks */,
+				880B4635B2F6238FA24EF85E8594E485 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		132FDA052B998CB5AD8DCB45CCA167E9 /* EstimoteSDK */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C949D05F5C5F87E4E1BBB5D689B8DB1 /* ESTBeaconConnection.h */,
-				C35086113C958C3E369299C0217C3E62 /* ESTBeaconDefinitions.h */,
-				42424C1BAF5D08D780FB379529886760 /* ESTBeaconFirmwareVO.h */,
-				548DF6C0C8C9133B197574BF2AF567EE /* ESTBeaconManager.h */,
-				E032787D79B365C22BEFF87FDD90444B /* ESTBeaconManagerDelegate.h */,
-				726E64D314E0FCCC78D24950EF3ACEC7 /* ESTBeaconUpdateConfig.h */,
-				DCBA9A0F4D4C6B52C2766CC8D9B5C468 /* ESTBeaconUpdateInfo.h */,
-				6E9EB2BB3697A30B89A8380D9AE46BB0 /* ESTBeaconVO.h */,
-				15319D8A96887E02FA2D9AFBC3AC65C3 /* ESTBluetoothBeacon.h */,
-				2F777925C85BC0B43AEC22C31068CF4D /* ESTBulkUpdater.h */,
-				57E46793AEF064225A6D9EC0532262FB /* ESTCloudManager.h */,
-				7ECA1CA0E9F6386F0DADC406829FF5CE /* ESTCloudSettingProtocol.h */,
-				3F1E5E0A3EDD1A69BC52EFBF6F889231 /* ESTConfig.h */,
-				37310EAC0AE75AE1A00078C94491B1D5 /* ESTDateRule.h */,
-				8878574E5AE4AF87895E1D74006E9B64 /* ESTDefinitions.h */,
-				3175EEC769B109F48DF64D26624B048B /* ESTDevice.h */,
-				382C6064EFCC5FDDC65C64E1824B20CD /* ESTDeviceConnectable.h */,
-				C9EFAF85D2BC538E9225FA0448B4B24D /* ESTDeviceNearable.h */,
-				4F40986A701C8F700A882A654E993E1B /* ESTDeviceNearableSettingProtocol.h */,
-				73CA418127C7BF0E6AEDCC762577DB70 /* ESTDeviceSettingProtocol.h */,
-				3096C3D539CBB2D63C66375C0E4DD5E2 /* ESTEddystone.h */,
-				07B631A44923B16EEF17C7BEC9419CD1 /* ESTEddystoneFilter.h */,
-				D1D4BAA227FDB6FAB1B5396A441DB506 /* ESTEddystoneFilterUID.h */,
-				B29A6386A208A92848B002A4D894AB3B /* ESTEddystoneFilterURL.h */,
-				2114EA7F25CA1ACFDDB44E9615778A98 /* ESTEddystoneFilterURLDomain.h */,
-				7583D10C1761580594EEDDC95F9D701C /* ESTEddystoneManager.h */,
-				4139ACB256A73A8F1B7A7F8BE97F7EDA /* ESTEddystoneTelemetry.h */,
-				7F0159DEDF53C1E0B19779201C6B4AD5 /* ESTEddystoneUID.h */,
-				4FEA1F858C66F1DB7D19D3F6657B15EC /* ESTFirmwareInfoVO.h */,
-				216EACABE06C4729926D93C26858C31B /* EstimoteSDK.h */,
-				4787ECBCC58F3FA18A75A9EDAA555497 /* ESTMotionRule.h */,
-				8550CBBDC84569F0BEAE8C6E90C500F1 /* ESTNearable.h */,
-				FD325E49E90AED23DF3EE9A3EDC2551D /* ESTNearableDefinitions.h */,
-				F6F627ABA46082770735C101C6A3A925 /* ESTNearableManager.h */,
-				E9D34C1701775643904CDDEF300B0826 /* ESTNearableRule.h */,
-				58EA13E7C916D45124A36B1E2F8EA2B1 /* ESTNearableSettingAdvertisingIntervalStill.h */,
-				08A317CC1461A3DE82FAEB1F039CF475 /* ESTNearableSettingAppVersion.h */,
-				0069E727099228E09492475C74E8B43E /* ESTNearableSettingBootVersion.h */,
-				5B6E2F5C375D5E9ED44D93AF7701C0E4 /* ESTNearableSettingBroadcastingPower.h */,
-				4AAEB47017E4F20B1942CA45A011D99D /* ESTNearableSettingHardwareVersion.h */,
-				F525F08ED5C0B00A5596C3D5DAA67D0D /* ESTNearableVO.h */,
-				85BABBEDA5E75538862D8FC475355E1E /* ESTNotificationSettingProtocol.h */,
-				6E6A2F3A50B031643E80BCA95594E13B /* ESTNotificationTransporter.h */,
-				CC156F5F42631B30B6DB12170A8F9B08 /* ESTOrientationRule.h */,
-				16199869963E1B4F9F6A94BD20F228B8 /* ESTProximityRule.h */,
-				19FC31FC31887EE5702E923C1F50545B /* ESTRequestAssignGPSLocation.h */,
-				B956044E75C04AFF322AE023B14E6D8A /* ESTRequestBase.h */,
-				40975C1750F4595E00FACB1BA907E634 /* ESTRequestBeaconColor.h */,
-				5449D11C1E3365D95058CA80F7045F74 /* ESTRequestBeaconDetails.h */,
-				6A88CE8EAC79BBB202F86179A9FCCD6C /* ESTRequestBeaconMac.h */,
-				11F14B14C0D0A45B47F5B2D2DEB42751 /* ESTRequestCancelPendingSettings.h */,
-				244882E595B2785B7025302C7FDB4268 /* ESTRequestDelete.h */,
-				E1E6143E3A229E4056CE8622C6EC85B8 /* ESTRequestGetBeacons.h */,
-				1858A9EAE33A77EA9FF765EFD76AE47D /* ESTRequestGetBeaconsDetails.h */,
-				2A289D312295B4C7EFDA8D6A0684B67D /* ESTRequestGetJSON.h */,
-				32FB7F4C0253031394CBC469D5B5FA6D /* ESTRequestGetNearables.h */,
-				A69ADCCB20CC3A49B95538DAFA878D13 /* ESTRequestGetPendingSettings.h */,
-				48609B1466A4F9F640AC2B54A08A086A /* ESTRequestGetSettingsHistory.h */,
-				EA14ED50C3542BC5EB7EE561C29AE921 /* ESTRequestPatchJSON.h */,
-				D945F980061D72C1F5C6B0161EB72A5C /* ESTRequestPostJSON.h */,
-				B23A1CF12339EFC380C50B5D5EFBAF9C /* ESTRequestPutJSON.h */,
-				1E4FB6901A3A5A4ACADD67268A75C3F3 /* ESTRequestRegisterDevice.h */,
-				6F01B0FE8C308561A7C7CA38265C6CB6 /* ESTRule.h */,
-				FCA25B0C8CD6B9A6DD0385A3E7CDDC4C /* ESTSecureBeaconManager.h */,
-				F27FBD72E94A152B852E4B7BCA418CF0 /* ESTSettingProtocol.h */,
-				951946B7A029C7A445F39175A4375E2A /* ESTSimulatedNearableManager.h */,
-				27A38272155A8DAF709F26AAF3D4F76F /* ESTTemperatureRule.h */,
-				C1F3702673DDFCC669AF094193E5A1BC /* ESTTrigger.h */,
-				E7B154443F6EB14D55E54A0F297F36B6 /* ESTTriggerManager.h */,
-				064FE6622B123BDF381E9C3B63F95110 /* ESTUtilityManager.h */,
-				46263E52CB5B161CA1901E05210F4C3A /* Frameworks */,
+				E35B3E289DB984DA75A774080D293670 /* iOS */,
 			);
-			path = EstimoteSDK;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3137C03EFC3BA52DD3824BB7E701F38E /* Products */ = {
+		4EB41B5ABA83AFEFBEC48266D4EE22DB /* RZTransitions */ = {
 			isa = PBXGroup;
 			children = (
-				DC4CF372BF2DC8F7F8F2E55D3B0942B1 /* libPods-ShamengoVilla.a */,
+				90B6EA584BB0B948D208050ECBEE5400 /* RZAnimationControllerProtocol.h */,
+				32F4DB29874B858D9ED187AA4DFD7AB9 /* RZBaseSwipeInteractionController.h */,
+				D5866EEA36B6E97F368BC2691DF4E214 /* RZBaseSwipeInteractionController.m */,
+				D0D995A7FEA91BE4FC677B622E912E00 /* RZCardSlideAnimationController.h */,
+				A971D3EA980FF37840A8E48D0459B585 /* RZCardSlideAnimationController.m */,
+				1D0AB265ED3F30D235912EA3904CF6A3 /* RZCirclePushAnimationController.h */,
+				3F5CC52C295EE47C10AD1C7521FE1BE8 /* RZCirclePushAnimationController.m */,
+				7A7098076717641334B8543B3071BD74 /* RZHorizontalInteractionController.h */,
+				7DA81FAD309103F2DF6FE10692C864F6 /* RZHorizontalInteractionController.m */,
+				E1CA88E58464074B2D43CF6F87B6E051 /* RZOverscrollInteractionController.h */,
+				6552EF959B3220EA3771E15F49EA03F0 /* RZOverscrollInteractionController.m */,
+				4742257CD3329B15EC73C73CE007706E /* RZPinchInteractionController.h */,
+				2B43D0F194F8474B5594D4524E9F6100 /* RZPinchInteractionController.m */,
+				2F4AC461FDC5EDB3E9A72D23F2B491E1 /* RZRectZoomAnimationController.h */,
+				2008057AD1381359C060E07264B6F4FB /* RZRectZoomAnimationController.m */,
+				042BDFA8C8A6A3998E5485E85E1697B3 /* RZSegmentControlMoveFadeAnimationController.h */,
+				56FE6FFD0BA3A0806AC93175097A586E /* RZSegmentControlMoveFadeAnimationController.m */,
+				71FAA728E789EE76A1BD7A0E38BFC576 /* RZShrinkZoomAnimationController.h */,
+				51D25F0558A76AC3B368DCA60B0CCC8B /* RZShrinkZoomAnimationController.m */,
+				2FFFF2F4EC141733183647F358DA52B9 /* RZTransitionAction.h */,
+				7CCF681D1B0FF41CB83A3FEF7EE2D9BE /* RZTransitionInteractionControllerProtocol.h */,
+				A50348B97BFD6EF8155AC948A777B373 /* RZTransitionsAnimationControllers.h */,
+				ADE6006FC4F24253D5605B62529C8A46 /* RZTransitionsInteractionControllers.h */,
+				E32DC47666E4F15D40EC10A63B24EB40 /* RZTransitionsManager.h */,
+				0A6AA3B805312B221D7470DC918D5C76 /* RZTransitionsManager.m */,
+				E22FAF1B86450816701C4AA2C1A7DFAA /* RZTransitionsNavigationController.h */,
+				9094519842CE13C4E21243876F5746A8 /* RZTransitionsNavigationController.m */,
+				674771BA8DEA98AEF2E5F702D193EA2B /* RZUniqueTransition.h */,
+				5D0FAA120B883958DE0B9664EEDE95D1 /* RZUniqueTransition.m */,
+				B4CD130A2ADDE0A0744BA3C7CA3DD96F /* RZVerticalSwipeInteractionController.h */,
+				C6E25DA1017500A92B8385BC2BC73A43 /* RZVerticalSwipeInteractionController.m */,
+				AF26628E476ED1C95D4ECB9BFA17E26D /* RZZoomAlphaAnimationController.h */,
+				E2C1649813A4768825392B329CB266E2 /* RZZoomAlphaAnimationController.m */,
+				1B01B0FECE4137A6BA2881A43F3B8AE2 /* RZZoomBlurAnimationController.h */,
+				C2899FC98170FC31973EE5782791B279 /* RZZoomBlurAnimationController.m */,
+				1E10DB1E72CB6EBF4F6B5BE68A3F790B /* RZZoomPushAnimationController.h */,
+				95E6302A093B169A1B2CE3E1F77E1B42 /* RZZoomPushAnimationController.m */,
+				0F8E59D9F6221FD2546BDCF3F79710C9 /* UIImage+RZTransitionsFastImageBlur.h */,
+				67D1A83CEA13C74E2E9707E60D7C6B67 /* UIImage+RZTransitionsFastImageBlur.m */,
+				8AA0423B504C93C1CDAB5C57BF59EDFD /* UIImage+RZTransitionsSnapshotHelpers.h */,
+				128BD155AD7C9FF2578F286549F3B716 /* UIImage+RZTransitionsSnapshotHelpers.m */,
+				7285F32D14EFBE4EB7B20D6851B34760 /* Support Files */,
+			);
+			path = RZTransitions;
+			sourceTree = "<group>";
+		};
+		701B7A23F6634F887864871F870C1FE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAF28AE024CD402C256EB1ADD3FAE37F /* libPods-ShamengoVilla.a */,
+				04E17898F4B60B91C94A2CBE5A2CC37B /* libRZTransitions.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		431F051CF82B1252560F4E16DBC276B9 /* Pods */ = {
+		7285F32D14EFBE4EB7B20D6851B34760 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				132FDA052B998CB5AD8DCB45CCA167E9 /* EstimoteSDK */,
+				B0599EFF589055FDDE4C4DF3C73A0D96 /* RZTransitions.xcconfig */,
+				7CADD0A90951F54C1B996C9563A00C66 /* RZTransitions-dummy.m */,
+				516C6FB1353CB430D87F5C684BC7690C /* RZTransitions-prefix.pch */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		46263E52CB5B161CA1901E05210F4C3A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				108C511A7ECE302D85C644FCE89644E0 /* EstimoteSDK.framework */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/RZTransitions";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				431F051CF82B1252560F4E16DBC276B9 /* Pods */,
-				3137C03EFC3BA52DD3824BB7E701F38E /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				BB40F53503B6101F4DE6147860A76709 /* Pods */,
+				701B7A23F6634F887864871F870C1FE3 /* Products */,
 				A5E5B18FBF36B7CF0D88299A44EE1FE7 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8141D67E781B5E2DA1F1EBA4113CE395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D7DB1DB367FD34F97F1818AFA62266 /* EstimoteSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A5E5B18FBF36B7CF0D88299A44EE1FE7 /* Targets Support Files */ = {
@@ -228,20 +323,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BB40F53503B6101F4DE6147860A76709 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				D266F1C48E8595C9EE56A3B9CDED6C47 /* EstimoteSDK */,
+				4EB41B5ABA83AFEFBEC48266D4EE22DB /* RZTransitions */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D1A74D0C865C391A92B8FA5927F6424C /* Pods-ShamengoVilla */ = {
@@ -259,23 +347,162 @@
 			path = "Target Support Files/Pods-ShamengoVilla";
 			sourceTree = "<group>";
 		};
+		D266F1C48E8595C9EE56A3B9CDED6C47 /* EstimoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B7507AA3631D5A15D9E201C519A2D69E /* ESTBeaconConnection.h */,
+				B340CB9213F3F27A213F5E9EB0CB783D /* ESTBeaconDefinitions.h */,
+				38EF7AA36C0E2EE1F1704C5841E52D81 /* ESTBeaconFirmwareVO.h */,
+				232DA634C19628008ED6A18F994B7E5C /* ESTBeaconManager.h */,
+				0E776F2677DE2F4E63A34A686B11FF4B /* ESTBeaconManagerDelegate.h */,
+				F5978F05C9BA7D3D588AF4B57B66015A /* ESTBeaconUpdateConfig.h */,
+				E1BA5B88EF5F8FD9D1C00E43EF65CBBA /* ESTBeaconUpdateInfo.h */,
+				A8D0A9A8250751ACEEA337FAD2354EE2 /* ESTBeaconVO.h */,
+				7FF204C3D96315142470A0EC59BDB393 /* ESTBluetoothBeacon.h */,
+				E864E8348EE64198A57E4BD847E7127E /* ESTBulkUpdater.h */,
+				5F5F40256D3B70BAB8BE339ADA942409 /* ESTCloudManager.h */,
+				8EB8A6C4895AAEC2015366F67CE518CC /* ESTCloudSettingProtocol.h */,
+				6D66ADC57788DB9BB67AB0E624730C31 /* ESTConfig.h */,
+				07FA49D1EAB665246F283118829C5D45 /* ESTDateRule.h */,
+				AD43C67730FC46C628F6CAB88ECEEF10 /* ESTDefinitions.h */,
+				CD0A93672658248046201A7A47A67E4A /* ESTDevice.h */,
+				A87F4FB43418E3693A12C53519052B71 /* ESTDeviceConnectable.h */,
+				AA24F800A5DD1759EEFF9F6816ECA765 /* ESTDeviceNearable.h */,
+				035A68E0A4B4F51670572EBAF962468F /* ESTDeviceNearableSettingProtocol.h */,
+				285FBE8DC00D2BA6E35EEC6B216B7C2A /* ESTDeviceSettingProtocol.h */,
+				A0286F2909567A6D40F7229B54EDA0BE /* ESTEddystone.h */,
+				CFBA8389933DFAF1CB956233128AD9FD /* ESTEddystoneFilter.h */,
+				F1CC07A716F6DAB878632C3AB0E1A80E /* ESTEddystoneFilterUID.h */,
+				D2943333F9242CF46024CBBAC2EC3DA9 /* ESTEddystoneFilterURL.h */,
+				E42285706EB5CB91C1DA0CE8AED845AB /* ESTEddystoneFilterURLDomain.h */,
+				3EF2FEFFE35F4783068CFD6C9564B00D /* ESTEddystoneManager.h */,
+				9A4DBB4EF3D50A50747B30C9D978A79F /* ESTEddystoneTelemetry.h */,
+				4010668A29C26DF7599F5CE1462A63BC /* ESTEddystoneUID.h */,
+				438B7A0D7B4FBBD8F94EED2170F59FFD /* ESTFirmwareInfoVO.h */,
+				F46138F4A542E97B12B88FE3BA10A27C /* EstimoteSDK.h */,
+				1FED6835C32364B1CCC5716398834345 /* ESTMotionRule.h */,
+				A309A6F4006BCBA2C006BEE3CB048D69 /* ESTNearable.h */,
+				970E2A67965BAA653ECFDECB94CF3210 /* ESTNearableDefinitions.h */,
+				16FC19D67C1C1D894062390B411224D0 /* ESTNearableManager.h */,
+				129BAD3A075A2258DDD407BA51845688 /* ESTNearableRule.h */,
+				B7DBFF9B7B35F44F49D243AD1F6B7DD5 /* ESTNearableSettingAdvertisingIntervalStill.h */,
+				745C92E7DACB65737B29A241C571B7CB /* ESTNearableSettingAppVersion.h */,
+				78AFF34AB79493490DD58B805636F18C /* ESTNearableSettingBootVersion.h */,
+				0867F7B20D2ED6B0FCA3EAE31D690EF4 /* ESTNearableSettingBroadcastingPower.h */,
+				73DEEDB5EACA1E852D4EFE5C6693381D /* ESTNearableSettingHardwareVersion.h */,
+				767386879F56480315FCC0CF1C676512 /* ESTNearableVO.h */,
+				897711F604D6AB4EEBFC0ECD0BF3C0BE /* ESTNotificationSettingProtocol.h */,
+				F6F1C4643A45B460D098B58A54D0A915 /* ESTNotificationTransporter.h */,
+				4C23240726CC10B97A266ED2AB006399 /* ESTOrientationRule.h */,
+				417871E1A4B76B33870EAF49D737F87E /* ESTProximityRule.h */,
+				9DDFF9A1FFA94E56756DC79942524D95 /* ESTRequestAssignGPSLocation.h */,
+				69D59E8497C63989746EDA68C186F5BE /* ESTRequestBase.h */,
+				A5376E4B11598DF710F5183FAAF96FF4 /* ESTRequestBeaconColor.h */,
+				3D41332ECECD5A774B80D24F95BA2923 /* ESTRequestBeaconDetails.h */,
+				41BD81BA9E1C5EF8BE341F6BFC69E195 /* ESTRequestBeaconMac.h */,
+				50E9AA718C65276566FF069F2C0271D1 /* ESTRequestCancelPendingSettings.h */,
+				E0611577BD88A1E65030D95110CD9D69 /* ESTRequestDelete.h */,
+				E6D0F1A3A14AD110736C13EAE4D0DF3C /* ESTRequestGetBeacons.h */,
+				53966319328745748689192FD8268866 /* ESTRequestGetBeaconsDetails.h */,
+				9FB1A8D6B863FF6F737426EACEF5C470 /* ESTRequestGetJSON.h */,
+				AAFD8AE90FE76F6DBC9BBA414A0574E2 /* ESTRequestGetNearables.h */,
+				4844F8D02F09E27B05A8C3365DC4ADD6 /* ESTRequestGetPendingSettings.h */,
+				7C4FE5A8D63C03CAB280119527619B19 /* ESTRequestGetSettingsHistory.h */,
+				184FBC736A8ECF35EC57504533CB48CB /* ESTRequestPatchJSON.h */,
+				CE7B5CDB73FF4DE44E693CF9AC94552D /* ESTRequestPostJSON.h */,
+				CBC9F32A50044CC98A195B3DCEFC35C3 /* ESTRequestPutJSON.h */,
+				FFE1D88ED9F68260C92F5C103E796C7D /* ESTRequestRegisterDevice.h */,
+				9190398FA9FFDF059D9C790AAB4474A8 /* ESTRule.h */,
+				F9E65FC60B7BFCB8247D3D540973B313 /* ESTSecureBeaconManager.h */,
+				20B0A2132CABE9F15B95E154567CC615 /* ESTSettingProtocol.h */,
+				9F4740126321198AE7877416A0BF40E1 /* ESTSimulatedNearableManager.h */,
+				52D68DA0DD40A99ADE4679FA0F0098C6 /* ESTTemperatureRule.h */,
+				2188690D60A294E4E5A26723E92398E2 /* ESTTrigger.h */,
+				F2FE8114FBEE82C38F60F512A723E1D4 /* ESTTriggerManager.h */,
+				4049BA5BBED2829A9C64BFE939049CB4 /* ESTUtilityManager.h */,
+				8141D67E781B5E2DA1F1EBA4113CE395 /* Frameworks */,
+			);
+			path = EstimoteSDK;
+			sourceTree = "<group>";
+		};
+		E35B3E289DB984DA75A774080D293670 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */,
+				95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */,
+				7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A2534021A38B5EEE2E9AD9F1A0EFA702 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14898255895DFEB2A8B9E326B33E2271 /* RZAnimationControllerProtocol.h in Headers */,
+				424336F8A01F89D5FD1FDA650D351BD6 /* RZBaseSwipeInteractionController.h in Headers */,
+				68E61BDDBF3AFBB1A9F381CB6ACBB4F6 /* RZCardSlideAnimationController.h in Headers */,
+				501B7697BD29F123155F1407987A8D38 /* RZCirclePushAnimationController.h in Headers */,
+				6C7028B049A3645254862155FCB30C1E /* RZHorizontalInteractionController.h in Headers */,
+				82BDAF02535D1787206BDB1F3E0F320D /* RZOverscrollInteractionController.h in Headers */,
+				76FC677301ED4A95E94CC38B22236986 /* RZPinchInteractionController.h in Headers */,
+				713CE7D361395CE1DD2EA97C5263810A /* RZRectZoomAnimationController.h in Headers */,
+				AE33E3C1F7CFF6A8D993A8B1AB418F61 /* RZSegmentControlMoveFadeAnimationController.h in Headers */,
+				95538B3484FBEA9075B10A2D6588D646 /* RZShrinkZoomAnimationController.h in Headers */,
+				AEA535141E20F619BE34CB003859ECCD /* RZTransitionAction.h in Headers */,
+				49EB7623878BA917E78D25AA6C7CF909 /* RZTransitionInteractionControllerProtocol.h in Headers */,
+				60982F8B8BB53D598B8B8E4A4090EEA2 /* RZTransitionsAnimationControllers.h in Headers */,
+				77144BB20C80375E6A0354CE79D93A82 /* RZTransitionsInteractionControllers.h in Headers */,
+				D19DED21FFCD9760E1CAA7AC98B3D8B4 /* RZTransitionsManager.h in Headers */,
+				B8F5059A0379E87934A44977804EE625 /* RZTransitionsNavigationController.h in Headers */,
+				089663589D4782E07D48A7FF3D7E5115 /* RZUniqueTransition.h in Headers */,
+				78288C205E8B95FBA44661019866EF60 /* RZVerticalSwipeInteractionController.h in Headers */,
+				F76530E3D223120750D40B10E8A4600E /* RZZoomAlphaAnimationController.h in Headers */,
+				0409AF878FCB78F0CD08B69EE15B3431 /* RZZoomBlurAnimationController.h in Headers */,
+				289904A873426CB1C8FEF260D8604EA6 /* RZZoomPushAnimationController.h in Headers */,
+				FEB032F49BF238AB3EE3EBD835BF7EAD /* UIImage+RZTransitionsFastImageBlur.h in Headers */,
+				7BEF2B206E578D849763A2184048D848 /* UIImage+RZTransitionsSnapshotHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		C7046338CCA8CD4122C7489BC184EAC2 /* Pods-ShamengoVilla */ = {
+		4F8AF15F499027C05AB76DA969167D7D /* Pods-ShamengoVilla */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B32D0EFEA4596D3317701C4D983B0BD8 /* Build configuration list for PBXNativeTarget "Pods-ShamengoVilla" */;
+			buildConfigurationList = C1641225DE2265F6D2DC62B794A88375 /* Build configuration list for PBXNativeTarget "Pods-ShamengoVilla" */;
 			buildPhases = (
-				6CFD4188C6E79DA3EB271BDD7B0FFD76 /* Sources */,
-				F898F14662ABCCCE0768A38BD172A49D /* Frameworks */,
+				C8A2C150ED55722FDD70B35A53E72219 /* Sources */,
+				398DFD86616299E607193B1944C4E53C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60753D892CC19E9325FCAC5614CE4896 /* PBXTargetDependency */,
+			);
+			name = "Pods-ShamengoVilla";
+			productName = "Pods-ShamengoVilla";
+			productReference = CAF28AE024CD402C256EB1ADD3FAE37F /* libPods-ShamengoVilla.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD256AE4EA6A7B21E0FC556825A472CC /* RZTransitions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047CE790363319992DCD7D7822520086 /* Build configuration list for PBXNativeTarget "RZTransitions" */;
+			buildPhases = (
+				A492706D72957847780D2208E926F9DF /* Sources */,
+				58909D7D3573D22D99ECEEDF035D8709 /* Frameworks */,
+				A2534021A38B5EEE2E9AD9F1A0EFA702 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ShamengoVilla";
-			productName = "Pods-ShamengoVilla";
-			productReference = DC4CF372BF2DC8F7F8F2E55D3B0942B1 /* libPods-ShamengoVilla.a */;
+			name = RZTransitions;
+			productName = RZTransitions;
+			productReference = 04E17898F4B60B91C94A2CBE5A2CC37B /* libRZTransitions.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -295,28 +522,99 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3137C03EFC3BA52DD3824BB7E701F38E /* Products */;
+			productRefGroup = 701B7A23F6634F887864871F870C1FE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7046338CCA8CD4122C7489BC184EAC2 /* Pods-ShamengoVilla */,
+				4F8AF15F499027C05AB76DA969167D7D /* Pods-ShamengoVilla */,
+				DD256AE4EA6A7B21E0FC556825A472CC /* RZTransitions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6CFD4188C6E79DA3EB271BDD7B0FFD76 /* Sources */ = {
+		A492706D72957847780D2208E926F9DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E912A407CF1D16159ADC696314FAFB0 /* Pods-ShamengoVilla-dummy.m in Sources */,
+				DFE20DAA4EAF57064B28FB7A595B959F /* RZBaseSwipeInteractionController.m in Sources */,
+				522A415682C70D71F5E0CD41FFF88206 /* RZCardSlideAnimationController.m in Sources */,
+				5B80B6D8454829B84569DE0570711098 /* RZCirclePushAnimationController.m in Sources */,
+				BA02DB7B53B65D78028BE2F399B80338 /* RZHorizontalInteractionController.m in Sources */,
+				5F93A95BCA134A3655FC1EAE9AF27690 /* RZOverscrollInteractionController.m in Sources */,
+				5B1A6AF6649334DCC680471FC9A30DE4 /* RZPinchInteractionController.m in Sources */,
+				47804DA3EA0AF3BB1BFDA2F53FB8C715 /* RZRectZoomAnimationController.m in Sources */,
+				2F0CB29E593D78A4981EA685415D9ADD /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
+				7BBBCD87B11A20E9A94604627FF3EB86 /* RZShrinkZoomAnimationController.m in Sources */,
+				1225562E10D057226DD0FB8D6E5F423F /* RZTransitions-dummy.m in Sources */,
+				40F3C668CCC4EFE51C48734A2CE57CEE /* RZTransitionsManager.m in Sources */,
+				CC956BBE5EDB1313F22123506E899E73 /* RZTransitionsNavigationController.m in Sources */,
+				03CB59A581E6A40DD8B78437C3925AA0 /* RZUniqueTransition.m in Sources */,
+				F0AC423F9C2ECCF606C8ABD88F7EB29D /* RZVerticalSwipeInteractionController.m in Sources */,
+				A956E8E4067E1CA6CD61356535E15D0D /* RZZoomAlphaAnimationController.m in Sources */,
+				240CF1CAB8414CCE8DB4A3B78609E358 /* RZZoomBlurAnimationController.m in Sources */,
+				E094B83961BF353A43211983053B8160 /* RZZoomPushAnimationController.m in Sources */,
+				F1B0BB8BB40FB4397528E1E79B6924BA /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
+				E7150F557475274E98C4EDE5D8389F39 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A2C150ED55722FDD70B35A53E72219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F898E6D54191C6C426F1DA32DA357AE /* Pods-ShamengoVilla-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		60753D892CC19E9325FCAC5614CE4896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZTransitions;
+			target = DD256AE4EA6A7B21E0FC556825A472CC /* RZTransitions */;
+			targetProxy = EE9F2BF5C26A7F27E737542852ECBBB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		27397AF5A476FBE28EAD3369E7906248 /* Release */ = {
+		74F256C683E51111E0A233BBBDACD775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0599EFF589055FDDE4C4DF3C73A0D96 /* RZTransitions.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RZTransitions/RZTransitions-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		774B211C175F1A43269DF453D5A4E0A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF128398F1DF59239D31403BEA73F3D /* Pods-ShamengoVilla.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8ED71E8BC26B1198C83A51D8BBEFC2AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8F4633F71D0DA038D0E30F4D324FFE8 /* Pods-ShamengoVilla.release.xcconfig */;
 			buildSettings = {
@@ -372,22 +670,23 @@
 			};
 			name = Debug;
 		};
-		AEA6A00B8BC5CA960618D6A5BDC5386F /* Debug */ = {
+		EA609620E3FC268138195E69AB436290 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEF128398F1DF59239D31403BEA73F3D /* Pods-ShamengoVilla.debug.xcconfig */;
+			baseConfigurationReference = B0599EFF589055FDDE4C4DF3C73A0D96 /* RZTransitions.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RZTransitions/RZTransitions-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -426,6 +725,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		047CE790363319992DCD7D7822520086 /* Build configuration list for PBXNativeTarget "RZTransitions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F256C683E51111E0A233BBBDACD775 /* Debug */,
+				EA609620E3FC268138195E69AB436290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -435,11 +743,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B32D0EFEA4596D3317701C4D983B0BD8 /* Build configuration list for PBXNativeTarget "Pods-ShamengoVilla" */ = {
+		C1641225DE2265F6D2DC62B794A88375 /* Build configuration list for PBXNativeTarget "Pods-ShamengoVilla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEA6A00B8BC5CA960618D6A5BDC5386F /* Debug */,
-				27397AF5A476FBE28EAD3369E7906248 /* Release */,
+				774B211C175F1A43269DF453D5A4E0A4 /* Debug */,
+				8ED71E8BC26B1198C83A51D8BBEFC2AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

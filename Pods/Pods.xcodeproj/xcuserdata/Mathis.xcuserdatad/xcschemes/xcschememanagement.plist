@@ -9,10 +9,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RZTransitions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C7046338CCA8CD4122C7489BC184EAC2</key>
+		<key>4F8AF15F499027C05AB76DA969167D7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD256AE4EA6A7B21E0FC556825A472CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

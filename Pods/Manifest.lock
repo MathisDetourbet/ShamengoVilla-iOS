@@ -1,10 +1,13 @@
 PODS:
-  - EstimoteSDK (3.7.0)
+  - EstimoteSDK (3.7.1)
+  - RZTransitions (1.1.1)
 
 DEPENDENCIES:
-  - EstimoteSDK
+  - EstimoteSDK (~> 3.7.0)
+  - RZTransitions (~> 1.0)
 
 SPEC CHECKSUMS:
-  EstimoteSDK: 3ecb389bf661493612a5a70ce1cd8d3c45b4561b
+  EstimoteSDK: 15d4cf50a4a1e41dcbb0c3cefd43207bed990d53
+  RZTransitions: d3a1ad40f580eaee5aeecd55688e4280e8dca976
 
 COCOAPODS: 0.39.0

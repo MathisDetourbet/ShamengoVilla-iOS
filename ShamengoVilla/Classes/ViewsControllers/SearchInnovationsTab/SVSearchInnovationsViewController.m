@@ -9,10 +9,12 @@
 #import "SVSearchInnovationsViewController.h"
 #import "SVInnovationsManager.h"
 #import "SVInnovation.h"
+#import "SVInnovationCardViewController.h"
 
 @interface SVSearchInnovationsViewController ()
 
-@property (strong, nonatomic) NSString *searchName;
+@property (strong, nonatomic) NSString  *searchName;
+@property (assign, nonatomic) BOOL      isHiddenSearchBar;
 
 @end
 
@@ -20,8 +22,7 @@
 
 #pragma mark - Life view cycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
@@ -34,6 +35,7 @@
     
     search.tintColor = [UIColor blackColor];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = search;
+    self.isHiddenSearchBar = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,8 +44,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)showSearch
-{
+- (void)showSearch {
+    
+    self.isHiddenSearchBar = NO;
     self.navigationController.navigationBar.topItem.rightBarButtonItem = nil;
     
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 45)];
@@ -51,13 +54,13 @@
     searchBar.tintColor = [UIColor grayColor];
     searchBar.delegate = self;
     searchBar.showsCancelButton = YES;
-    searchBar.delegate = self;
     searchBar.placeholder = @"Numéro, pionnier, innovation";
     [searchBar becomeFirstResponder];
 }
 
-- (void)dismissSearchBar
-{
+- (void)dismissSearchBar {
+    
+    self.isHiddenSearchBar = YES;
     self.navigationController.navigationBar.topItem.titleView = nil;
     
     UIBarButtonItem *search = [[UIBarButtonItem alloc]
@@ -75,21 +78,22 @@
 
 - (void)loadSearch {
     
+    NSArray *innovList = [[SVInnovationsManager sharedManager] innovationsList];
     NSMutableArray *searchList = [[NSMutableArray alloc] init];
     NSInteger innovNumber = [self.searchName integerValue];
     
     if (innovNumber != 0) {
         
-        for (SVInnovation *innovation in self.innovationsList) {
+        for (SVInnovation *innovation in innovList) {
             
             if (innovation.innovationId == innovNumber) {
                 [searchList addObject:innovation];
                 
                 if ([searchList count] > 0) {
-                    self.innovationsList = searchList;
+                    self.resultInnovList = searchList;
                     
                 } else {
-                    [self.innovationsList removeAllObjects];
+                    self.resultInnovList = nil;
                 }
                 
                 [self.tableView reloadData];
@@ -99,27 +103,25 @@
         }
     }
     
-    for (SVInnovation *innovation in self.innovationsList) {
+    for (SVInnovation *innovation in innovList) {
         
-        if ([innovation.innovationName caseInsensitiveCompare:self.searchName] == NSOrderedSame) {
+        if ([innovation.innovationName localizedCaseInsensitiveContainsString:self.searchName]) {
             [searchList addObject:innovation];
         }
-        
-        [innovation.innovationName containsString:@""];
     }
     
-    for (SVInnovation *innovation in self.innovationsList) {
+    for (SVInnovation *innovation in innovList) {
         
-        if ([innovation.pionnerName caseInsensitiveCompare:self.searchName] == NSOrderedSame) {
+        if ([innovation.pionnerName localizedCaseInsensitiveContainsString:self.searchName]) {
             [searchList addObject:innovation];
         }
     }
     
     if ([searchList count] > 0) {
-        self.innovationsList = searchList;
+        self.resultInnovList = searchList;
         
     } else {
-        [self.innovationsList removeAllObjects];
+        self.resultInnovList = nil;
     }
     
     [self.tableView reloadData];
@@ -128,17 +130,51 @@
 
 #pragma mark - SearchBar Delegate
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
     self.searchName = searchBar.text;
     [self loadSearch];
     [searchBar resignFirstResponder];
 }
 
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
-{
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    
     [searchBar resignFirstResponder];
     [self dismissSearchBar];
+}
+
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    
+    if ([searchText isEqualToString:@""]) {
+        [self loadJSONData];
+        [self.tableView reloadData];
+    } else {
+        self.searchName = searchBar.text;
+        [self loadSearch];
+    }
+}
+
+
+/******************************************************************/
+#pragma mark - UITableView Delegate
+/******************************************************************/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SVInnovation *innovToPresent = [self.resultInnovList objectAtIndex:indexPath.row];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    SVInnovationCardViewController *innovCard = [storyboard instantiateViewControllerWithIdentifier:@"idInnovCardViewController"];
+    innovCard.hidesBottomBarWhenPushed = YES;
+    innovCard.innovation = innovToPresent;
+    
+    [self.navigationController pushViewController:innovCard animated:YES];
+    
+    if (!self.isHiddenSearchBar) {
+        [self dismissSearchBar];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

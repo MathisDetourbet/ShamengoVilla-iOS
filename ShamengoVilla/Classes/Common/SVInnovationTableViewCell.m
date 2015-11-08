@@ -15,23 +15,22 @@
 @property (weak, nonatomic) IBOutlet UILabel *innovationIDLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *innovationImageView;
 @property (weak, nonatomic) IBOutlet UILabel *pionnerNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
 
 @end
 
 @implementation SVInnovationTableViewCell
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
     // Initialization code
 }
 
-- (void)prepareForReuse
-{
+- (void)prepareForReuse {
     [super prepareForReuse];
 }
 
-- (void)displayInnovation:(SVInnovation *)innovation forIndexPath:(NSIndexPath *)indexPath
-{
+- (void)displayInnovation:(SVInnovation *)innovation forIndexPath:(NSIndexPath *)indexPath {
+    
     self.innovationTitleLabel.text = [NSString stringWithFormat:@"\"%@\"", innovation.innovationName];
     self.innovationIDLabel.text = [NSString stringWithFormat:@"%ld", (long)innovation.innovationId];
     self.pionnerNameLabel.text = innovation.pionnerName;
@@ -40,17 +39,39 @@
     if ([innovation.innovationImageName isEqualToString:@"innov01.png"] || [innovation.innovationImageName isEqualToString:@"innov02.png"]) {
         self.innovationImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", innovation.innovationImageName]];
     }
+    
+    self.categoryImageView.image = [UIImage imageNamed:[self getPinsNameForCategoryName:innovation.innovCategory]];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
     // Configure the view for the selected state
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
+}
+
+- (NSString *)getPinsNameForCategoryName:(NSString *)categoryName {
+    
+    if ([categoryName isEqualToString:@"Alimentation"]) {
+        return @"pins_food";
+        
+    } else if ([categoryName isEqualToString:@"Eau"]) {
+        return @"pins_water";
+        
+    } else if ([categoryName isEqualToString:@"Transports"]) {
+        return @"pins_transport";
+        
+    } else if ([categoryName isEqualToString:@"Energie"]) {
+        return @"pins_energy";
+        
+    } else if ([categoryName isEqualToString:@"L'Habitat"]) {
+        return @"pins_home";
+        
+    } else {
+        return @"pins_home";
+    }
 }
 
 

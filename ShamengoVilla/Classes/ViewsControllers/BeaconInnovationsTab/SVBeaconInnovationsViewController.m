@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.innovationsList = nil;
+    self.resultInnovList = nil;
     [self.tableView reloadData];
     self.tableView.hidden = YES;
     
@@ -81,6 +81,7 @@
     NSArray *innovationsJSON = [NSArray arrayWithArray:[[SVInnovationsManager sharedManager] innovationsList]];
     
     for (SVInnovation *innov in innovationsJSON) {
+        
         if ([innov.beaconMajor isEqualToString:beaconMajor]) {
             [innovationsNearBeacon addObject:innov];
         }
@@ -97,7 +98,7 @@
     CLBeacon *nearestBeacon = beacons.firstObject;
     
     if (nearestBeacon) {
-        self.innovationsList = [NSMutableArray arrayWithArray:[self innovationsNearBeacon:nearestBeacon]];
+        self.resultInnovList = [self innovationsNearBeacon:nearestBeacon];
         [self.tableView reloadData];
         self.tableView.hidden = NO;
     } else {
@@ -105,16 +106,15 @@
     }
 }
 
-- (void)refreshInnovationsList
-{
+- (void)refreshInnovationsList {
     
 }
 
 
 #pragma mark - Bluetooth Detection Methods
 
-- (void)detectBluetooth
-{
+- (void)detectBluetooth {
+    
     if (!self.bluetoothManager)
     {
         // Put on main queue so we can call UIAlertView from delegate callbacks.
@@ -123,8 +123,8 @@
     [self centralManagerDidUpdateState:self.bluetoothManager]; // Show initial state
 }
 
-- (void)centralManagerDidUpdateState:(CBCentralManager *)central
-{
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central {
+    
     NSString *stateString = nil;
     switch (self.bluetoothManager.state)
     {
@@ -135,12 +135,12 @@
         case CBCentralManagerStatePoweredOn: stateString = @"Bluetooth is currently powered on and available to use."; break;
         default: stateString = @"State unknown, update imminent."; break;
     }
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bluetooth state"
-                                                     message:stateString
-                                                    delegate:nil
-                                           cancelButtonTitle:@"Ok"
-                                      otherButtonTitles:nil];
-    //[alert show];
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bluetooth state"
+//                                                     message:stateString
+//                                                    delegate:nil
+//                                           cancelButtonTitle:@"Ok"
+//                                      otherButtonTitles:nil];
+//    [alert show];
 }
 
 @end
