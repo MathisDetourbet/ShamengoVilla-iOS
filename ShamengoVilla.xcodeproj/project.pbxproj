@@ -14,6 +14,8 @@
 		670216BD1B87A6DD00EF0840 /* SVInnovationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216BC1B87A6DD00EF0840 /* SVInnovationsManager.m */; };
 		670216C01B87A89900EF0840 /* SVInnovation.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216BF1B87A89900EF0840 /* SVInnovation.m */; };
 		670216C71B87AE4C00EF0840 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */; };
+		670D9FEB1BF600D0000995F0 /* TitilliumText22(text).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */; };
+		670D9FEC1BF600D0000995F0 /* TitilliumText22(title).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */; };
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
 		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
@@ -56,6 +58,8 @@
 		670216BF1B87A89900EF0840 /* SVInnovation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovation.m; sourceTree = "<group>"; };
 		670216C51B87AE4C00EF0840 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
 		670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(text).otf"; sourceTree = "<group>"; };
+		670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(title).otf"; sourceTree = "<group>"; };
 		672FCA6F1BE28D7500574161 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -187,6 +191,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		670D9FE81BF60046000995F0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */,
+				670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		671D459D1BAF59AC000C7795 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +240,7 @@
 		67357C571B7B3E4D00E39187 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				670D9FE81BF60046000995F0 /* Fonts */,
 				671D459D1BAF59AC000C7795 /* Videos */,
 				670216A71B879DF900EF0840 /* Translation */,
 				67357C601B7B3FD200E39187 /* jsonFiles */,
@@ -435,6 +449,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670D9FEB1BF600D0000995F0 /* TitilliumText22(text).otf in Resources */,
+				670D9FEC1BF600D0000995F0 /* TitilliumText22(title).otf in Resources */,
 				6753E3491BEA9FD800746BAA /* video02.mp4 in Resources */,
 				6753E34A1BEA9FD800746BAA /* video01.mp4 in Resources */,
 				67A1B4491BE2942A00955211 /* jsoncop21_fr.json in Resources */,

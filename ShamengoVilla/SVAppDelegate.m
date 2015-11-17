@@ -7,6 +7,7 @@
 //
 
 #import "SVAppDelegate.h"
+#import "SVConstants.h"
 #import "SVInnovationsManager.h"
 #import "SVNavSChemeManager.h"
 #import <RZTransitions/RZTransitionsManager.h>
@@ -27,6 +28,12 @@
     // Load innovations in the memory
     [[SVInnovationsManager sharedManager] loadInnovations];
     [[SVNavSChemeManager manager] initRootViewController];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if (![userDefaults arrayForKey:kUserFavoritesArray]) {
+        [userDefaults setObject:[NSArray array] forKey:kUserFavoritesArray];
+        [userDefaults synchronize];
+    }
     
     id<RZAnimationControllerProtocol> presentDismissAnimationController = [[RZZoomAlphaAnimationController alloc] init];
     id<RZAnimationControllerProtocol> pushPopAnimationController = [[RZCardSlideAnimationController alloc] init];

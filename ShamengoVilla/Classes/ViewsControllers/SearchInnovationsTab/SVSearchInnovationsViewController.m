@@ -10,30 +10,45 @@
 #import "SVInnovationsManager.h"
 #import "SVInnovation.h"
 #import "SVInnovationCardViewController.h"
+#import "SVConstants.h"
 
 @interface SVSearchInnovationsViewController ()
 
 @property (strong, nonatomic) NSString  *searchName;
 @property (assign, nonatomic) BOOL      isHiddenSearchBar;
+@property (assign, nonatomic) BOOL      isDisplayingFavorites;
 
 @end
 
 @implementation SVSearchInnovationsViewController
 
+
+/*********************************************************************/
 #pragma mark - Life view cycle
+/*********************************************************************/
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Search button
     UIBarButtonItem *search = [[UIBarButtonItem alloc]
                                initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
                                target:self
                                action:@selector(showSearch)];
-    
     search.tintColor = [UIColor blackColor];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = search;
+    
+    // Favoris bututon
+    UIBarButtonItem *favoritesButton = [[UIBarButtonItem alloc]
+                                initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
+                                target:self
+                                action:@selector(showFavorites)];
+    favoritesButton.tintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = favoritesButton;
+    
     self.isHiddenSearchBar = YES;
+    self.isDisplayingFavorites = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +69,36 @@
     searchBar.showsCancelButton = YES;
     searchBar.placeholder = @"Numéro, pionnier, innovation";
     [searchBar becomeFirstResponder];
+}
+
+- (void)showFavorites {
+    
+    if (_isDisplayingFavorites) {
+        self.resultInnovList = [[SVInnovationsManager sharedManager] innovationsList];
+        _isDisplayingFavorites = NO;
+        
+    } else {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSArray *favoritesDefaultList = [userDefaults arrayForKey:kUserFavoritesArray];
+        NSArray *innovList = [NSArray arrayWithArray:[[SVInnovationsManager sharedManager] innovationsList]];
+        NSMutableArray *favoritesInnovList = [NSMutableArray new];
+        _isDisplayingFavorites = YES;
+        
+        for (SVInnovation *innov in innovList) {
+            if ([favoritesDefaultList containsObject:[NSNumber numberWithInteger:innov.innovationId]]) {
+                [favoritesInnovList addObject:innov];
+            }
+        }
+        
+        if ([favoritesInnovList count] > 0) {
+            self.resultInnovList = favoritesInnovList;
+            
+        } else {
+            self.resultInnovList = nil;
+        }
+    }
+    
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 - (void)dismissSearchBar {
@@ -94,7 +139,7 @@
                     self.resultInnovList = nil;
                 }
                 
-                [self.tableView reloadData];
+                [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
                 
                 return;
             }
@@ -122,7 +167,7 @@
         self.resultInnovList = nil;
     }
     
-    [self.tableView reloadData];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 
@@ -145,7 +190,8 @@
     
     if ([searchText isEqualToString:@""]) {
         [self loadJSONData];
-        [self.tableView reloadData];
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+        
     } else {
         self.searchName = searchBar.text;
         [self loadSearch];

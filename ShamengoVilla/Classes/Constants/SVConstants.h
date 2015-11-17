@@ -7,3 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+
+/*********************** MACRO CODE **************************/
+
+#define _(key) NSLocalizedString(key,@"")
+
+
+/*********************** User Favorites Constantes **************************/
+
+#define kUserFavoritesArray @"userFavoritesDefaults"

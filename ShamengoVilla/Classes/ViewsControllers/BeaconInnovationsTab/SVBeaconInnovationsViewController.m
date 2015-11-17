@@ -25,6 +25,11 @@
 
 @implementation SVBeaconInnovationsViewController
 
+
+/*********************************************************************/
+#pragma mark - Life view cycle
+/*********************************************************************/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -59,7 +64,9 @@
 }
 
 
+/*********************************************************************/
 #pragma mark - ESTBeaconManager Methods
+/*********************************************************************/
 
 - (void)initBeaconManager {
     
@@ -81,7 +88,6 @@
     NSArray *innovationsJSON = [NSArray arrayWithArray:[[SVInnovationsManager sharedManager] innovationsList]];
     
     for (SVInnovation *innov in innovationsJSON) {
-        
         if ([innov.beaconMajor isEqualToString:beaconMajor]) {
             [innovationsNearBeacon addObject:innov];
         }
@@ -91,16 +97,36 @@
 }
 
 
+/*********************************************************************/
 #pragma mark - ESTBeaconManager Delegate
+/*********************************************************************/
 
 - (void)beaconManager:(id)manager didRangeBeacons:(NSArray<CLBeacon *> *)beacons inRegion:(CLBeaconRegion *)region {
     
     CLBeacon *nearestBeacon = beacons.firstObject;
     
     if (nearestBeacon) {
-        self.resultInnovList = [self innovationsNearBeacon:nearestBeacon];
-        [self.tableView reloadData];
-        self.tableView.hidden = NO;
+        NSArray *innovBeaconList = [self innovationsNearBeacon:nearestBeacon];
+        NSArray *innovListBefore = self.resultInnovList;
+        
+        if (!innovListBefore) {
+            self.resultInnovList = innovBeaconList;
+            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+            self.tableView.hidden = NO;
+        }
+        
+        NSSet *setNow = [NSSet setWithArray:innovBeaconList];
+        NSSet *setBefore = [NSSet setWithArray:innovListBefore];
+        
+        if ([setNow isEqualToSet:setBefore]) {
+            return;
+            
+        } else {
+            self.resultInnovList = innovBeaconList;
+            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+            self.tableView.hidden = NO;
+        }
+        
     } else {
         self.tableView.hidden = YES;
     }
@@ -111,7 +137,9 @@
 }
 
 
+/*********************************************************************/
 #pragma mark - Bluetooth Detection Methods
+/*********************************************************************/
 
 - (void)detectBluetooth {
     
@@ -120,6 +148,7 @@
         // Put on main queue so we can call UIAlertView from delegate callbacks.
         self.bluetoothManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue()];
     }
+    
     [self centralManagerDidUpdateState:self.bluetoothManager]; // Show initial state
 }
 

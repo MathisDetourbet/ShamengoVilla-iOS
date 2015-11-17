@@ -14,6 +14,10 @@
 
 @implementation SVShamengoTabViewController
 
+/*********************************************************************/
+#pragma mark - Life view cycle
+/*********************************************************************/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

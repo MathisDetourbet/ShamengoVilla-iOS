@@ -30,7 +30,8 @@
     if ([deviceLanguage isEqualToString:@"fr-FR"]) {
         jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
     } else {
-        jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_en" ofType:@"json"];
+#warning changer la string pour en lorsque qu'on aura le json en anglais
+        jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
     }
     
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
@@ -56,10 +57,16 @@
             
         } else {
             NSLog(@"### Error : there is no innovation in json file");
+            return;
         }
     } else {
         NSLog(@"### Error : jsonData is nil !");
+        return;
     }
+    
+    NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"innovationId" ascending:YES]];
+    NSArray *sortedArray = [self.innovationsList sortedArrayUsingDescriptors:sortDescriptors];
+    self.innovationsList = [NSMutableArray arrayWithArray:sortedArray];
 }
 
 

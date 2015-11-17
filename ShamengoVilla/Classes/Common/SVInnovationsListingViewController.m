@@ -30,6 +30,10 @@
 
 @implementation SVInnovationsListingViewController
 
+/*********************************************************************/
+#pragma mark - Life view cycle
+/*********************************************************************/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -68,7 +72,7 @@
     }
     self.resultInnovList = [[NSArray alloc] initWithArray:manager.innovationsList];
     
-    [self.tableView reloadData];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 

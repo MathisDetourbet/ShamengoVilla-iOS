@@ -10,12 +10,12 @@
 
 @interface SVInnovationTableViewCell ()
 
-@property (weak, nonatomic) IBOutlet UIView *containerView;
-@property (weak, nonatomic) IBOutlet UILabel *innovationTitleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *innovationIDLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *innovationImageView;
-@property (weak, nonatomic) IBOutlet UILabel *pionnerNameLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
+@property (weak, nonatomic) IBOutlet UIView         *containerView;
+@property (weak, nonatomic) IBOutlet UILabel        *innovationTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel        *innovationIDLabel;
+@property (weak, nonatomic) IBOutlet UIImageView    *innovationImageView;
+@property (weak, nonatomic) IBOutlet UILabel        *pionnerNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView    *categoryImageView;
 
 @end
 
