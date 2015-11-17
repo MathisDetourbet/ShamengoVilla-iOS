@@ -8,6 +8,8 @@
     <customFonts key="customFonts">
         <mutableArray key="TitilliumText22(text).otf">
             <string>TitilliumText22L-Regular</string>
+            <string>TitilliumText22L-Regular</string>
+            <string>TitilliumText22L-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -278,18 +280,65 @@
                                     <outlet property="delegate" destination="XlO-eB-Q8Q" id="EYX-oi-irV"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huH-wD-yAk">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoBeacon" translatesAutoresizingMaskIntoConstraints="NO" id="oe3-8Y-Rfc">
+                                        <rect key="frame" x="85" y="61" width="150" height="150"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="CF5-Sm-cGU"/>
+                                            <constraint firstAttribute="height" constant="150" id="LY0-Nv-hum"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aucune balise à proximité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-Wm-Uxe">
+                                        <rect key="frame" x="66" y="236" width="189" height="17"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-fk-Iv8">
+                                        <rect key="frame" x="18" y="255" width="285" height="90"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="ENA-Bn-Cwg"/>
+                                            <constraint firstAttribute="width" constant="285" id="Qve-YA-J3q"/>
+                                        </constraints>
+                                        <string key="text">1. Assurez-vous d'avoir le Bluetooth activé.                    2. Si vous vous trouvez sur le stand de la Villa Shamengo et que le problème persiste, merci de vous adresser à une personne de l'équipe.</string>
+                                        <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XCV-Wm-Uxe" firstAttribute="top" secondItem="oe3-8Y-Rfc" secondAttribute="bottom" constant="25" id="3VL-ie-szr"/>
+                                    <constraint firstItem="oe3-8Y-Rfc" firstAttribute="centerX" secondItem="huH-wD-yAk" secondAttribute="centerX" id="9eI-oQ-Ld5"/>
+                                    <constraint firstItem="oe3-8Y-Rfc" firstAttribute="top" secondItem="huH-wD-yAk" secondAttribute="top" constant="61" id="OxV-Qm-zil"/>
+                                    <constraint firstItem="bIe-fk-Iv8" firstAttribute="top" secondItem="XCV-Wm-Uxe" secondAttribute="bottom" constant="2" id="Zo1-c6-jyl"/>
+                                    <constraint firstItem="bIe-fk-Iv8" firstAttribute="centerX" secondItem="huH-wD-yAk" secondAttribute="centerX" id="vab-z9-Zer"/>
+                                    <constraint firstItem="XCV-Wm-Uxe" firstAttribute="centerX" secondItem="huH-wD-yAk" secondAttribute="centerX" id="wSH-NN-PU4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="huH-wD-yAk" secondAttribute="trailing" id="9JS-Sc-6e7"/>
                             <constraint firstItem="fA7-Ay-PA0" firstAttribute="top" secondItem="lu0-81-bsY" secondAttribute="top" id="GFh-Dc-8Iv"/>
                             <constraint firstItem="iDf-yP-K7F" firstAttribute="top" secondItem="fA7-Ay-PA0" secondAttribute="bottom" id="MPC-AU-wux"/>
+                            <constraint firstItem="huH-wD-yAk" firstAttribute="top" secondItem="thP-wl-nZM" secondAttribute="bottom" id="OOp-dc-r7t"/>
                             <constraint firstAttribute="trailing" secondItem="fA7-Ay-PA0" secondAttribute="trailing" id="XIQ-O7-0Xt"/>
+                            <constraint firstItem="huH-wD-yAk" firstAttribute="leading" secondItem="lu0-81-bsY" secondAttribute="leading" id="dES-5O-odh"/>
+                            <constraint firstItem="iDf-yP-K7F" firstAttribute="top" secondItem="huH-wD-yAk" secondAttribute="bottom" id="oRD-bQ-b5v"/>
                             <constraint firstItem="fA7-Ay-PA0" firstAttribute="leading" secondItem="lu0-81-bsY" secondAttribute="leading" id="x1O-TK-5Ke"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="A proximité" id="OZn-lL-wuo"/>
                     <connections>
+                        <outlet property="noBeaconView" destination="huH-wD-yAk" id="MKV-Lu-5em"/>
                         <outlet property="tableView" destination="fA7-Ay-PA0" id="ehz-Fk-qKE"/>
                     </connections>
                 </viewController>
@@ -555,6 +604,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NoBeacon" width="150" height="150"/>
         <image name="StarOff" width="30" height="30"/>
         <image name="a_proximite_tabBar_image75x75@x3" width="75" height="75"/>
         <image name="country_icon" width="15" height="15"/>

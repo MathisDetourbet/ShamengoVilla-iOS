@@ -14,9 +14,11 @@
 
 @interface SVBeaconInnovationsViewController () <ESTBeaconManagerDelegate, CBCentralManagerDelegate, UIAlertViewDelegate>
 
-@property (nonatomic) ESTBeaconManager  *beaconManager;
-@property (nonatomic) CLBeaconRegion    *beaconRegion;
-@property (nonatomic) CBCentralManager  *bluetoothManager;
+@property (nonatomic) ESTBeaconManager      *beaconManager;
+@property (nonatomic) CLBeaconRegion        *beaconRegion;
+@property (nonatomic) CBCentralManager      *bluetoothManager;
+
+@property (weak, nonatomic) IBOutlet UIView *noBeaconView;
 
 - (void)initBeaconManager;
 - (NSArray *)innovationsNearBeacon:(CLBeacon *)beacon;
@@ -33,13 +35,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self buildUI];
+    
     self.resultInnovList = nil;
     [self.tableView reloadData];
     self.tableView.hidden = YES;
+    self.noBeaconView.hidden = NO;
     
     [self detectBluetooth];
     [self initBeaconManager];
-    [self buildUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -55,6 +59,16 @@
 }
 
 - (void)buildUI {
+    
+//    self.noBeaconView = [[UIView alloc] initWithFrame:self.view.frame];
+//    [self.noBeaconView setBackgroundColor:[UIColor colorWithRed:225.f green:225.f blue:225.f alpha:0.f]];
+//    [self.noBeaconView setTranslatesAutoresizingMaskIntoConstraints:NO];
+//    
+//    UIImageView *noBeaconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NoBeacon"]];
+//    [noBeaconImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
+//    [self.noBeaconView addSubview:noBeaconImageView];
+//    
+//    [noBeaconImageView addConstraint:[NSLayoutConstraint constraintWithItem:noBeaconImageView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.noBeaconView attribute:NSLayoutAttributeCenterX multiplier:1.f constant:0.f]];
     
     UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
                                                                              target:self
@@ -74,10 +88,9 @@
     self.beaconManager = [ESTBeaconManager new];
     self.beaconManager.delegate = self;
     
-    self.beaconRegion = [[CLBeaconRegion alloc]
-                        initWithProximityUUID:[[NSUUID alloc]
-                        initWithUUIDString:@"85FC11DD-4CCA-4B27-AFB3-876854BB5C3B"]
-                        identifier:@"ranged region"];
+    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
+                                                   initWithUUIDString:@"85FC11DD-4CCA-4B27-AFB3-876854BB5C3B"]
+                                                           identifier:@"ranged region"];
     [self.beaconManager requestWhenInUseAuthorization];
 }
 
@@ -125,10 +138,12 @@
             self.resultInnovList = innovBeaconList;
             [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
             self.tableView.hidden = NO;
+            self.noBeaconView.hidden = YES;
         }
         
     } else {
         self.tableView.hidden = YES;
+        self.noBeaconView.hidden = NO;
     }
 }
 
