@@ -280,7 +280,7 @@
                                     <outlet property="delegate" destination="XlO-eB-Q8Q" id="EYX-oi-irV"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huH-wD-yAk">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huH-wD-yAk">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoBeacon" translatesAutoresizingMaskIntoConstraints="NO" id="oe3-8Y-Rfc">

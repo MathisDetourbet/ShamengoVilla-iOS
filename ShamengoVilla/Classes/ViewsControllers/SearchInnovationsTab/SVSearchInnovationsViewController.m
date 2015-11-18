@@ -39,7 +39,7 @@
     search.tintColor = [UIColor blackColor];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = search;
     
-    // Favoris bututon
+    // Favorites button
     UIBarButtonItem *favoritesButton = [[UIBarButtonItem alloc]
                                 initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
                                 target:self
@@ -57,9 +57,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+/*********************************************************************/
+#pragma mark - Bar button item controls
+/*********************************************************************/
+
 - (void)showSearch {
     
     self.isHiddenSearchBar = NO;
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = nil;
     self.navigationController.navigationBar.topItem.rightBarButtonItem = nil;
     
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 45)];
@@ -69,6 +75,30 @@
     searchBar.showsCancelButton = YES;
     searchBar.placeholder = @"Numéro, pionnier, innovation";
     [searchBar becomeFirstResponder];
+}
+
+- (void)dismissSearchBar {
+    
+    self.isHiddenSearchBar = YES;
+    self.navigationController.navigationBar.topItem.titleView = nil;
+    
+    // Search button
+    UIBarButtonItem *search = [[UIBarButtonItem alloc]
+                               initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                               target:self
+                               action:@selector(showSearch)];
+    
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = search;
+    
+    // Favorites button
+    UIBarButtonItem *favoritesButton = [[UIBarButtonItem alloc]
+                                        initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
+                                        target:self
+                                        action:@selector(showFavorites)];
+    favoritesButton.tintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = favoritesButton;
+    
+    [self loadJSONData];
 }
 
 - (void)showFavorites {
@@ -101,23 +131,10 @@
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
 }
 
-- (void)dismissSearchBar {
-    
-    self.isHiddenSearchBar = YES;
-    self.navigationController.navigationBar.topItem.titleView = nil;
-    
-    UIBarButtonItem *search = [[UIBarButtonItem alloc]
-                               initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
-                               target:self
-                               action:@selector(showSearch)];
-    
-    self.navigationController.navigationBar.topItem.rightBarButtonItem = search;
-    
-    [self loadJSONData];
-}
 
-
+/*********************************************************************/
 #pragma mark - Search Items Method
+/*********************************************************************/
 
 - (void)loadSearch {
     
@@ -171,7 +188,9 @@
 }
 
 
+/*********************************************************************/
 #pragma mark - SearchBar Delegate
+/*********************************************************************/
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     

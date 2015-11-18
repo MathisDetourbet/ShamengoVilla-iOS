@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self buildUI];
+    //[self buildUI];
     
     self.resultInnovList = nil;
     [self.tableView reloadData];
@@ -59,23 +59,17 @@
 }
 
 - (void)buildUI {
-    
-//    self.noBeaconView = [[UIView alloc] initWithFrame:self.view.frame];
-//    [self.noBeaconView setBackgroundColor:[UIColor colorWithRed:225.f green:225.f blue:225.f alpha:0.f]];
-//    [self.noBeaconView setTranslatesAutoresizingMaskIntoConstraints:NO];
 //    
-//    UIImageView *noBeaconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NoBeacon"]];
-//    [noBeaconImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
-//    [self.noBeaconView addSubview:noBeaconImageView];
-//    
-//    [noBeaconImageView addConstraint:[NSLayoutConstraint constraintWithItem:noBeaconImageView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.noBeaconView attribute:NSLayoutAttributeCenterX multiplier:1.f constant:0.f]];
-    
-    UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
-                                                                             target:self
-                                                                             action:@selector(refreshInnovationsList)];
-    refresh.tintColor = [UIColor blackColor];
-    self.navigationController.navigationBar.topItem.rightBarButtonItem = refresh;
+//    UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+//                                                                             target:self
+//                                                                             action:@selector(refreshInnovationsList)];
+//    refresh.tintColor = [UIColor blackColor];
+//    self.navigationController.navigationBar.topItem.rightBarButtonItem = refresh;
 }
+
+//- (void)refreshInnovationsList {
+//    
+//}
 
 
 /*********************************************************************/
@@ -125,7 +119,18 @@
         if (!innovListBefore) {
             self.resultInnovList = innovBeaconList;
             [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-            self.tableView.hidden = NO;
+            
+            self.noBeaconView.alpha = 1.f;
+            
+            [UIView animateWithDuration:1.f animations:^{
+                self.noBeaconView.alpha = 0.f;
+                
+            } completion:^(BOOL finished) {
+                if (finished) {
+                    self.noBeaconView.hidden = YES;
+                    self.tableView.hidden = NO;
+                }
+            }];
         }
         
         NSSet *setNow = [NSSet setWithArray:innovBeaconList];
@@ -137,18 +142,32 @@
         } else {
             self.resultInnovList = innovBeaconList;
             [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-            self.tableView.hidden = NO;
-            self.noBeaconView.hidden = YES;
+            
+            self.noBeaconView.alpha = 1.f;
+            
+            [UIView animateWithDuration:1.f animations:^{
+                self.noBeaconView.alpha = 0.f;
+                
+            } completion:^(BOOL finished) {
+                if (finished) {
+                    self.noBeaconView.hidden = YES;
+                    self.tableView.hidden = NO;
+                }
+            }];
         }
         
     } else {
         self.tableView.hidden = YES;
-        self.noBeaconView.hidden = NO;
+        
+        [UIView animateWithDuration:1.f animations:^{
+            self.noBeaconView.alpha = 1.f;
+            
+        } completion:^(BOOL finished) {
+            if (finished) {
+                self.noBeaconView.hidden = NO;
+            }
+        }];
     }
-}
-
-- (void)refreshInnovationsList {
-    
 }
 
 
@@ -179,12 +198,6 @@
         case CBCentralManagerStatePoweredOn: stateString = @"Bluetooth is currently powered on and available to use."; break;
         default: stateString = @"State unknown, update imminent."; break;
     }
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bluetooth state"
-//                                                     message:stateString
-//                                                    delegate:nil
-//                                           cancelButtonTitle:@"Ok"
-//                                      otherButtonTitles:nil];
-//    [alert show];
 }
 
 @end
