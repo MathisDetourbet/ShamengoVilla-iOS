@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel            *innovTitleLabel;
 @property (weak, nonatomic) IBOutlet UIButton           *starButton;
 @property (weak, nonatomic) IBOutlet UIView *bottomContainerView;
+@property (weak, nonatomic) IBOutlet UIButton *playMovieButton;
 
 - (void)buildUI;
 - (void)doneButtonClicked:(NSNotification *)notification;
@@ -54,6 +55,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSString *movieNameJSON = [[NSString alloc] initWithFormat:@"%@", self.innovation.innovationMoviePath];
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:movieNameJSON ofType:@""];
+    
+    if (!videoPath) {
+        self.playMovieButton.hidden = YES;
+    }
     
     self.starred = NO;
     self.view.backgroundColor = [UIColor whiteColor];
@@ -100,6 +108,7 @@
     // Pioneer Name
     self.pioneerNameLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerName];
     self.pioneerNameLabel.font = [UIFont fontWithName:@"TitilliumText22L-XBold" size:15.f];
+    //self.pioneerNameLabel.textColor = [self getColorNameForCategoryName:self.innovation.innovCategory];
     
     // Pioneer Country
     self.pioneerCountryLabel.text = [NSString stringWithFormat:@"%@", self.innovation.pionnerCountry];
@@ -188,7 +197,7 @@
 
 
 /*********************************************************************/
-#pragma mark - Others methods
+#pragma mark - Categorie color method
 /*********************************************************************/
 
 - (NSString *)getPinsNameForCategoryName:(NSString *)categoryName {

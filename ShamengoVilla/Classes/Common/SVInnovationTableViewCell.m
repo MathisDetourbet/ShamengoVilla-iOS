@@ -32,10 +32,15 @@
 - (void)displayInnovation:(SVInnovation *)innovation forIndexPath:(NSIndexPath *)indexPath {
     
     self.innovationTitleLabel.text = [NSString stringWithFormat:@"\"%@\"", innovation.innovationName];
-    self.innovationIDLabel.text = [NSString stringWithFormat:@"%ld", (long)innovation.innovationId];
-    self.pionnerNameLabel.text = innovation.pionnerName;
+    self.innovationTitleLabel.font = [UIFont fontWithName:@"TitilliumText22L-Regular" size:11.f];
     
-    // A supprimer lorsque toutes les images seront dispo !
+    self.innovationIDLabel.text = [NSString stringWithFormat:@"%ld", (long)innovation.innovationId];
+    self.innovationIDLabel.font = [UIFont fontWithName:@"TitilliumText22L-XBold" size:17.f];
+    
+    self.pionnerNameLabel.text = innovation.pionnerName;
+    self.pionnerNameLabel.font = [UIFont fontWithName:@"TitilliumText22L-Regular" size:10.f];
+    
+#warning A supprimer lorsque toutes les images seront dispo !
     if ([innovation.innovationImageName isEqualToString:@"innov01.png"] || [innovation.innovationImageName isEqualToString:@"innov02.png"]) {
         self.innovationImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", innovation.innovationImageName]];
     }

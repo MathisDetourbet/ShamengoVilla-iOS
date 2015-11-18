@@ -515,12 +515,13 @@
                             <constraint firstItem="X6f-NE-2n1" firstAttribute="top" secondItem="QNr-xB-cqm" secondAttribute="bottom" id="3yT-Rd-ZQt"/>
                             <constraint firstItem="QNr-xB-cqm" firstAttribute="top" secondItem="Dlm-4L-XBz" secondAttribute="bottom" id="6Ww-fl-gOU"/>
                             <constraint firstItem="QNr-xB-cqm" firstAttribute="leading" secondItem="7GC-eL-4XM" secondAttribute="leading" id="LJ3-hD-YYh"/>
-                            <constraint firstItem="DVm-8b-mAm" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="bottom" id="QV2-Rf-68N"/>
+                            <constraint firstAttribute="bottom" secondItem="X6f-NE-2n1" secondAttribute="bottom" id="Mcf-u5-TBI"/>
                             <constraint firstItem="X6f-NE-2n1" firstAttribute="leading" secondItem="7GC-eL-4XM" secondAttribute="leading" id="aLt-Qi-sNi"/>
                             <constraint firstAttribute="trailing" secondItem="QNr-xB-cqm" secondAttribute="trailing" id="ppU-zg-Pb4"/>
                             <constraint firstAttribute="trailing" secondItem="X6f-NE-2n1" secondAttribute="trailing" id="w2b-mN-e7E"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -533,6 +534,7 @@
                         <outlet property="pioneerCountryLabel" destination="rW8-ex-k8d" id="1rK-AH-O3E"/>
                         <outlet property="pioneerNameLabel" destination="K1U-Ly-LcS" id="vrZ-xe-XKz"/>
                         <outlet property="pionnerImageView" destination="Xuh-mg-PEl" id="EP9-QI-Td9"/>
+                        <outlet property="playMovieButton" destination="uts-3d-HFv" id="YX5-nP-HZp"/>
                         <outlet property="starButton" destination="XZg-vo-6Nx" id="gNo-mf-prW"/>
                     </connections>
                 </viewController>
