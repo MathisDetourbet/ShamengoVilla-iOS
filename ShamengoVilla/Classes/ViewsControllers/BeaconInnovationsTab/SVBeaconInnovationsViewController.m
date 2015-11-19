@@ -116,7 +116,7 @@
         NSArray *innovBeaconList = [self innovationsNearBeacon:nearestBeacon];
         NSArray *innovListBefore = self.resultInnovList;
         
-        if (!innovListBefore) {
+        if (!innovListBefore && ([innovBeaconList count] > 0)) {
             self.resultInnovList = innovBeaconList;
             [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
             

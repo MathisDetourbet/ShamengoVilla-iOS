@@ -45,7 +45,7 @@
         self.innovationImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", innovation.innovationImageName]];
     }
     
-    self.categoryImageView.image = [UIImage imageNamed:[self getPinsNameForCategoryName:innovation.innovCategory]];
+    self.categoryImageView.image = [UIImage imageNamed:innovation.innovCategory];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -56,28 +56,5 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
 }
-
-- (NSString *)getPinsNameForCategoryName:(NSString *)categoryName {
-    
-    if ([categoryName isEqualToString:@"Alimentation"]) {
-        return @"pins_food";
-        
-    } else if ([categoryName isEqualToString:@"Eau"]) {
-        return @"pins_water";
-        
-    } else if ([categoryName isEqualToString:@"Transports"]) {
-        return @"pins_transport";
-        
-    } else if ([categoryName isEqualToString:@"Energie"]) {
-        return @"pins_energy";
-        
-    } else if ([categoryName isEqualToString:@"L'Habitat"]) {
-        return @"pins_home";
-        
-    } else {
-        return @"pins_home";
-    }
-}
-
 
 @end

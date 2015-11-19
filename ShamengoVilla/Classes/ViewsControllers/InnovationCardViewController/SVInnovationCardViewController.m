@@ -84,7 +84,7 @@
     self.innovTitleLabel.font = [UIFont fontWithName:@"TitilliumText22L-XBold" size:15.f];
     
     // Category
-    self.innovCategoryImageView.image = [UIImage imageNamed:[self getPinsNameForCategoryName:self.innovation.innovCategory]];
+    self.innovCategoryImageView.image = [UIImage imageNamed:self.innovation.innovCategory];
     
     // Star
     NSArray *userFavoris = [[NSUserDefaults standardUserDefaults] arrayForKey:kUserFavoritesArray];
@@ -195,6 +195,14 @@
     [self presentViewController:activityVC animated:YES completion:nil];
 }
 
+- (IBAction)moreInfosButtonClicked:(UIButton *)sender {
+    
+    NSString *shamengoPath = self.innovation.shamengoPath;
+    
+    if (shamengoPath && ![shamengoPath isEqualToString:@""]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:shamengoPath]];
+    }
+}
 
 /*********************************************************************/
 #pragma mark - Categorie color method

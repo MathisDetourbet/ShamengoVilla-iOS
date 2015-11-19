@@ -9,7 +9,9 @@
         <mutableArray key="TitilliumText22(text).otf">
             <string>TitilliumText22L-Regular</string>
             <string>TitilliumText22L-Regular</string>
-            <string>TitilliumText22L-Regular</string>
+        </mutableArray>
+        <mutableArray key="TitilliumText22(title).otf">
+            <string>TitilliumText22L-XBold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -94,7 +96,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pins_energy" translatesAutoresizingMaskIntoConstraints="NO" id="QLB-Ih-HiY" userLabel="categoryImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Energy" translatesAutoresizingMaskIntoConstraints="NO" id="QLB-Ih-HiY" userLabel="categoryImageView">
                                                     <rect key="frame" x="113" y="42" width="25" height="25"/>
                                                     <animations/>
                                                     <constraints>
@@ -235,7 +237,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pins_energy" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-0x-Hej" userLabel="categoryImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Energy" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-0x-Hej" userLabel="categoryImageView">
                                                     <rect key="frame" x="113" y="42" width="25" height="25"/>
                                                     <animations/>
                                                     <constraints>
@@ -298,7 +300,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-fk-Iv8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-fk-Iv8">
                                         <rect key="frame" x="18" y="255" width="285" height="90"/>
                                         <animations/>
                                         <constraints>
@@ -376,8 +378,8 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-l4-PJ4" userLabel="innovDescriptionLabel">
-                                        <rect key="frame" x="31" y="130" width="258" height="184"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="justified" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-l4-PJ4" userLabel="innovDescriptionLabel">
+                                        <rect key="frame" x="31" y="147" width="258" height="167"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -387,13 +389,6 @@
                                         <rect key="frame" x="94" y="55" width="143" height="18"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En savoir plus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPF-pS-Z3N" userLabel="shamengoLinkLabel">
-                                        <rect key="frame" x="209" y="327" width="90" height="13"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -408,7 +403,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pins_energy" translatesAutoresizingMaskIntoConstraints="NO" id="cs7-Fi-yq3" userLabel="categoryImageView">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Energy" translatesAutoresizingMaskIntoConstraints="NO" id="cs7-Fi-yq3" userLabel="categoryImageView">
                                         <rect key="frame" x="245" y="57" width="30" height="30"/>
                                         <animations/>
                                         <constraints>
@@ -443,18 +438,39 @@
                                             <action selector="starButtonClicked:" destination="80L-CK-VS0" eventType="touchUpInside" id="7gu-Gf-Omx"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeparationBar" translatesAutoresizingMaskIntoConstraints="NO" id="Ndm-9d-SB8" userLabel="SeparationBarImageView">
+                                        <rect key="frame" x="85" y="130" width="150" height="2"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="bma-GR-dGa"/>
+                                            <constraint firstAttribute="width" constant="150" id="ggr-kB-OGm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed6-Xs-Z2t" userLabel="EnSavoirPlusButton">
+                                        <rect key="frame" x="209" y="319" width="80" height="25"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="TitilliumText22L-XBold" family="TitilliumText22L" pointSize="13"/>
+                                        <state key="normal" title="En savoir plus">
+                                            <color key="titleColor" red="0.02971771408839774" green="0.02971771408839774" blue="0.02971771408839774" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moreInfosButtonClicked:" destination="80L-CK-VS0" eventType="touchUpInside" id="z8W-BM-Cu5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Ed6-Xs-Z2t" firstAttribute="top" secondItem="sxH-l4-PJ4" secondAttribute="bottom" constant="5" id="0X8-pJ-L4a"/>
                                     <constraint firstItem="sxH-l4-PJ4" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="31" id="23E-tO-RHt"/>
                                     <constraint firstItem="cs7-Fi-yq3" firstAttribute="leading" secondItem="rW8-ex-k8d" secondAttribute="trailing" constant="19" id="2qZ-Vv-2HY"/>
                                     <constraint firstItem="Xuh-mg-PEl" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" constant="44" id="4md-yn-B0g"/>
                                     <constraint firstItem="qQX-I6-9GZ" firstAttribute="leading" secondItem="Xuh-mg-PEl" secondAttribute="trailing" constant="8" id="5jB-jX-SF1"/>
-                                    <constraint firstItem="XPF-pS-Z3N" firstAttribute="top" secondItem="sxH-l4-PJ4" secondAttribute="bottom" constant="13" id="5k2-Oz-2hz"/>
+                                    <constraint firstItem="Ndm-9d-SB8" firstAttribute="top" secondItem="Xuh-mg-PEl" secondAttribute="bottom" constant="8" id="6MP-35-oZX"/>
                                     <constraint firstItem="rW8-ex-k8d" firstAttribute="top" secondItem="K1U-Ly-LcS" secondAttribute="bottom" constant="9" id="7nX-G1-Gm6"/>
                                     <constraint firstItem="rW8-ex-k8d" firstAttribute="leading" secondItem="qQX-I6-9GZ" secondAttribute="trailing" constant="6" id="BFF-MB-HfZ"/>
-                                    <constraint firstItem="sxH-l4-PJ4" firstAttribute="top" secondItem="Xuh-mg-PEl" secondAttribute="bottom" constant="8" id="Ckj-NW-adh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ndm-9d-SB8" secondAttribute="trailing" constant="85" id="BHj-2A-qls"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ed6-Xs-Z2t" secondAttribute="bottom" constant="25" id="Bb9-xm-C2M"/>
                                     <constraint firstItem="Aa7-oN-ElD" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" id="FpO-VL-n09"/>
                                     <constraint firstItem="K1U-Ly-LcS" firstAttribute="leading" secondItem="Xuh-mg-PEl" secondAttribute="trailing" constant="8" id="G7o-J1-z2v"/>
                                     <constraint firstItem="XZg-vo-6Nx" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" constant="57" id="IhB-jO-fol"/>
@@ -463,18 +479,19 @@
                                     <constraint firstAttribute="trailing" secondItem="cs7-Fi-yq3" secondAttribute="trailing" constant="45" id="U8W-Y5-OfD"/>
                                     <constraint firstItem="qQX-I6-9GZ" firstAttribute="top" secondItem="K1U-Ly-LcS" secondAttribute="bottom" constant="9" id="UNo-rW-9Xd"/>
                                     <constraint firstAttribute="trailing" secondItem="ht3-TU-WO4" secondAttribute="trailing" constant="21" id="Vc6-xd-mJT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ed6-Xs-Z2t" secondAttribute="trailing" constant="31" id="Vyk-M8-Gx9"/>
                                     <constraint firstItem="K1U-Ly-LcS" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" constant="55" id="Wi1-kt-MKT"/>
                                     <constraint firstAttribute="trailing" secondItem="K1U-Ly-LcS" secondAttribute="trailing" constant="83" id="XHH-a2-HQ4"/>
                                     <constraint firstItem="cs7-Fi-yq3" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" constant="57" id="YiJ-Mf-aSs"/>
                                     <constraint firstItem="Aa7-oN-ElD" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="8" id="hGC-LN-8Tq"/>
-                                    <constraint firstAttribute="trailing" secondItem="XPF-pS-Z3N" secondAttribute="trailing" constant="21" id="iUb-el-37F"/>
                                     <constraint firstAttribute="trailing" secondItem="Aa7-oN-ElD" secondAttribute="trailing" constant="8" id="j7F-Ei-xwX"/>
-                                    <constraint firstItem="XPF-pS-Z3N" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="209" id="lXe-p4-SfP"/>
-                                    <constraint firstAttribute="bottom" secondItem="XPF-pS-Z3N" secondAttribute="bottom" constant="29" id="mDy-hL-O8j"/>
+                                    <constraint firstItem="Ed6-Xs-Z2t" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="209" id="mCf-5h-fjW"/>
                                     <constraint firstItem="XZg-vo-6Nx" firstAttribute="leading" secondItem="cs7-Fi-yq3" secondAttribute="trailing" constant="7" id="nXP-Xf-y5W"/>
+                                    <constraint firstItem="sxH-l4-PJ4" firstAttribute="top" secondItem="Ndm-9d-SB8" secondAttribute="bottom" constant="15" id="nqb-EO-qNJ"/>
                                     <constraint firstItem="Xuh-mg-PEl" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="8" id="pPo-hi-dqY"/>
                                     <constraint firstItem="4h1-7F-acW" firstAttribute="centerX" secondItem="ht3-TU-WO4" secondAttribute="centerX" id="pcQ-bl-tCh"/>
                                     <constraint firstItem="Xuh-mg-PEl" firstAttribute="top" secondItem="Aa7-oN-ElD" secondAttribute="bottom" constant="2" id="pdj-6Y-Mx9"/>
+                                    <constraint firstItem="Ndm-9d-SB8" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="85" id="r1u-de-lPa"/>
                                     <constraint firstAttribute="trailing" secondItem="sxH-l4-PJ4" secondAttribute="trailing" constant="31" id="rbO-VR-3lk"/>
                                 </constraints>
                             </view>
@@ -606,13 +623,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Energy" width="25" height="25"/>
         <image name="NoBeacon" width="150" height="150"/>
+        <image name="SeparationBar" width="150" height="2"/>
         <image name="StarOff" width="30" height="30"/>
         <image name="a_proximite_tabBar_image75x75@x3" width="75" height="75"/>
         <image name="country_icon" width="15" height="15"/>
         <image name="defaultInnovationPicture" width="545" height="301"/>
         <image name="numbers_background" width="93" height="47"/>
-        <image name="pins_energy" width="30" height="30"/>
         <image name="play_circle" width="200" height="200"/>
         <image name="shamengo_tab" width="30" height="30"/>
     </resources>
