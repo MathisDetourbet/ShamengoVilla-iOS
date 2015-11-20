@@ -30,6 +30,7 @@
 
 @implementation SVInnovationsListingViewController
 
+
 /*********************************************************************/
 #pragma mark - Life view cycle
 /*********************************************************************/
@@ -44,6 +45,7 @@
     self.tabBarOriginalFrame = self.tabBarController.tabBar.frame;
     
     [self.navigationController setDelegate:[RZTransitionsManager shared]];
+    [self.tabBarController.tabBar setTranslucent:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,7 +53,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
 //    if (self.isHiddenTabBar) {

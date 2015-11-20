@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIButton           *starButton;
 @property (weak, nonatomic) IBOutlet UIView             *bottomContainerView;
 @property (weak, nonatomic) IBOutlet UIButton           *playMovieButton;
+@property (weak, nonatomic) IBOutlet UIImageView        *innovPictureImageView;
 
 - (void)buildUI;
 - (void)doneButtonClicked:(NSNotification *)notification;
@@ -75,6 +76,10 @@
 }
 
 - (void)buildUI {
+    
+    // Innovation Picture
+    self.innovPictureImageView.image = [UIImage imageNamed:self.innovation.innovationImageName];
+    
     // ID
     self.innovIDLabel.text = [NSString stringWithFormat:@"%lu", (long)self.innovation.innovationId];
     self.innovIDLabel.font = [UIFont fontWithName:@"TitilliumText22L-Regular" size:17.f];
@@ -190,7 +195,8 @@
 
 - (void)shareAction {
     
-    NSArray *activityItems = @[UIActivityTypeMail, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, UIActivityTypeMessage];
+    //NSArray *activityItems = @[UIActivityTypeMail, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, UIActivityTypeMessage];
+    NSArray *activityItems = @[[NSString stringWithFormat:@"Voici le lien du partage : %@", self.innovation.shamengoPath]];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     [self presentViewController:activityVC animated:YES completion:nil];
 }
@@ -212,6 +218,17 @@
 - (NSString *)activityViewController:(UIActivityViewController *)activityViewController subjectForActivityType:(NSString *)activityType {
     return [NSString stringWithFormat:@"Voici le lien du partage : %@", self.innovation.shamengoPath];
 }
+
+- (id)activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController {
+    
+    return nil;
+}
+
+- (id)activityViewController:(UIActivityViewController *)activityViewController itemForActivityType:(NSString *)activityType {
+    
+    return nil;
+}
+
 
 /*********************************************************************/
 #pragma mark - Categorie color method

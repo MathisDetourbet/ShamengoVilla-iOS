@@ -23,6 +23,11 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    self.layer.shadowOffset = CGSizeMake(1, 0);
+    self.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.layer.shadowRadius = 5;
+    self.layer.shadowOpacity = .25;
 }
 
 - (void)prepareForReuse {
@@ -40,10 +45,7 @@
     self.pionnerNameLabel.text = innovation.pionnerName;
     self.pionnerNameLabel.font = [UIFont fontWithName:@"TitilliumText22L-Regular" size:10.f];
     
-#warning A supprimer lorsque toutes les images seront dispo !
-    if ([innovation.innovationImageName isEqualToString:@"innov01.png"] || [innovation.innovationImageName isEqualToString:@"innov02.png"]) {
-        self.innovationImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", innovation.innovationImageName]];
-    }
+    self.innovationImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", innovation.innovationImageName]];
     
     self.categoryImageView.image = [UIImage imageNamed:innovation.innovCategory];
 }

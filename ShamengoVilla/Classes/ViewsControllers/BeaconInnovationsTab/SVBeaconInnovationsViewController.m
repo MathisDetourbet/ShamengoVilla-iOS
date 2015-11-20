@@ -170,6 +170,10 @@
     }
 }
 
+- (void)beaconManager:(id)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error {
+    NSLog(@"Echec de la détection de Beacon... Autorisation requise");
+}
+
 
 /*********************************************************************/
 #pragma mark - Bluetooth Detection Methods

@@ -19,7 +19,6 @@
         <scene sceneID="tVv-B6-7Xi">
             <objects>
                 <tabBarController storyboardIdentifier="idTabBarSV" id="bPl-Hc-wp0" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tdb-Hp-Jzh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,10 +47,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-9R-Ebi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-9R-Ebi">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="idInnovationCell" rowHeight="70" id="zOO-Ic-E9i" customClass="SVInnovationTableViewCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="70"/>
@@ -132,6 +132,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="QLB-Ih-HiY" secondAttribute="bottom" constant="3" id="sw1-Bu-Gx3"/>
                                         </constraints>
@@ -160,7 +161,7 @@
                             <constraint firstItem="QOM-9R-Ebi" firstAttribute="leading" secondItem="rYD-eF-QTp" secondAttribute="leading" id="ySL-j3-CQm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Index" id="g46-wI-kRZ"/>
+                    <navigationItem key="navigationItem" title="Les innovations" id="g46-wI-kRZ"/>
                     <connections>
                         <outlet property="tableView" destination="QOM-9R-Ebi" id="BI6-EA-Wzf"/>
                     </connections>
@@ -181,16 +182,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-Ay-PA0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-Ay-PA0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="idInnovationCell" rowHeight="70" id="TtX-jC-HZq" customClass="SVInnovationTableViewCell">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="70"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="idInnovationCell" rowHeight="70" id="TtX-jC-HZq" customClass="SVInnovationTableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TtX-jC-HZq" id="qxu-t8-bh7">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-WP-Wex" userLabel="innovationTitleLabel">
@@ -256,7 +257,7 @@
                                                 <constraint firstItem="vMc-JX-TQF" firstAttribute="centerY" secondItem="tN3-Zq-Zh5" secondAttribute="centerY" constant="-1" id="I2i-Ub-ZyT"/>
                                                 <constraint firstItem="tN3-Zq-Zh5" firstAttribute="leading" secondItem="vMc-JX-TQF" secondAttribute="trailing" constant="-44" id="LK7-HH-xqw"/>
                                                 <constraint firstItem="kvW-rv-wVz" firstAttribute="leading" secondItem="qxu-t8-bh7" secondAttribute="leading" constant="8" id="Mom-zo-NfD"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hFP-52-X4Z" secondAttribute="bottom" constant="-5" id="NJa-ID-buL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hFP-52-X4Z" secondAttribute="bottom" constant="-4" id="NJa-ID-buL"/>
                                                 <constraint firstItem="XaL-WP-Wex" firstAttribute="top" secondItem="qxu-t8-bh7" secondAttribute="top" id="Nwl-n3-tsk"/>
                                                 <constraint firstItem="hFP-52-X4Z" firstAttribute="leading" secondItem="tN3-Zq-Zh5" secondAttribute="trailing" constant="6" id="O8T-X3-4tE"/>
                                                 <constraint firstItem="hFP-52-X4Z" firstAttribute="top" secondItem="tN3-Zq-Zh5" secondAttribute="top" constant="1" id="bi7-tX-pnm"/>
@@ -265,6 +266,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="6y8-0x-Hej" secondAttribute="bottom" constant="3" id="06w-xp-r8s"/>
                                         </constraints>
@@ -381,6 +383,9 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="justified" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-l4-PJ4" userLabel="innovDescriptionLabel">
                                         <rect key="frame" x="31" y="147" width="258" height="167"/>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="167" id="b5z-0e-6Oe"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -470,7 +475,6 @@
                                     <constraint firstItem="rW8-ex-k8d" firstAttribute="top" secondItem="K1U-Ly-LcS" secondAttribute="bottom" constant="9" id="7nX-G1-Gm6"/>
                                     <constraint firstItem="rW8-ex-k8d" firstAttribute="leading" secondItem="qQX-I6-9GZ" secondAttribute="trailing" constant="6" id="BFF-MB-HfZ"/>
                                     <constraint firstAttribute="trailing" secondItem="Ndm-9d-SB8" secondAttribute="trailing" constant="85" id="BHj-2A-qls"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ed6-Xs-Z2t" secondAttribute="bottom" constant="25" id="Bb9-xm-C2M"/>
                                     <constraint firstItem="Aa7-oN-ElD" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" id="FpO-VL-n09"/>
                                     <constraint firstItem="K1U-Ly-LcS" firstAttribute="leading" secondItem="Xuh-mg-PEl" secondAttribute="trailing" constant="8" id="G7o-J1-z2v"/>
                                     <constraint firstItem="XZg-vo-6Nx" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" constant="57" id="IhB-jO-fol"/>
@@ -501,12 +505,16 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uts-3d-HFv" userLabel="playVideoButton">
                                         <rect key="frame" x="128" y="36" width="64" height="64"/>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="PTG-1T-gDJ"/>
+                                            <constraint firstAttribute="height" constant="64" id="cZE-or-McZ"/>
+                                        </constraints>
                                         <state key="normal" image="play_circle"/>
                                         <connections>
                                             <action selector="playVideo:" destination="80L-CK-VS0" eventType="touchUpInside" id="m88-Wv-slS"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultInnovationPicture" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-Td-RB1" userLabel="movieImageView">
+                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultInnovationPicture" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-Td-RB1" userLabel="movieImageView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
                                         <animations/>
                                     </imageView>
@@ -547,6 +555,7 @@
                         <outlet property="innovCategoryImageView" destination="cs7-Fi-yq3" id="lVy-5O-NHT"/>
                         <outlet property="innovDescriptionLabel" destination="sxH-l4-PJ4" id="dMd-fQ-eRd"/>
                         <outlet property="innovIDLabel" destination="4h1-7F-acW" id="XZg-Au-PcI"/>
+                        <outlet property="innovPictureImageView" destination="OcR-Td-RB1" id="Z0c-1v-ACu"/>
                         <outlet property="innovTitleLabel" destination="Aa7-oN-ElD" id="XLP-vP-VmY"/>
                         <outlet property="pioneerCountryLabel" destination="rW8-ex-k8d" id="1rK-AH-O3E"/>
                         <outlet property="pioneerNameLabel" destination="K1U-Ly-LcS" id="vrZ-xe-XKz"/>
@@ -573,7 +582,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shamengo" image="shamengo_tab" id="EJg-ph-HMu"/>
+                    <tabBarItem key="tabBarItem" title="Shamengo" image="shamengo_tab" selectedImage="shamengo_tab" id="EJg-ph-HMu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXO-Jj-ItQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
