@@ -29,9 +29,9 @@
     
     if ([deviceLanguage isEqualToString:@"fr-FR"]) {
         jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
+        
     } else {
-#warning changer la string pour en lorsque qu'on aura le json en anglais
-        jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_fr" ofType:@"json"];
+        jsonPath = [[NSBundle mainBundle] pathForResource:@"jsoncop21_en" ofType:@"json"];
     }
     
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];

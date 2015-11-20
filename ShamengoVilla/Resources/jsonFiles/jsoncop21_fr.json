@@ -89,7 +89,7 @@
       "pioneerPicture": "pioneer10.png",
       "innovPicture": "innov10.png",
       "innovVideo": "",
-      "ShamengoLink": "http://loliware.com"
+      "ShamengoLink": "http://www.loliware.com"
     },
     {
       "innovName": "Je fabrique des chewing-gums 100% bio dégradables",
@@ -172,7 +172,7 @@
     {
       "innovName": "Je suis un guerillero du jardinage",
       "pioneerName": "Richard Reynolds",
-      "pionneerCountry": "Londres - United Kingdom",
+      "pionneerCountry": "Londres - Royaume-Uni",
       "innovNumber": 15,
       "category": "Water",
       "beaconMajor": "",
@@ -198,7 +198,7 @@
     {
       "innovName": "Jacynthe d'eau",
       "pioneerName": "Jose Carlos Vargas",
-      "pionneerCountry": "Londres - United Kingdom",
+      "pionneerCountry": "",
       "innovNumber": 17,
       "category": "Water",
       "beaconMajor": "839",
@@ -211,7 +211,7 @@
     {
       "innovName": "En faisant du sport, je recharge mon téléphone portable",
       "pioneerName": "Georgie Delaney",
-      "pionneerCountry": "Dartford / United Kingdom",
+      "pionneerCountry": "Dartford - Royaume-Uni",
       "innovNumber": 18,
       "category": "Energy",
       "beaconMajor": "1617",
@@ -224,11 +224,11 @@
     {
       "innovName": "J'éclaire les bidonvilles avec nos vieilles bouteilles en plastique",
       "pioneerName": "Illac Diaz",
-      "pionneerCountry": "Manille - Philippine",
+      "pionneerCountry": "Manille - Philippines",
       "innovNumber": 19,
       "category": "Energy",
       "beaconMajor": "947",
-      "description": "Parce que plus d’un milliard de personnes n’ont toujours pas accès à l’électricité sur la planète, Illac leur propose de s’emparer d’une technologie open source verte et low tech pour devenir acteurs de la solution. Eclairant.  ",
+      "description": "Parce que plus d’un milliard de personnes n’ont toujours pas accès à l’électricité sur la planète, Illac leur propose de s’emparer d’une technologie open source verte et low tech pour devenir acteurs de la solution. \nEclairant.",
       "pioneerPicture": "pioneer02.png",
       "innovPicture": "innov02.png",
       "innovVideo": "Illac Diaz VF.mp4",
@@ -263,7 +263,7 @@
     {
       "innovName": "J’ai créé l’université des va-nu-pieds",
       "pioneerName": "Bunker Roy",
-      "pionneerCountry": "Tiloniya, Rajasthan - India",
+      "pionneerCountry": "Tiloniya, Rajasthan - Inde",
       "innovNumber": 22,
       "category": "Energy",
       "beaconMajor": "839",
@@ -409,7 +409,7 @@
       "pionneerCountry": "Siem Reap - Cambodge",
       "innovNumber": 33,
       "category": "Waste",
-      "beaconMajor": "1051",
+      "beaconMajor": "1649",
       "description": "Après avoir été licencié par l’un des principaux fabricants de masques de carnaval, ce designer français part s’installer à proximité des temples d’Angkor. Il améliore alors la technique traditionnelle du papier mâché, pour donner vie à des statues totalement bluffantes dont lui seul a le secret, produites localement avec des matériaux de recupération.",
       "pioneerPicture": "pioneer05.png",
       "innovPicture": "innov05.png",
@@ -435,7 +435,7 @@
       "pionneerCountry": "Paris - France",
       "innovNumber": 35,
       "category": "Waste",
-      "beaconMajor": "1649",
+      "beaconMajor": "1097",
       "description": "Pendant que les vacanciers se dorent la pilule sur les plages de l’île de beauté, ces trois amis d’enfance remplissent des sacs entiers d’objets que la mer reflue pour les transformer en oeuvre d’art. Des briquets, des tongues, des tubes de crème solaire et tout ce que notre société de consommation produit se retrouve exposé dans des galeries pour sensibiliser les amateurs d’art à l’écologie. ",
       "pioneerPicture": "pioneer00.png",
       "innovPicture": "innov00.png",
@@ -471,7 +471,7 @@
     {
       "innovName": "J’ai créé un tissu en fibre de lotus",
       "pioneerName": "Awen Delaval",
-      "pionneerCountry": "Siem Reap / Cambodia",
+      "pionneerCountry": "Siem Reap - Cambodge",
       "innovNumber": 38,
       "category": "Waste",
       "beaconMajor": "947",
@@ -484,7 +484,7 @@
     {
       "innovName": "J'utilise des coquilles d'huitres pour faire de la peinture",
       "pioneerName": "Martine Le Lu",
-      "pionneerCountry": "Kervellerin / France",
+      "pionneerCountry": "Kervellerin - France",
       "innovNumber": 39,
       "category": "Waste",
       "beaconMajor": "1131",
@@ -513,12 +513,12 @@
       "pionneerCountry": "",
       "innovNumber": 41,
       "category": "Waste",
-      "beaconMajor": "1",
+      "beaconMajor": "1617",
       "description": "",
       "pioneerPicture": "pioneer00.png",
       "innovPicture": "innov00.png",
       "innovVideo": "",
-      "ShamengoLink": "http://interfaceflor.com"
+      "ShamengoLink": "http://www.interfaceflor.com"
     },
     
 
@@ -629,7 +629,7 @@
       "pioneerPicture": "pioneer10.png",
       "innovPicture": "innov10.png",
       "innovVideo": "",
-      "ShamengoLink": "http://loliware.com"
+      "ShamengoLink": "http://www.loliware.com"
     },
     {
       "innovName": "Je fabrique des chewing-gums 100% bio dégradables",
@@ -660,7 +660,7 @@
     {
       "innovName": "En faisant du sport, je recharge mon téléphone portable",
       "pioneerName": "Georgie Delaney",
-      "pionneerCountry": "Dartford / United Kingdom",
+      "pionneerCountry": "Dartford - Royaume-Uni",
       "innovNumber": 111,
       "category": "Energy",
       "beaconMajor": "15",
@@ -677,7 +677,7 @@
       "innovNumber": 112,
       "category": "Energy",
       "beaconMajor": "15",
-      "description": "Parce que plus d’un milliard de personnes n’ont toujours pas accès à l’électricité sur la planète, Illac leur propose de s’emparer d’une technologie open source verte et low tech pour devenir acteurs de la solution. Eclairant.  ",
+      "description": "Parce que plus d’un milliard de personnes n’ont toujours pas accès à l’électricité sur la planète, Illac leur propose de s’emparer d’une technologie open source verte et low tech pour devenir acteurs de la solution. \nEclairant.  ",
       "pioneerPicture": "pioneer02.png",
       "innovPicture": "innov02.png",
       "innovVideo": "Illac Diaz VF.mp4",
@@ -690,7 +690,7 @@
       "innovNumber": 112,
       "category": "Energy",
       "beaconMajor": "123",
-      "description": "L'idée est toute simple et pourtant Eric est le premier à la développer à grande échelle : optimiser l'espace péri-urbain en construisant des serres agricoles avec des panneaux solaires sur le toit. Cette formule mise au point sur l'île de la Réunion part aujourd'hui à la conquête du monde. A suivre de près.",
+      "description": "L'idée est toute simple et pourtant Eric est le premier à la développer à grande échelle : optimiser l'espace péri-urbain en construisant des serres agricoles avec des panneaux solaires sur le toit. Cette formule mise au point sur l'île de la Réunion part aujourd'hui à la conquête du monde. \nA suivre de près.",
       "pioneerPicture": "pioneer115.png",
       "innovPicture": "innov115.png",
       "innovVideo": "Eric Scotto VF.mp4",
@@ -703,7 +703,7 @@
       "innovNumber": 113,
       "category": "Home",
       "beaconMajor": "15",
-      "description": "Son invention pourrait changer la face du monde si elle s’avère 100% fiable, efficace et bon marché. Le premier prototype de son lampadaire absorbeur de CO2 fait déjà couler beaucoup d’encre. A voir absolument.",
+      "description": "Son invention pourrait changer la face du monde si elle s’avère 100% fiable, efficace et bon marché. Le premier prototype de son lampadaire absorbeur de CO2 fait déjà couler beaucoup d’encre. \nA voir absolument.",
       "pioneerPicture": "pioneer116.png",
       "innovPicture": "innov116.png",
       "innovVideo": "Pierre Calleja VF.mp4",
@@ -716,7 +716,7 @@
       "innovNumber": 114,
       "category": "Home",
       "beaconMajor": "15",
-      "description": "A l’heure ou personne ne sait gérer l’interminable dégradation des milliards de sacs plastique fabriqués à partir de pétrole, Catia invente le sac biodégradable le plus écologique du monde. A mettre entre toutes les mains. Immédiatement ! ",
+      "description": "A l’heure ou personne ne sait gérer l’interminable dégradation des milliards de sacs plastique fabriqués à partir de pétrole, Catia invente le sac biodégradable le plus écologique du monde. A mettre entre toutes les mains. \nImmédiatement ! ",
       "pioneerPicture": "pioneer117.png",
       "innovPicture": "innov117.png",
       "innovVideo": "Catia Bastioli VF.mp4",
@@ -729,7 +729,7 @@
       "innovNumber": 115,
       "category": "Home",
       "beaconMajor": "15",
-      "description": "Nous connaissons tous le papier fabriqué à partir de la cellulose des arbres. Henry, lui, fabrique du papier avec des rebuts de pierre. Une manière radicale pour ne plus couper d'arbre. A voir... pour y croire.",
+      "description": "Nous connaissons tous le papier fabriqué à partir de la cellulose des arbres. Henry, lui, fabrique du papier avec des rebuts de pierre. Une manière radicale pour ne plus couper d'arbre. \nA voir... pour y croire.",
       "pioneerPicture": "pioneer01.png",
       "innovPicture": "innov01.png",
       "innovVideo": "Henry Liang VF.mp4",
@@ -790,7 +790,7 @@
     {
       "innovName": "J’ai créé un tissu en fibre de lotus",
       "pioneerName": "Awen Delaval",
-      "pionneerCountry": "Siem Reap / Cambodia",
+      "pionneerCountry": "Siem Reap - Cambodge",
       "innovNumber": 120,
       "category": "Waste",
       "beaconMajor": "15",
@@ -803,7 +803,7 @@
     {
       "innovName": "J'utilise des coquilles d'huitres pour faire de la peinture",
       "pioneerName": "Martine Le Lu",
-      "pionneerCountry": "Kervellerin / France",
+      "pionneerCountry": "Kervellerin - France",
       "innovNumber": 121,
       "category": "Waste",
       "beaconMajor": "15",
@@ -812,6 +812,6 @@
       "innovPicture": "innov00.png",
       "innovVideo": "Martine Le Lu VF.mp4",
       "ShamengoLink": "http://www.shamengo.com/fr/pionnier/104-martine-le-lu"
-    },
+    }
   ]
 }

@@ -11,7 +11,7 @@
 #import "SVAppDelegate.h"
 #import "SVConstants.h"
 
-@interface SVInnovationCardViewController ()
+@interface SVInnovationCardViewController () <UIActivityItemSource>
 
 @property (strong, nonatomic) MPMoviePlayerController   *moviePlayer;
 @property (strong, nonatomic) UITabBarController        *tabBarController;
@@ -25,8 +25,8 @@
 @property (weak, nonatomic) IBOutlet UILabel            *pioneerCountryLabel;
 @property (weak, nonatomic) IBOutlet UILabel            *innovTitleLabel;
 @property (weak, nonatomic) IBOutlet UIButton           *starButton;
-@property (weak, nonatomic) IBOutlet UIView *bottomContainerView;
-@property (weak, nonatomic) IBOutlet UIButton *playMovieButton;
+@property (weak, nonatomic) IBOutlet UIView             *bottomContainerView;
+@property (weak, nonatomic) IBOutlet UIButton           *playMovieButton;
 
 - (void)buildUI;
 - (void)doneButtonClicked:(NSNotification *)notification;
@@ -134,6 +134,7 @@
     NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
     
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    [self.moviePlayer prepareToPlay];
     [self.moviePlayer setMovieSourceType:MPMovieSourceTypeFile];
     [self.moviePlayer setFullscreen:YES];
     [self.moviePlayer setControlStyle:MPMovieControlStyleFullscreen];
@@ -147,7 +148,6 @@
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.moviePlayer.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.f constant:0.f]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.moviePlayer.view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.f constant:0.f]];
 
-    [self.moviePlayer prepareToPlay];
     [self.moviePlayer play];
     
     self.navigationController.navigationBarHidden = YES;
@@ -204,6 +204,15 @@
     }
 }
 
+
+/*********************************************************************/
+#pragma mark - UIActivityItemSource Delegate
+/*********************************************************************/
+
+- (NSString *)activityViewController:(UIActivityViewController *)activityViewController subjectForActivityType:(NSString *)activityType {
+    return [NSString stringWithFormat:@"Voici le lien du partage : %@", self.innovation.shamengoPath];
+}
+
 /*********************************************************************/
 #pragma mark - Categorie color method
 /*********************************************************************/
@@ -232,23 +241,26 @@
 
 - (UIColor *)getColorNameForCategoryName:(NSString *)categoryName {
     
-    if ([categoryName isEqualToString:@"Alimentation"]) {
+    if ([categoryName isEqualToString:@"Food"]) {
         return [UIColor colorWithRed:147.f green:192.f blue:31.f alpha:0.f];
         
-    } else if ([categoryName isEqualToString:@"Eau"]) {
+    } else if ([categoryName isEqualToString:@"Water"]) {
         return [UIColor colorWithRed:4.f green:186.f blue:238.f alpha:0.f];
         
-    } else if ([categoryName isEqualToString:@"Transports"]) {
+    } else if ([categoryName isEqualToString:@"Transport"]) {
         return [UIColor colorWithRed:58.f green:58.f blue:58.f alpha:0.f];
         
-    } else if ([categoryName isEqualToString:@"Energie"]) {
+    } else if ([categoryName isEqualToString:@"Energy"]) {
         return [UIColor colorWithRed:242.f green:145.f blue:0.f alpha:0.f];
         
-    } else if ([categoryName isEqualToString:@"L'Habitat"]) {
+    } else if ([categoryName isEqualToString:@"Home"]) {
         return [UIColor colorWithRed:207.f green:1.f blue:108.f alpha:0.f];
         
+    } else if ([categoryName isEqualToString:@"Waste"]) {
+        return [UIColor colorWithRed:241.f green:203.f blue:48.f alpha:0.f];
+    
     } else {
-        return [UIColor colorWithRed:58.f green:58.f blue:58.f alpha:0.f];
+        return [UIColor blackColor];
     }
 }
 

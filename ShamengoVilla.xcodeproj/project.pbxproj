@@ -16,16 +16,93 @@
 		670216C71B87AE4C00EF0840 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */; };
 		670D9FEB1BF600D0000995F0 /* TitilliumText22(text).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */; };
 		670D9FEC1BF600D0000995F0 /* TitilliumText22(title).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */; };
-		672D5AD61BFDDEA100FE923A /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 672D5AD51BFDDEA100FE923A /* jsoncop21_fr.json */; };
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
 		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
-		6753E3491BEA9FD800746BAA /* video02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 67B146ED1BD019BF009E8538 /* video02.mp4 */; };
-		6753E34A1BEA9FD800746BAA /* video01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 67B146EE1BD019BF009E8538 /* video01.mp4 */; };
 		6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */; };
 		6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */; };
 		676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A21BAC1CA60016854B /* MediaPlayer.framework */; };
 		676BE3A51BAC1CAE0016854B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A41BAC1CAE0016854B /* CoreLocation.framework */; };
+		678A0B521BFE4B670036FADD /* Anita Ahuja VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B041BFE4B670036FADD /* Anita Ahuja VA.mp4 */; };
+		678A0B531BFE4B670036FADD /* Anita Ahuja VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B051BFE4B670036FADD /* Anita Ahuja VF.mp4 */; };
+		678A0B541BFE4B670036FADD /* Awen Delaval VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B061BFE4B670036FADD /* Awen Delaval VA.mp4 */; };
+		678A0B551BFE4B670036FADD /* Awen Delaval VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B071BFE4B670036FADD /* Awen Delaval VF.mp4 */; };
+		678A0B561BFE4B670036FADD /* Benoit Paget VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B081BFE4B670036FADD /* Benoit Paget VA.mp4 */; };
+		678A0B571BFE4B670036FADD /* Benoit Paget VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B091BFE4B670036FADD /* Benoit Paget VF.mp4 */; };
+		678A0B581BFE4B670036FADD /* Beverly Blum VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B0A1BFE4B670036FADD /* Beverly Blum VA.mp4 */; };
+		678A0B591BFE4B670036FADD /* Beverly Blum VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B0B1BFE4B670036FADD /* Beverly Blum VF.mp4 */; };
+		678A0B5A1BFE4B670036FADD /* Bunker Roy VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B0C1BFE4B670036FADD /* Bunker Roy VA.mp4 */; };
+		678A0B5B1BFE4B670036FADD /* Bunker Roy VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B0D1BFE4B670036FADD /* Bunker Roy VF.mp4 */; };
+		678A0B5C1BFE4B670036FADD /* Catia Bastioli VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B0E1BFE4B670036FADD /* Catia Bastioli VA.mp4 */; };
+		678A0B5D1BFE4B670036FADD /* Catia Bastioli VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B0F1BFE4B670036FADD /* Catia Bastioli VF.mp4 */; };
+		678A0B5E1BFE4B670036FADD /* Cedric Auriol VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B101BFE4B670036FADD /* Cedric Auriol VA.mp4 */; };
+		678A0B5F1BFE4B670036FADD /* Cedric Auriol VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B111BFE4B670036FADD /* Cedric Auriol VF.mp4 */; };
+		678A0B601BFE4B670036FADD /* Cedric Pechard VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B121BFE4B670036FADD /* Cedric Pechard VA.mp4 */; };
+		678A0B611BFE4B670036FADD /* Cedric Pechard VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B131BFE4B670036FADD /* Cedric Pechard VF.mp4 */; };
+		678A0B621BFE4B670036FADD /* Choukroun et Cheron VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B141BFE4B670036FADD /* Choukroun et Cheron VA.mp4 */; };
+		678A0B631BFE4B670036FADD /* Choukroun et Cheron VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B151BFE4B670036FADD /* Choukroun et Cheron VF.mp4 */; };
+		678A0B641BFE4B670036FADD /* Corentin de Chatelperron VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B161BFE4B670036FADD /* Corentin de Chatelperron VA.mp4 */; };
+		678A0B651BFE4B670036FADD /* Corentin de Chatelperron VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B171BFE4B670036FADD /* Corentin de Chatelperron VF.mp4 */; };
+		678A0B661BFE4B670036FADD /* Dr Patahk VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B181BFE4B670036FADD /* Dr Patahk VA.mp4 */; };
+		678A0B671BFE4B670036FADD /* Dr Patahk VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B191BFE4B670036FADD /* Dr Patahk VF.mp4 */; };
+		678A0B681BFE4B670036FADD /* Eric Scotto VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B1A1BFE4B670036FADD /* Eric Scotto VA.mp4 */; };
+		678A0B691BFE4B670036FADD /* Eric Scotto VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B1B1BFE4B670036FADD /* Eric Scotto VF.mp4 */; };
+		678A0B6A1BFE4B670036FADD /* Francisco da Silva VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B1C1BFE4B670036FADD /* Francisco da Silva VA.mp4 */; };
+		678A0B6B1BFE4B670036FADD /* Francisco da Silva VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B1D1BFE4B670036FADD /* Francisco da Silva VF.mp4 */; };
+		678A0B6C1BFE4B670036FADD /* Georgie Delaney VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B1E1BFE4B670036FADD /* Georgie Delaney VA.mp4 */; };
+		678A0B6D1BFE4B670036FADD /* Georgie Delaney VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B1F1BFE4B670036FADD /* Georgie Delaney VF.mp4 */; };
+		678A0B6E1BFE4B670036FADD /* Gilles Charlie Thierry VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B201BFE4B670036FADD /* Gilles Charlie Thierry VA.mp4 */; };
+		678A0B6F1BFE4B670036FADD /* Gilles Charlie Thierry VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B211BFE4B670036FADD /* Gilles Charlie Thierry VF.mp4 */; };
+		678A0B701BFE4B670036FADD /* Henri Liang VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B221BFE4B670036FADD /* Henri Liang VA.mp4 */; };
+		678A0B711BFE4B670036FADD /* Henri Liang VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B231BFE4B670036FADD /* Henri Liang VF.mp4 */; };
+		678A0B721BFE4B670036FADD /* Illac Diaz VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B241BFE4B670036FADD /* Illac Diaz VA.mp4 */; };
+		678A0B731BFE4B670036FADD /* Illac Diaz VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B251BFE4B670036FADD /* Illac Diaz VF.mp4 */; };
+		678A0B741BFE4B670036FADD /* Janos Terbe VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B261BFE4B670036FADD /* Janos Terbe VA.mp4 */; };
+		678A0B751BFE4B670036FADD /* Janos Terbe VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B271BFE4B670036FADD /* Janos Terbe VF.mp4 */; };
+		678A0B761BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B281BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 */; };
+		678A0B771BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B291BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 */; };
+		678A0B781BFE4B670036FADD /* Jose Carlos Vargas VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B2A1BFE4B670036FADD /* Jose Carlos Vargas VA.mp4 */; };
+		678A0B791BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B2B1BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 */; };
+		678A0B7A1BFE4B670036FADD /* Manshuk Prajapati VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B2C1BFE4B670036FADD /* Manshuk Prajapati VA.mp4 */; };
+		678A0B7B1BFE4B670036FADD /* Manshuk Prajapati VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B2D1BFE4B670036FADD /* Manshuk Prajapati VF.mp4 */; };
+		678A0B7C1BFE4B670036FADD /* Manuel Aldrete VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B2E1BFE4B670036FADD /* Manuel Aldrete VA.mp4 */; };
+		678A0B7D1BFE4B670036FADD /* Manuel Aldrete VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B2F1BFE4B670036FADD /* Manuel Aldrete VF.mp4 */; };
+		678A0B7E1BFE4B670036FADD /* Marcelo Villegas VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B301BFE4B670036FADD /* Marcelo Villegas VA.mp4 */; };
+		678A0B7F1BFE4B670036FADD /* Marcelo Villegas VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B311BFE4B670036FADD /* Marcelo Villegas VF.mp4 */; };
+		678A0B801BFE4B670036FADD /* Martine Le Lu VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B321BFE4B670036FADD /* Martine Le Lu VA.mp4 */; };
+		678A0B811BFE4B670036FADD /* Martine Le Lu VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B331BFE4B670036FADD /* Martine Le Lu VF.mp4 */; };
+		678A0B821BFE4B670036FADD /* Mary Delano VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B341BFE4B670036FADD /* Mary Delano VA.mp4 */; };
+		678A0B831BFE4B670036FADD /* Mary Delano VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B351BFE4B670036FADD /* Mary Delano VF.mp4 */; };
+		678A0B841BFE4B670036FADD /* Nicolas Chabanne VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B361BFE4B670036FADD /* Nicolas Chabanne VA.mp4 */; };
+		678A0B851BFE4B670036FADD /* Nicolas Chabanne VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B371BFE4B670036FADD /* Nicolas Chabanne VF.mp4 */; };
+		678A0B861BFE4B670036FADD /* Peggy Pascal VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B381BFE4B670036FADD /* Peggy Pascal VA.mp4 */; };
+		678A0B871BFE4B670036FADD /* Peggy Pascal VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B391BFE4B670036FADD /* Peggy Pascal VF.mp4 */; };
+		678A0B881BFE4B670036FADD /* Petra Wadstrom VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B3A1BFE4B670036FADD /* Petra Wadstrom VA.mp4 */; };
+		678A0B891BFE4B670036FADD /* Petra Wadstrom VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B3B1BFE4B670036FADD /* Petra Wadstrom VF.mp4 */; };
+		678A0B8A1BFE4B670036FADD /* Philippe Brousseau VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B3C1BFE4B670036FADD /* Philippe Brousseau VA.mp4 */; };
+		678A0B8B1BFE4B670036FADD /* Philippe Brousseau VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B3D1BFE4B670036FADD /* Philippe Brousseau VF.mp4 */; };
+		678A0B8C1BFE4B670036FADD /* Philippe Ouaki VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B3E1BFE4B670036FADD /* Philippe Ouaki VA.mp4 */; };
+		678A0B8D1BFE4B670036FADD /* Philippe Ouaki VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B3F1BFE4B670036FADD /* Philippe Ouaki VF.mp4 */; };
+		678A0B8E1BFE4B670036FADD /* Pierre Calleja VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B401BFE4B670036FADD /* Pierre Calleja VA.mp4 */; };
+		678A0B8F1BFE4B670036FADD /* Pierre Calleja VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B411BFE4B670036FADD /* Pierre Calleja VF.mp4 */; };
+		678A0B901BFE4B670036FADD /* Richard Reynolds VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B421BFE4B670036FADD /* Richard Reynolds VA.mp4 */; };
+		678A0B911BFE4B670036FADD /* Richard Reynolds VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B431BFE4B670036FADD /* Richard Reynolds VF.mp4 */; };
+		678A0B921BFE4B670036FADD /* Shane Chen VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B441BFE4B670036FADD /* Shane Chen VA.mp4 */; };
+		678A0B931BFE4B670036FADD /* Shane Chen VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B451BFE4B670036FADD /* Shane Chen VF.mp4 */; };
+		678A0B941BFE4B670036FADD /* Stiven Kerestegian VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B461BFE4B670036FADD /* Stiven Kerestegian VA.mp4 */; };
+		678A0B951BFE4B670036FADD /* Stiven Kerestegian VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B471BFE4B670036FADD /* Stiven Kerestegian VF.mp4 */; };
+		678A0B961BFE4B670036FADD /* Takao Furuno VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B481BFE4B670036FADD /* Takao Furuno VA.mp4 */; };
+		678A0B971BFE4B670036FADD /* Takao Furuno VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B491BFE4B670036FADD /* Takao Furuno VF.mp4 */; };
+		678A0B981BFE4B670036FADD /* Thierry Jacquet VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B4A1BFE4B670036FADD /* Thierry Jacquet VA.mp4 */; };
+		678A0B991BFE4B670036FADD /* Thierry Jacquet VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B4B1BFE4B670036FADD /* Thierry Jacquet VF.mp4 */; };
+		678A0B9A1BFE4B670036FADD /* Thomas et Clement VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B4C1BFE4B670036FADD /* Thomas et Clement VA.mp4 */; };
+		678A0B9B1BFE4B670036FADD /* Thomas et Clement VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B4D1BFE4B670036FADD /* Thomas et Clement VF.mp4 */; };
+		678A0B9C1BFE4B670036FADD /* Tom Szaky VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B4E1BFE4B670036FADD /* Tom Szaky VA.mp4 */; };
+		678A0B9D1BFE4B670036FADD /* Tom Szaky VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B4F1BFE4B670036FADD /* Tom Szaky VF.mp4 */; };
+		678A0B9E1BFE4B670036FADD /* Valerie Pache VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B501BFE4B670036FADD /* Valerie Pache VA.mp4 */; };
+		678A0B9F1BFE4B670036FADD /* Valerie Pache VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B511BFE4B670036FADD /* Valerie Pache VF.mp4 */; };
+		678A0BA21BFE4BA30036FADD /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 678A0BA01BFE4BA30036FADD /* jsoncop21_en.json */; };
+		678A0BA31BFE4BA30036FADD /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 678A0BA11BFE4BA30036FADD /* jsoncop21_fr.json */; };
 		679297CB1B77CC7600703F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CA1B77CC7600703F1B /* main.m */; };
 		679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CD1B77CC7600703F1B /* SVAppDelegate.m */; };
 		679297E51B77CC7600703F1B /* ShamengoVillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297E41B77CC7600703F1B /* ShamengoVillaTests.m */; };
@@ -60,7 +137,6 @@
 		670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
 		670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(text).otf"; sourceTree = "<group>"; };
 		670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(title).otf"; sourceTree = "<group>"; };
-		672D5AD51BFDDEA100FE923A /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67357C5E1B7B3F6100E39187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -70,6 +146,86 @@
 		6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVShamengoTabViewController.m; sourceTree = "<group>"; };
 		676BE3A21BAC1CA60016854B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		676BE3A41BAC1CAE0016854B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		678A0B041BFE4B670036FADD /* Anita Ahuja VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anita Ahuja VA.mp4"; sourceTree = "<group>"; };
+		678A0B051BFE4B670036FADD /* Anita Ahuja VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anita Ahuja VF.mp4"; sourceTree = "<group>"; };
+		678A0B061BFE4B670036FADD /* Awen Delaval VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Awen Delaval VA.mp4"; sourceTree = "<group>"; };
+		678A0B071BFE4B670036FADD /* Awen Delaval VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Awen Delaval VF.mp4"; sourceTree = "<group>"; };
+		678A0B081BFE4B670036FADD /* Benoit Paget VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Benoit Paget VA.mp4"; sourceTree = "<group>"; };
+		678A0B091BFE4B670036FADD /* Benoit Paget VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Benoit Paget VF.mp4"; sourceTree = "<group>"; };
+		678A0B0A1BFE4B670036FADD /* Beverly Blum VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beverly Blum VA.mp4"; sourceTree = "<group>"; };
+		678A0B0B1BFE4B670036FADD /* Beverly Blum VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beverly Blum VF.mp4"; sourceTree = "<group>"; };
+		678A0B0C1BFE4B670036FADD /* Bunker Roy VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bunker Roy VA.mp4"; sourceTree = "<group>"; };
+		678A0B0D1BFE4B670036FADD /* Bunker Roy VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bunker Roy VF.mp4"; sourceTree = "<group>"; };
+		678A0B0E1BFE4B670036FADD /* Catia Bastioli VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Catia Bastioli VA.mp4"; sourceTree = "<group>"; };
+		678A0B0F1BFE4B670036FADD /* Catia Bastioli VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Catia Bastioli VF.mp4"; sourceTree = "<group>"; };
+		678A0B101BFE4B670036FADD /* Cedric Auriol VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cedric Auriol VA.mp4"; sourceTree = "<group>"; };
+		678A0B111BFE4B670036FADD /* Cedric Auriol VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cedric Auriol VF.mp4"; sourceTree = "<group>"; };
+		678A0B121BFE4B670036FADD /* Cedric Pechard VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cedric Pechard VA.mp4"; sourceTree = "<group>"; };
+		678A0B131BFE4B670036FADD /* Cedric Pechard VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cedric Pechard VF.mp4"; sourceTree = "<group>"; };
+		678A0B141BFE4B670036FADD /* Choukroun et Cheron VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Choukroun et Cheron VA.mp4"; sourceTree = "<group>"; };
+		678A0B151BFE4B670036FADD /* Choukroun et Cheron VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Choukroun et Cheron VF.mp4"; sourceTree = "<group>"; };
+		678A0B161BFE4B670036FADD /* Corentin de Chatelperron VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Corentin de Chatelperron VA.mp4"; sourceTree = "<group>"; };
+		678A0B171BFE4B670036FADD /* Corentin de Chatelperron VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Corentin de Chatelperron VF.mp4"; sourceTree = "<group>"; };
+		678A0B181BFE4B670036FADD /* Dr Patahk VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dr Patahk VA.mp4"; sourceTree = "<group>"; };
+		678A0B191BFE4B670036FADD /* Dr Patahk VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dr Patahk VF.mp4"; sourceTree = "<group>"; };
+		678A0B1A1BFE4B670036FADD /* Eric Scotto VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Scotto VA.mp4"; sourceTree = "<group>"; };
+		678A0B1B1BFE4B670036FADD /* Eric Scotto VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Scotto VF.mp4"; sourceTree = "<group>"; };
+		678A0B1C1BFE4B670036FADD /* Francisco da Silva VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Francisco da Silva VA.mp4"; sourceTree = "<group>"; };
+		678A0B1D1BFE4B670036FADD /* Francisco da Silva VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Francisco da Silva VF.mp4"; sourceTree = "<group>"; };
+		678A0B1E1BFE4B670036FADD /* Georgie Delaney VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Georgie Delaney VA.mp4"; sourceTree = "<group>"; };
+		678A0B1F1BFE4B670036FADD /* Georgie Delaney VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Georgie Delaney VF.mp4"; sourceTree = "<group>"; };
+		678A0B201BFE4B670036FADD /* Gilles Charlie Thierry VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilles Charlie Thierry VA.mp4"; sourceTree = "<group>"; };
+		678A0B211BFE4B670036FADD /* Gilles Charlie Thierry VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilles Charlie Thierry VF.mp4"; sourceTree = "<group>"; };
+		678A0B221BFE4B670036FADD /* Henri Liang VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Henri Liang VA.mp4"; sourceTree = "<group>"; };
+		678A0B231BFE4B670036FADD /* Henri Liang VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Henri Liang VF.mp4"; sourceTree = "<group>"; };
+		678A0B241BFE4B670036FADD /* Illac Diaz VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Illac Diaz VA.mp4"; sourceTree = "<group>"; };
+		678A0B251BFE4B670036FADD /* Illac Diaz VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Illac Diaz VF.mp4"; sourceTree = "<group>"; };
+		678A0B261BFE4B670036FADD /* Janos Terbe VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Janos Terbe VA.mp4"; sourceTree = "<group>"; };
+		678A0B271BFE4B670036FADD /* Janos Terbe VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Janos Terbe VF.mp4"; sourceTree = "<group>"; };
+		678A0B281BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jaquenoud et Lo Chai VA.mp4"; sourceTree = "<group>"; };
+		678A0B291BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jaquenoud et Lo Chai VF.mp4"; sourceTree = "<group>"; };
+		678A0B2A1BFE4B670036FADD /* Jose Carlos Vargas VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jose Carlos Vargas VA.mp4"; sourceTree = "<group>"; };
+		678A0B2B1BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jose Carlos Vargas VF.mp4"; sourceTree = "<group>"; };
+		678A0B2C1BFE4B670036FADD /* Manshuk Prajapati VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manshuk Prajapati VA.mp4"; sourceTree = "<group>"; };
+		678A0B2D1BFE4B670036FADD /* Manshuk Prajapati VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manshuk Prajapati VF.mp4"; sourceTree = "<group>"; };
+		678A0B2E1BFE4B670036FADD /* Manuel Aldrete VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manuel Aldrete VA.mp4"; sourceTree = "<group>"; };
+		678A0B2F1BFE4B670036FADD /* Manuel Aldrete VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manuel Aldrete VF.mp4"; sourceTree = "<group>"; };
+		678A0B301BFE4B670036FADD /* Marcelo Villegas VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marcelo Villegas VA.mp4"; sourceTree = "<group>"; };
+		678A0B311BFE4B670036FADD /* Marcelo Villegas VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marcelo Villegas VF.mp4"; sourceTree = "<group>"; };
+		678A0B321BFE4B670036FADD /* Martine Le Lu VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Martine Le Lu VA.mp4"; sourceTree = "<group>"; };
+		678A0B331BFE4B670036FADD /* Martine Le Lu VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Martine Le Lu VF.mp4"; sourceTree = "<group>"; };
+		678A0B341BFE4B670036FADD /* Mary Delano VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mary Delano VA.mp4"; sourceTree = "<group>"; };
+		678A0B351BFE4B670036FADD /* Mary Delano VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mary Delano VF.mp4"; sourceTree = "<group>"; };
+		678A0B361BFE4B670036FADD /* Nicolas Chabanne VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nicolas Chabanne VA.mp4"; sourceTree = "<group>"; };
+		678A0B371BFE4B670036FADD /* Nicolas Chabanne VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nicolas Chabanne VF.mp4"; sourceTree = "<group>"; };
+		678A0B381BFE4B670036FADD /* Peggy Pascal VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peggy Pascal VA.mp4"; sourceTree = "<group>"; };
+		678A0B391BFE4B670036FADD /* Peggy Pascal VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peggy Pascal VF.mp4"; sourceTree = "<group>"; };
+		678A0B3A1BFE4B670036FADD /* Petra Wadstrom VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Petra Wadstrom VA.mp4"; sourceTree = "<group>"; };
+		678A0B3B1BFE4B670036FADD /* Petra Wadstrom VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Petra Wadstrom VF.mp4"; sourceTree = "<group>"; };
+		678A0B3C1BFE4B670036FADD /* Philippe Brousseau VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philippe Brousseau VA.mp4"; sourceTree = "<group>"; };
+		678A0B3D1BFE4B670036FADD /* Philippe Brousseau VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philippe Brousseau VF.mp4"; sourceTree = "<group>"; };
+		678A0B3E1BFE4B670036FADD /* Philippe Ouaki VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philippe Ouaki VA.mp4"; sourceTree = "<group>"; };
+		678A0B3F1BFE4B670036FADD /* Philippe Ouaki VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philippe Ouaki VF.mp4"; sourceTree = "<group>"; };
+		678A0B401BFE4B670036FADD /* Pierre Calleja VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pierre Calleja VA.mp4"; sourceTree = "<group>"; };
+		678A0B411BFE4B670036FADD /* Pierre Calleja VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pierre Calleja VF.mp4"; sourceTree = "<group>"; };
+		678A0B421BFE4B670036FADD /* Richard Reynolds VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Richard Reynolds VA.mp4"; sourceTree = "<group>"; };
+		678A0B431BFE4B670036FADD /* Richard Reynolds VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Richard Reynolds VF.mp4"; sourceTree = "<group>"; };
+		678A0B441BFE4B670036FADD /* Shane Chen VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shane Chen VA.mp4"; sourceTree = "<group>"; };
+		678A0B451BFE4B670036FADD /* Shane Chen VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shane Chen VF.mp4"; sourceTree = "<group>"; };
+		678A0B461BFE4B670036FADD /* Stiven Kerestegian VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stiven Kerestegian VA.mp4"; sourceTree = "<group>"; };
+		678A0B471BFE4B670036FADD /* Stiven Kerestegian VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stiven Kerestegian VF.mp4"; sourceTree = "<group>"; };
+		678A0B481BFE4B670036FADD /* Takao Furuno VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Takao Furuno VA.mp4"; sourceTree = "<group>"; };
+		678A0B491BFE4B670036FADD /* Takao Furuno VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Takao Furuno VF.mp4"; sourceTree = "<group>"; };
+		678A0B4A1BFE4B670036FADD /* Thierry Jacquet VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Thierry Jacquet VA.mp4"; sourceTree = "<group>"; };
+		678A0B4B1BFE4B670036FADD /* Thierry Jacquet VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Thierry Jacquet VF.mp4"; sourceTree = "<group>"; };
+		678A0B4C1BFE4B670036FADD /* Thomas et Clement VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Thomas et Clement VA.mp4"; sourceTree = "<group>"; };
+		678A0B4D1BFE4B670036FADD /* Thomas et Clement VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Thomas et Clement VF.mp4"; sourceTree = "<group>"; };
+		678A0B4E1BFE4B670036FADD /* Tom Szaky VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tom Szaky VA.mp4"; sourceTree = "<group>"; };
+		678A0B4F1BFE4B670036FADD /* Tom Szaky VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tom Szaky VF.mp4"; sourceTree = "<group>"; };
+		678A0B501BFE4B670036FADD /* Valerie Pache VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valerie Pache VA.mp4"; sourceTree = "<group>"; };
+		678A0B511BFE4B670036FADD /* Valerie Pache VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valerie Pache VF.mp4"; sourceTree = "<group>"; };
+		678A0BA01BFE4BA30036FADD /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
+		678A0BA11BFE4BA30036FADD /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		679297C51B77CC7600703F1B /* ShamengoVilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShamengoVilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		679297C91B77CC7600703F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679297CA1B77CC7600703F1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,8 +238,6 @@
 		679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationCardViewController.m; sourceTree = "<group>"; };
 		67A9D8151BAC896800E57AC1 /* SVNavSChemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVNavSChemeManager.h; sourceTree = "<group>"; };
 		67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVNavSChemeManager.m; sourceTree = "<group>"; };
-		67B146ED1BD019BF009E8538 /* video02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video02.mp4; sourceTree = "<group>"; };
-		67B146EE1BD019BF009E8538 /* video01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video01.mp4; sourceTree = "<group>"; };
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
 		67B9EE421BE28FEC009992E4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -203,8 +357,84 @@
 		671D459D1BAF59AC000C7795 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				67B146ED1BD019BF009E8538 /* video02.mp4 */,
-				67B146EE1BD019BF009E8538 /* video01.mp4 */,
+				678A0B041BFE4B670036FADD /* Anita Ahuja VA.mp4 */,
+				678A0B051BFE4B670036FADD /* Anita Ahuja VF.mp4 */,
+				678A0B061BFE4B670036FADD /* Awen Delaval VA.mp4 */,
+				678A0B071BFE4B670036FADD /* Awen Delaval VF.mp4 */,
+				678A0B081BFE4B670036FADD /* Benoit Paget VA.mp4 */,
+				678A0B091BFE4B670036FADD /* Benoit Paget VF.mp4 */,
+				678A0B0A1BFE4B670036FADD /* Beverly Blum VA.mp4 */,
+				678A0B0B1BFE4B670036FADD /* Beverly Blum VF.mp4 */,
+				678A0B0C1BFE4B670036FADD /* Bunker Roy VA.mp4 */,
+				678A0B0D1BFE4B670036FADD /* Bunker Roy VF.mp4 */,
+				678A0B0E1BFE4B670036FADD /* Catia Bastioli VA.mp4 */,
+				678A0B0F1BFE4B670036FADD /* Catia Bastioli VF.mp4 */,
+				678A0B101BFE4B670036FADD /* Cedric Auriol VA.mp4 */,
+				678A0B111BFE4B670036FADD /* Cedric Auriol VF.mp4 */,
+				678A0B121BFE4B670036FADD /* Cedric Pechard VA.mp4 */,
+				678A0B131BFE4B670036FADD /* Cedric Pechard VF.mp4 */,
+				678A0B141BFE4B670036FADD /* Choukroun et Cheron VA.mp4 */,
+				678A0B151BFE4B670036FADD /* Choukroun et Cheron VF.mp4 */,
+				678A0B161BFE4B670036FADD /* Corentin de Chatelperron VA.mp4 */,
+				678A0B171BFE4B670036FADD /* Corentin de Chatelperron VF.mp4 */,
+				678A0B181BFE4B670036FADD /* Dr Patahk VA.mp4 */,
+				678A0B191BFE4B670036FADD /* Dr Patahk VF.mp4 */,
+				678A0B1A1BFE4B670036FADD /* Eric Scotto VA.mp4 */,
+				678A0B1B1BFE4B670036FADD /* Eric Scotto VF.mp4 */,
+				678A0B1C1BFE4B670036FADD /* Francisco da Silva VA.mp4 */,
+				678A0B1D1BFE4B670036FADD /* Francisco da Silva VF.mp4 */,
+				678A0B1E1BFE4B670036FADD /* Georgie Delaney VA.mp4 */,
+				678A0B1F1BFE4B670036FADD /* Georgie Delaney VF.mp4 */,
+				678A0B201BFE4B670036FADD /* Gilles Charlie Thierry VA.mp4 */,
+				678A0B211BFE4B670036FADD /* Gilles Charlie Thierry VF.mp4 */,
+				678A0B221BFE4B670036FADD /* Henri Liang VA.mp4 */,
+				678A0B231BFE4B670036FADD /* Henri Liang VF.mp4 */,
+				678A0B241BFE4B670036FADD /* Illac Diaz VA.mp4 */,
+				678A0B251BFE4B670036FADD /* Illac Diaz VF.mp4 */,
+				678A0B261BFE4B670036FADD /* Janos Terbe VA.mp4 */,
+				678A0B271BFE4B670036FADD /* Janos Terbe VF.mp4 */,
+				678A0B281BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 */,
+				678A0B291BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 */,
+				678A0B2A1BFE4B670036FADD /* Jose Carlos Vargas VA.mp4 */,
+				678A0B2B1BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 */,
+				678A0B2C1BFE4B670036FADD /* Manshuk Prajapati VA.mp4 */,
+				678A0B2D1BFE4B670036FADD /* Manshuk Prajapati VF.mp4 */,
+				678A0B2E1BFE4B670036FADD /* Manuel Aldrete VA.mp4 */,
+				678A0B2F1BFE4B670036FADD /* Manuel Aldrete VF.mp4 */,
+				678A0B301BFE4B670036FADD /* Marcelo Villegas VA.mp4 */,
+				678A0B311BFE4B670036FADD /* Marcelo Villegas VF.mp4 */,
+				678A0B321BFE4B670036FADD /* Martine Le Lu VA.mp4 */,
+				678A0B331BFE4B670036FADD /* Martine Le Lu VF.mp4 */,
+				678A0B341BFE4B670036FADD /* Mary Delano VA.mp4 */,
+				678A0B351BFE4B670036FADD /* Mary Delano VF.mp4 */,
+				678A0B361BFE4B670036FADD /* Nicolas Chabanne VA.mp4 */,
+				678A0B371BFE4B670036FADD /* Nicolas Chabanne VF.mp4 */,
+				678A0B381BFE4B670036FADD /* Peggy Pascal VA.mp4 */,
+				678A0B391BFE4B670036FADD /* Peggy Pascal VF.mp4 */,
+				678A0B3A1BFE4B670036FADD /* Petra Wadstrom VA.mp4 */,
+				678A0B3B1BFE4B670036FADD /* Petra Wadstrom VF.mp4 */,
+				678A0B3C1BFE4B670036FADD /* Philippe Brousseau VA.mp4 */,
+				678A0B3D1BFE4B670036FADD /* Philippe Brousseau VF.mp4 */,
+				678A0B3E1BFE4B670036FADD /* Philippe Ouaki VA.mp4 */,
+				678A0B3F1BFE4B670036FADD /* Philippe Ouaki VF.mp4 */,
+				678A0B401BFE4B670036FADD /* Pierre Calleja VA.mp4 */,
+				678A0B411BFE4B670036FADD /* Pierre Calleja VF.mp4 */,
+				678A0B421BFE4B670036FADD /* Richard Reynolds VA.mp4 */,
+				678A0B431BFE4B670036FADD /* Richard Reynolds VF.mp4 */,
+				678A0B441BFE4B670036FADD /* Shane Chen VA.mp4 */,
+				678A0B451BFE4B670036FADD /* Shane Chen VF.mp4 */,
+				678A0B461BFE4B670036FADD /* Stiven Kerestegian VA.mp4 */,
+				678A0B471BFE4B670036FADD /* Stiven Kerestegian VF.mp4 */,
+				678A0B481BFE4B670036FADD /* Takao Furuno VA.mp4 */,
+				678A0B491BFE4B670036FADD /* Takao Furuno VF.mp4 */,
+				678A0B4A1BFE4B670036FADD /* Thierry Jacquet VA.mp4 */,
+				678A0B4B1BFE4B670036FADD /* Thierry Jacquet VF.mp4 */,
+				678A0B4C1BFE4B670036FADD /* Thomas et Clement VA.mp4 */,
+				678A0B4D1BFE4B670036FADD /* Thomas et Clement VF.mp4 */,
+				678A0B4E1BFE4B670036FADD /* Tom Szaky VA.mp4 */,
+				678A0B4F1BFE4B670036FADD /* Tom Szaky VF.mp4 */,
+				678A0B501BFE4B670036FADD /* Valerie Pache VA.mp4 */,
+				678A0B511BFE4B670036FADD /* Valerie Pache VF.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -270,7 +500,8 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				672D5AD51BFDDEA100FE923A /* jsoncop21_fr.json */,
+				678A0BA01BFE4BA30036FADD /* jsoncop21_en.json */,
+				678A0BA11BFE4BA30036FADD /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -449,15 +680,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678A0B881BFE4B670036FADD /* Petra Wadstrom VA.mp4 in Resources */,
+				678A0B811BFE4B670036FADD /* Martine Le Lu VF.mp4 in Resources */,
+				678A0B5B1BFE4B670036FADD /* Bunker Roy VF.mp4 in Resources */,
+				678A0B7A1BFE4B670036FADD /* Manshuk Prajapati VA.mp4 in Resources */,
+				678A0B941BFE4B670036FADD /* Stiven Kerestegian VA.mp4 in Resources */,
+				678A0B921BFE4B670036FADD /* Shane Chen VA.mp4 in Resources */,
+				678A0B741BFE4B670036FADD /* Janos Terbe VA.mp4 in Resources */,
+				678A0B9E1BFE4B670036FADD /* Valerie Pache VA.mp4 in Resources */,
+				678A0B821BFE4B670036FADD /* Mary Delano VA.mp4 in Resources */,
+				678A0B751BFE4B670036FADD /* Janos Terbe VF.mp4 in Resources */,
+				678A0B831BFE4B670036FADD /* Mary Delano VF.mp4 in Resources */,
+				678A0B671BFE4B670036FADD /* Dr Patahk VF.mp4 in Resources */,
+				678A0B9A1BFE4B670036FADD /* Thomas et Clement VA.mp4 in Resources */,
+				678A0B9C1BFE4B670036FADD /* Tom Szaky VA.mp4 in Resources */,
+				678A0B581BFE4B670036FADD /* Beverly Blum VA.mp4 in Resources */,
 				670D9FEB1BF600D0000995F0 /* TitilliumText22(text).otf in Resources */,
+				678A0B721BFE4B670036FADD /* Illac Diaz VA.mp4 in Resources */,
 				670D9FEC1BF600D0000995F0 /* TitilliumText22(title).otf in Resources */,
-				6753E3491BEA9FD800746BAA /* video02.mp4 in Resources */,
-				6753E34A1BEA9FD800746BAA /* video01.mp4 in Resources */,
+				678A0B7B1BFE4B670036FADD /* Manshuk Prajapati VF.mp4 in Resources */,
+				678A0B961BFE4B670036FADD /* Takao Furuno VA.mp4 in Resources */,
+				678A0B6D1BFE4B670036FADD /* Georgie Delaney VF.mp4 in Resources */,
+				678A0B841BFE4B670036FADD /* Nicolas Chabanne VA.mp4 in Resources */,
+				678A0B681BFE4B670036FADD /* Eric Scotto VA.mp4 in Resources */,
+				678A0B8F1BFE4B670036FADD /* Pierre Calleja VF.mp4 in Resources */,
+				678A0B8D1BFE4B670036FADD /* Philippe Ouaki VF.mp4 in Resources */,
+				678A0B651BFE4B670036FADD /* Corentin de Chatelperron VF.mp4 in Resources */,
+				678A0B861BFE4B670036FADD /* Peggy Pascal VA.mp4 in Resources */,
+				678A0B7D1BFE4B670036FADD /* Manuel Aldrete VF.mp4 in Resources */,
+				678A0B991BFE4B670036FADD /* Thierry Jacquet VF.mp4 in Resources */,
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
+				678A0B6B1BFE4B670036FADD /* Francisco da Silva VF.mp4 in Resources */,
+				678A0BA31BFE4BA30036FADD /* jsoncop21_fr.json in Resources */,
+				678A0B771BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 in Resources */,
 				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
-				672D5AD61BFDDEA100FE923A /* jsoncop21_fr.json in Resources */,
+				678A0B7C1BFE4B670036FADD /* Manuel Aldrete VA.mp4 in Resources */,
+				678A0B6A1BFE4B670036FADD /* Francisco da Silva VA.mp4 in Resources */,
+				678A0B661BFE4B670036FADD /* Dr Patahk VA.mp4 in Resources */,
+				678A0B7E1BFE4B670036FADD /* Marcelo Villegas VA.mp4 in Resources */,
+				678A0B9F1BFE4B670036FADD /* Valerie Pache VF.mp4 in Resources */,
+				678A0B711BFE4B670036FADD /* Henri Liang VF.mp4 in Resources */,
+				678A0B521BFE4B670036FADD /* Anita Ahuja VA.mp4 in Resources */,
+				678A0B5A1BFE4B670036FADD /* Bunker Roy VA.mp4 in Resources */,
+				678A0B6C1BFE4B670036FADD /* Georgie Delaney VA.mp4 in Resources */,
+				678A0B601BFE4B670036FADD /* Cedric Pechard VA.mp4 in Resources */,
+				678A0B8A1BFE4B670036FADD /* Philippe Brousseau VA.mp4 in Resources */,
+				678A0B911BFE4B670036FADD /* Richard Reynolds VF.mp4 in Resources */,
+				678A0B981BFE4B670036FADD /* Thierry Jacquet VA.mp4 in Resources */,
+				678A0B5C1BFE4B670036FADD /* Catia Bastioli VA.mp4 in Resources */,
+				678A0B6F1BFE4B670036FADD /* Gilles Charlie Thierry VF.mp4 in Resources */,
+				678A0B541BFE4B670036FADD /* Awen Delaval VA.mp4 in Resources */,
+				678A0B611BFE4B670036FADD /* Cedric Pechard VF.mp4 in Resources */,
+				678A0B701BFE4B670036FADD /* Henri Liang VA.mp4 in Resources */,
+				678A0B621BFE4B670036FADD /* Choukroun et Cheron VA.mp4 in Resources */,
+				678A0B901BFE4B670036FADD /* Richard Reynolds VA.mp4 in Resources */,
+				678A0B5E1BFE4B670036FADD /* Cedric Auriol VA.mp4 in Resources */,
+				678A0B5F1BFE4B670036FADD /* Cedric Auriol VF.mp4 in Resources */,
+				678A0B551BFE4B670036FADD /* Awen Delaval VF.mp4 in Resources */,
+				678A0B9D1BFE4B670036FADD /* Tom Szaky VF.mp4 in Resources */,
+				678A0B851BFE4B670036FADD /* Nicolas Chabanne VF.mp4 in Resources */,
+				678A0B9B1BFE4B670036FADD /* Thomas et Clement VF.mp4 in Resources */,
+				678A0B6E1BFE4B670036FADD /* Gilles Charlie Thierry VA.mp4 in Resources */,
+				678A0B971BFE4B670036FADD /* Takao Furuno VF.mp4 in Resources */,
+				678A0B531BFE4B670036FADD /* Anita Ahuja VF.mp4 in Resources */,
+				678A0B8B1BFE4B670036FADD /* Philippe Brousseau VF.mp4 in Resources */,
+				678A0B801BFE4B670036FADD /* Martine Le Lu VA.mp4 in Resources */,
+				678A0B871BFE4B670036FADD /* Peggy Pascal VF.mp4 in Resources */,
+				678A0B761BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 in Resources */,
+				678A0B691BFE4B670036FADD /* Eric Scotto VF.mp4 in Resources */,
+				678A0B931BFE4B670036FADD /* Shane Chen VF.mp4 in Resources */,
+				678A0B571BFE4B670036FADD /* Benoit Paget VF.mp4 in Resources */,
+				678A0B951BFE4B670036FADD /* Stiven Kerestegian VF.mp4 in Resources */,
 				67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */,
+				678A0B591BFE4B670036FADD /* Beverly Blum VF.mp4 in Resources */,
+				678A0B631BFE4B670036FADD /* Choukroun et Cheron VF.mp4 in Resources */,
+				678A0B561BFE4B670036FADD /* Benoit Paget VA.mp4 in Resources */,
+				678A0B7F1BFE4B670036FADD /* Marcelo Villegas VF.mp4 in Resources */,
+				678A0B5D1BFE4B670036FADD /* Catia Bastioli VF.mp4 in Resources */,
+				678A0B641BFE4B670036FADD /* Corentin de Chatelperron VA.mp4 in Resources */,
+				678A0B8E1BFE4B670036FADD /* Pierre Calleja VA.mp4 in Resources */,
+				678A0B891BFE4B670036FADD /* Petra Wadstrom VF.mp4 in Resources */,
+				678A0B781BFE4B670036FADD /* Jose Carlos Vargas VA.mp4 in Resources */,
+				678A0B8C1BFE4B670036FADD /* Philippe Ouaki VA.mp4 in Resources */,
+				678A0B731BFE4B670036FADD /* Illac Diaz VF.mp4 in Resources */,
+				678A0B791BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 in Resources */,
+				678A0BA21BFE4BA30036FADD /* jsoncop21_en.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
