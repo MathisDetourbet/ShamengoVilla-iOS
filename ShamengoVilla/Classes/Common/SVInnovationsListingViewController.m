@@ -46,6 +46,11 @@
     
     [self.navigationController setDelegate:[RZTransitionsManager shared]];
     [self.tabBarController.tabBar setTranslucent:YES];
+    
+    self.tabBarController.view.layer.shadowOffset = CGSizeMake(1, 0);
+    self.tabBarController.view.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.tabBarController.view.layer.shadowRadius = 5;
+    self.tabBarController.view.layer.shadowOpacity = .25;
 }
 
 - (void)didReceiveMemoryWarning {

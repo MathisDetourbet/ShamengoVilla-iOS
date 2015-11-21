@@ -195,8 +195,7 @@
 
 - (void)shareAction {
     
-    //NSArray *activityItems = @[UIActivityTypeMail, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, UIActivityTypeMessage];
-    NSArray *activityItems = @[[NSString stringWithFormat:@"Voici le lien du partage : %@", self.innovation.shamengoPath]];
+    NSArray *activityItems = @[[NSString stringWithFormat:@"L'innovation de %@ sur la #villashamengo à la #COP21 est incroyable !\nPlus d'informations : %@", self.innovation.pionnerName ,self.innovation.shamengoPath]];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     [self presentViewController:activityVC animated:YES completion:nil];
 }

@@ -16,8 +16,6 @@
 		670216C71B87AE4C00EF0840 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */; };
 		670D9FEB1BF600D0000995F0 /* TitilliumText22(text).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */; };
 		670D9FEC1BF600D0000995F0 /* TitilliumText22(title).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */; };
-		671ACF6A1BFF7B8F00898E41 /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 671ACF681BFF7B8F00898E41 /* jsoncop21_en.json */; };
-		671ACF6B1BFF7B8F00898E41 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 671ACF691BFF7B8F00898E41 /* jsoncop21_fr.json */; };
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
 		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
@@ -109,6 +107,8 @@
 		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
 		67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
+		67CDA6601BFFF2E3002877A3 /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 67CDA65E1BFFF2E3002877A3 /* jsoncop21_en.json */; };
+		67CDA6611BFFF2E3002877A3 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 67CDA65F1BFFF2E3002877A3 /* jsoncop21_fr.json */; };
 		67F908871BD6812B003E1D47 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F908861BD6812B003E1D47 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -137,8 +137,6 @@
 		670216C61B87AE4C00EF0840 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
 		670D9FE91BF6004F000995F0 /* TitilliumText22(text).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(text).otf"; sourceTree = "<group>"; };
 		670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(title).otf"; sourceTree = "<group>"; };
-		671ACF681BFF7B8F00898E41 /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
-		671ACF691BFF7B8F00898E41 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67357C5E1B7B3F6100E39187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -241,6 +239,8 @@
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
 		67B9EE421BE28FEC009992E4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		67CDA65E1BFFF2E3002877A3 /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
+		67CDA65F1BFFF2E3002877A3 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		67F908861BD6812B003E1D47 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7B1851889EEFE0924154C6FB /* Pods-ShamengoVilla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.release.xcconfig"; sourceTree = "<group>"; };
 		B2A66B287B220D83D4EB0092 /* Pods-ShamengoVilla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.debug.xcconfig"; sourceTree = "<group>"; };
@@ -500,8 +500,8 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				671ACF681BFF7B8F00898E41 /* jsoncop21_en.json */,
-				671ACF691BFF7B8F00898E41 /* jsoncop21_fr.json */,
+				67CDA65E1BFFF2E3002877A3 /* jsoncop21_en.json */,
+				67CDA65F1BFFF2E3002877A3 /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -711,7 +711,7 @@
 				678A0B991BFE4B670036FADD /* Thierry Jacquet VF.mp4 in Resources */,
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
 				678A0B6B1BFE4B670036FADD /* Francisco da Silva VF.mp4 in Resources */,
-				671ACF6B1BFF7B8F00898E41 /* jsoncop21_fr.json in Resources */,
+				67CDA6611BFFF2E3002877A3 /* jsoncop21_fr.json in Resources */,
 				678A0B771BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 in Resources */,
 				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
@@ -765,7 +765,7 @@
 				678A0B8C1BFE4B670036FADD /* Philippe Ouaki VA.mp4 in Resources */,
 				678A0B731BFE4B670036FADD /* Illac Diaz VF.mp4 in Resources */,
 				678A0B791BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 in Resources */,
-				671ACF6A1BFF7B8F00898E41 /* jsoncop21_en.json in Resources */,
+				67CDA6601BFFF2E3002877A3 /* jsoncop21_en.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

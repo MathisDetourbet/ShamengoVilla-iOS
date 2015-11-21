@@ -5,3 +5,10 @@
   Created by Mathis Detourbet on 21/08/2015.
   Copyright (c) 2015 Efrei. All rights reserved.
 */
+
+/*************** Shamengo Tab ******************/
+
+"firstLabelShamengoTab" = "Created in 2011 by the TV Grand Reporter Catherine Berthillier, Shamengo finds the most amazing green and social entrepreneurs on earth, and delivers each week a new video portrait to discover on our website shamengo.com.";
+"secondLabelShamengoTab" = "Together, let’s build a new world, by creating a community of individuals and companies engaged aside our pioneers.";
+"thirdLabelShamengoTab" = "Join the community now:";
+"linkSignUp" = "http://www.shamengo.com/en/join/join-select-options";

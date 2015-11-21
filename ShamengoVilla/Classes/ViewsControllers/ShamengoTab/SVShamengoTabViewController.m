@@ -7,8 +7,13 @@
 //
 
 #import "SVShamengoTabViewController.h"
+#import "SVConstants.h"
 
 @interface SVShamengoTabViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel    *firstLabel;
+@property (weak, nonatomic) IBOutlet UILabel    *secondLabel;
+@property (weak, nonatomic) IBOutlet UILabel    *thirdLabel;
 
 @end
 
@@ -21,11 +26,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.firstLabel.text = _(@"firstLabelShamengoTab");
+    self.secondLabel.text = _(@"secondLabelShamengoTab");
+    self.thirdLabel.text = _(@"thirdLabelShamengoTab");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)signUpButtonClicked:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_(@"linkSignUp")]];
 }
 
 /*

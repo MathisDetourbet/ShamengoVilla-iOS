@@ -5,3 +5,12 @@
   Created by Mathis Detourbet on 21/08/2015.
   Copyright (c) 2015 Efrei. All rights reserved.
 */
+
+
+/*************** Shamengo Tab ******************/
+
+"firstLabelShamengoTab" = "Créé en 2011 par le Grand Reporter TV Catherine Berthillier, Shamengo déniche les entrepreneurs verts et sociaux les plus exceptionnels de la planète, et vous livre chaque semaine un nouveau portrait vidéo à découvrir sur notre site shamengo.com.";
+"secondLabelShamengoTab" = "Ensemble, participons à la construction d'un nouveau monde, en créant une communauté d'individus et d'entreprises qui s'engagent aux côtés de nos pionniers.";
+"thirdLabelShamengoTab" = "Rejoignez dès maintenant la communauté : ";
+"linkSignUp" = "http://www.shamengo.com/fr/inscription/s-inscrire-choix-formules";
+
