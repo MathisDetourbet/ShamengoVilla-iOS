@@ -92,6 +92,10 @@
 #pragma mark - UITableView Datasource methods
 /******************************************************************/
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 90.f;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.resultInnovList count];
 }

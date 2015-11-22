@@ -104,11 +104,11 @@
 		679297CB1B77CC7600703F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CA1B77CC7600703F1B /* main.m */; };
 		679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CD1B77CC7600703F1B /* SVAppDelegate.m */; };
 		679297E51B77CC7600703F1B /* ShamengoVillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297E41B77CC7600703F1B /* ShamengoVillaTests.m */; };
+		6795AE1D1C025D4600F06DCE /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6795AE1B1C025D4600F06DCE /* jsoncop21_en.json */; };
+		6795AE1E1C025D4600F06DCE /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 6795AE1C1C025D4600F06DCE /* jsoncop21_fr.json */; };
 		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
 		67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
-		67CDA6601BFFF2E3002877A3 /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 67CDA65E1BFFF2E3002877A3 /* jsoncop21_en.json */; };
-		67CDA6611BFFF2E3002877A3 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 67CDA65F1BFFF2E3002877A3 /* jsoncop21_fr.json */; };
 		67F908871BD6812B003E1D47 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F908861BD6812B003E1D47 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -232,6 +232,8 @@
 		679297DE1B77CC7600703F1B /* ShamengoVillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamengoVillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		679297E31B77CC7600703F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679297E41B77CC7600703F1B /* ShamengoVillaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShamengoVillaTests.m; sourceTree = "<group>"; };
+		6795AE1B1C025D4600F06DCE /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
+		6795AE1C1C025D4600F06DCE /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		679B06F91BA7410400AFF21A /* SVInnovationCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationCardViewController.h; sourceTree = "<group>"; };
 		679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationCardViewController.m; sourceTree = "<group>"; };
 		67A9D8151BAC896800E57AC1 /* SVNavSChemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVNavSChemeManager.h; sourceTree = "<group>"; };
@@ -239,8 +241,6 @@
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
 		67B9EE421BE28FEC009992E4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		67CDA65E1BFFF2E3002877A3 /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
-		67CDA65F1BFFF2E3002877A3 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		67F908861BD6812B003E1D47 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7B1851889EEFE0924154C6FB /* Pods-ShamengoVilla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.release.xcconfig"; sourceTree = "<group>"; };
 		B2A66B287B220D83D4EB0092 /* Pods-ShamengoVilla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.debug.xcconfig"; sourceTree = "<group>"; };
@@ -500,8 +500,8 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				67CDA65E1BFFF2E3002877A3 /* jsoncop21_en.json */,
-				67CDA65F1BFFF2E3002877A3 /* jsoncop21_fr.json */,
+				6795AE1B1C025D4600F06DCE /* jsoncop21_en.json */,
+				6795AE1C1C025D4600F06DCE /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -648,6 +648,7 @@
 				TargetAttributes = {
 					679297C41B77CC7600703F1B = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = R9HU3SEP6Z;
 					};
 					679297DD1B77CC7600703F1B = {
 						CreatedOnToolsVersion = 6.4;
@@ -711,7 +712,7 @@
 				678A0B991BFE4B670036FADD /* Thierry Jacquet VF.mp4 in Resources */,
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
 				678A0B6B1BFE4B670036FADD /* Francisco da Silva VF.mp4 in Resources */,
-				67CDA6611BFFF2E3002877A3 /* jsoncop21_fr.json in Resources */,
+				6795AE1E1C025D4600F06DCE /* jsoncop21_fr.json in Resources */,
 				678A0B771BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 in Resources */,
 				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
@@ -765,7 +766,7 @@
 				678A0B8C1BFE4B670036FADD /* Philippe Ouaki VA.mp4 in Resources */,
 				678A0B731BFE4B670036FADD /* Illac Diaz VF.mp4 in Resources */,
 				678A0B791BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 in Resources */,
-				67CDA6601BFFF2E3002877A3 /* jsoncop21_en.json in Resources */,
+				6795AE1D1C025D4600F06DCE /* jsoncop21_en.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,10 +965,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.efrei.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shamengo.shamengovillacop21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -977,10 +981,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.efrei.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shamengo.shamengovillacop21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

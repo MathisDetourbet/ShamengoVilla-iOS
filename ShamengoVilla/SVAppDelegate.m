@@ -41,7 +41,9 @@
     [[RZTransitionsManager shared] setDefaultPushPopAnimationController:pushPopAnimationController];
     
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.041 green:0.792 blue:0.403 alpha:0.815]];
+    [[UITabBar appearance] setShadowImage:[UIImage imageNamed:@"shadow_tabBar"]];
     
+    [NSThread sleepForTimeInterval:2.f];
     return YES;
 }
 
