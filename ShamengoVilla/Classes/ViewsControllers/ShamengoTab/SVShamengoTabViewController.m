@@ -14,10 +14,12 @@
 @property (weak, nonatomic) IBOutlet UILabel    *firstLabel;
 @property (weak, nonatomic) IBOutlet UILabel    *secondLabel;
 @property (weak, nonatomic) IBOutlet UILabel    *thirdLabel;
+@property (weak, nonatomic) IBOutlet UIButton   *signUpButton;
 
 @end
 
 @implementation SVShamengoTabViewController
+
 
 /*********************************************************************/
 #pragma mark - Life view cycle
@@ -30,6 +32,12 @@
     self.firstLabel.text = _(@"firstLabelShamengoTab");
     self.secondLabel.text = _(@"secondLabelShamengoTab");
     self.thirdLabel.text = _(@"thirdLabelShamengoTab");
+    
+    NSString *deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
+    
+    if (![deviceLanguage isEqualToString:@"fr-FR"]) {
+        [self.signUpButton setImage:[UIImage imageNamed:@"Inscription_en"] forState:UIControlStateNormal];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,15 +48,5 @@
 - (IBAction)signUpButtonClicked:(UIButton *)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_(@"linkSignUp")]];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

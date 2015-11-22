@@ -40,6 +40,8 @@
     [[RZTransitionsManager shared] setDefaultPresentDismissAnimationController:presentDismissAnimationController];
     [[RZTransitionsManager shared] setDefaultPushPopAnimationController:pushPopAnimationController];
     
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.041 green:0.792 blue:0.403 alpha:0.815]];
+    
     return YES;
 }
 

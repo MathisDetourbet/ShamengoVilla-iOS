@@ -13,6 +13,7 @@
             <string>TitilliumText22L-Regular</string>
             <string>TitilliumText22L-Regular</string>
             <string>TitilliumText22L-Regular</string>
+            <string>TitilliumText22L-Regular</string>
         </mutableArray>
         <mutableArray key="TitilliumText22(title).otf">
             <string>TitilliumText22L-XBold</string>
@@ -450,7 +451,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed6-Xs-Z2t" userLabel="EnSavoirPlusButton">
-                                        <rect key="frame" x="209" y="319" width="80" height="25"/>
+                                        <rect key="frame" x="209" y="316" width="80" height="25"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="TitilliumText22L-XBold" family="TitilliumText22L" pointSize="13"/>
                                         <state key="normal" title="En savoir plus">
@@ -472,7 +473,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ed6-Xs-Z2t" firstAttribute="top" secondItem="sxH-l4-PJ4" secondAttribute="bottom" constant="5" id="0X8-pJ-L4a"/>
+                                    <constraint firstItem="Ed6-Xs-Z2t" firstAttribute="top" secondItem="sxH-l4-PJ4" secondAttribute="bottom" constant="2" id="0X8-pJ-L4a"/>
                                     <constraint firstItem="sxH-l4-PJ4" firstAttribute="leading" secondItem="X6f-NE-2n1" secondAttribute="leading" constant="31" id="23E-tO-RHt"/>
                                     <constraint firstItem="cs7-Fi-yq3" firstAttribute="leading" secondItem="rW8-ex-k8d" secondAttribute="trailing" constant="16" id="2qZ-Vv-2HY"/>
                                     <constraint firstItem="Xuh-mg-PEl" firstAttribute="top" secondItem="X6f-NE-2n1" secondAttribute="top" constant="44" id="4md-yn-B0g"/>
@@ -563,6 +564,7 @@
                         <outlet property="innovIDLabel" destination="4h1-7F-acW" id="XZg-Au-PcI"/>
                         <outlet property="innovPictureImageView" destination="OcR-Td-RB1" id="Z0c-1v-ACu"/>
                         <outlet property="innovTitleLabel" destination="Aa7-oN-ElD" id="XLP-vP-VmY"/>
+                        <outlet property="moreInfosButton" destination="Ed6-Xs-Z2t" id="b1P-Bn-gTz"/>
                         <outlet property="pioneerCountryLabel" destination="rW8-ex-k8d" id="1rK-AH-O3E"/>
                         <outlet property="pioneerNameLabel" destination="K1U-Ly-LcS" id="vrZ-xe-XKz"/>
                         <outlet property="pionnerImageView" destination="Xuh-mg-PEl" id="EP9-QI-Td9"/>
@@ -587,14 +589,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShamengoVilla" translatesAutoresizingMaskIntoConstraints="NO" id="8wW-We-7Tw" userLabel="ShamengoVillaImageView">
-                                <rect key="frame" x="20" y="20" width="280" height="156"/>
+                                <rect key="frame" x="20" y="30" width="280" height="156"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="V0m-25-w62"/>
+                                    <constraint firstAttribute="width" constant="280" id="lUd-mA-nG1"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeparationBar" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-cb-Kgy" userLabel="firstSeparationBarImageView">
-                                <rect key="frame" x="85" y="184" width="150" height="2"/>
+                                <rect key="frame" x="85" y="188" width="150" height="2"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="LZl-JA-wN2"/>
@@ -611,20 +614,22 @@
                                 <rect key="frame" x="20" y="199" width="280" height="98"/>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Mhv-FS-erz"/>
                                     <constraint firstAttribute="height" constant="98" id="PEY-Fw-wO0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx5-fC-GqV" userLabel="secondLabel">
                                 <rect key="frame" x="20" y="319" width="280" height="60"/>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="97A-m2-HLt"/>
                                     <constraint firstAttribute="height" constant="60" id="jYp-OC-YqA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygn-Ex-m2t" userLabel="thirdLabel">
@@ -632,14 +637,16 @@
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8JB-K0-HPK"/>
+                                    <constraint firstAttribute="width" constant="280" id="nDi-kR-vLy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm9-e5-8Jn" userLabel="signUpButton">
                                 <rect key="frame" x="102" y="453" width="117" height="40"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" name="TitilliumText22L-Regular" family="TitilliumText22L" pointSize="18"/>
                                 <state key="normal" image="Inscription_fr"/>
                                 <connections>
                                     <action selector="signUpButtonClicked:" destination="3gK-ua-W8W" eventType="touchUpInside" id="NvF-X4-F2A"/>
@@ -649,34 +656,28 @@
                         <animations/>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="xx5-fC-GqV" secondAttribute="trailing" constant="20" id="2hx-Jx-sPt"/>
-                            <constraint firstItem="8wW-We-7Tw" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="20" id="4rm-as-qmP"/>
-                            <constraint firstItem="Q9O-Mm-Dbt" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="20" id="Brk-Aa-WJG"/>
-                            <constraint firstItem="Q9O-Mm-Dbt" firstAttribute="top" secondItem="sGh-cb-Kgy" secondAttribute="bottom" constant="13" id="Bxr-iS-Yzk"/>
-                            <constraint firstAttribute="trailing" secondItem="sGh-cb-Kgy" secondAttribute="trailing" constant="85" id="Fyf-xb-fFQ"/>
-                            <constraint firstItem="xx5-fC-GqV" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="20" id="JEt-Yq-81o"/>
-                            <constraint firstAttribute="trailing" secondItem="GzU-aF-Jjd" secondAttribute="trailing" constant="85" id="Pci-0n-FaT"/>
-                            <constraint firstItem="Ygn-Ex-m2t" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="20" id="T8b-9q-0rp"/>
+                            <constraint firstItem="Ygn-Ex-m2t" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="2D5-aL-7Ee"/>
+                            <constraint firstItem="Q9O-Mm-Dbt" firstAttribute="top" secondItem="sGh-cb-Kgy" secondAttribute="bottom" constant="9" id="Bxr-iS-Yzk"/>
+                            <constraint firstItem="GzU-aF-Jjd" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="Hyf-fb-ruT"/>
+                            <constraint firstItem="sGh-cb-Kgy" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="LO5-mV-Ztl"/>
                             <constraint firstItem="xx5-fC-GqV" firstAttribute="top" secondItem="Q9O-Mm-Dbt" secondAttribute="bottom" constant="22" id="TXP-PF-psr"/>
-                            <constraint firstAttribute="trailing" secondItem="8wW-We-7Tw" secondAttribute="trailing" constant="20" id="V4g-a8-Zbe"/>
-                            <constraint firstAttribute="trailing" secondItem="Q9O-Mm-Dbt" secondAttribute="trailing" constant="20" id="ZXY-Hp-k3o"/>
-                            <constraint firstItem="sGh-cb-Kgy" firstAttribute="top" secondItem="8wW-We-7Tw" secondAttribute="bottom" constant="8" id="Zn8-L0-A2k"/>
+                            <constraint firstItem="sGh-cb-Kgy" firstAttribute="top" secondItem="8wW-We-7Tw" secondAttribute="bottom" constant="2" id="Zn8-L0-A2k"/>
                             <constraint firstItem="sm9-e5-8Jn" firstAttribute="top" secondItem="Ygn-Ex-m2t" secondAttribute="bottom" constant="8" id="bFR-HQ-LO8"/>
                             <constraint firstItem="GzU-aF-Jjd" firstAttribute="top" secondItem="xx5-fC-GqV" secondAttribute="bottom" constant="17" id="dVO-TO-E2W"/>
-                            <constraint firstAttribute="trailing" secondItem="sm9-e5-8Jn" secondAttribute="trailing" constant="101" id="f6l-NW-HdR"/>
-                            <constraint firstItem="GzU-aF-Jjd" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="85" id="h8F-hg-eQc"/>
-                            <constraint firstItem="8wW-We-7Tw" firstAttribute="top" secondItem="Vfr-bm-SyH" secondAttribute="bottom" id="jao-Fl-1H9"/>
-                            <constraint firstAttribute="trailing" secondItem="Ygn-Ex-m2t" secondAttribute="trailing" constant="20" id="m84-Sa-qur"/>
+                            <constraint firstItem="8wW-We-7Tw" firstAttribute="top" secondItem="Vfr-bm-SyH" secondAttribute="bottom" constant="10" id="jao-Fl-1H9"/>
                             <constraint firstItem="Ygn-Ex-m2t" firstAttribute="top" secondItem="GzU-aF-Jjd" secondAttribute="bottom" constant="26" id="oRv-Er-gIo"/>
-                            <constraint firstItem="sGh-cb-Kgy" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="85" id="r7K-i3-k8P"/>
+                            <constraint firstItem="8wW-We-7Tw" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="qjw-5K-Mpy"/>
                             <constraint firstItem="sew-Sx-fau" firstAttribute="top" secondItem="sm9-e5-8Jn" secondAttribute="bottom" constant="26" id="rPL-x6-Et7"/>
-                            <constraint firstItem="sm9-e5-8Jn" firstAttribute="leading" secondItem="7cg-EM-cF4" secondAttribute="leading" constant="102" id="uSX-ty-MTA"/>
+                            <constraint firstItem="sm9-e5-8Jn" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="xpc-aX-QGO"/>
+                            <constraint firstItem="xx5-fC-GqV" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="xvn-MX-VBI"/>
+                            <constraint firstItem="Q9O-Mm-Dbt" firstAttribute="centerX" secondItem="7cg-EM-cF4" secondAttribute="centerX" id="xyJ-xe-pjI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shamengo" image="shamengo_tab" selectedImage="shamengo_tab" id="EJg-ph-HMu"/>
                     <connections>
                         <outlet property="firstLabel" destination="Q9O-Mm-Dbt" id="Ihs-N5-Edx"/>
                         <outlet property="secondLabel" destination="xx5-fC-GqV" id="oQf-Jw-LBt"/>
+                        <outlet property="signUpButton" destination="sm9-e5-8Jn" id="6TS-Fc-x8v"/>
                         <outlet property="thirdLabel" destination="Ygn-Ex-m2t" id="ipc-4Q-w6S"/>
                     </connections>
                 </viewController>

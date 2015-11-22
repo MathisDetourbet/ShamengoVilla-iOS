@@ -12,3 +12,13 @@
 "secondLabelShamengoTab" = "Together, let’s build a new world, by creating a community of individuals and companies engaged aside our pioneers.";
 "thirdLabelShamengoTab" = "Join the community now:";
 "linkSignUp" = "http://www.shamengo.com/en/join/join-select-options";
+
+/*************** Tab Bar ******************/
+"titleShamengoTab" = "Near";
+
+/*************** Nav Bar ******************/
+"nav_title_beacon" = "Near";
+"nav_title_innovations" = "Innovations";
+
+/*************** Innovation Card ******************/
+"innov_card_more_button" = "Learn more";

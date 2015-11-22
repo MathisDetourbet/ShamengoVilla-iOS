@@ -12,6 +12,7 @@
 #import "SVInnovation.h"
 #import "SVInnovationCardViewController.h"
 #import "SVSearchInnovationsViewController.h"
+#import "SVConstants.h"
 
 #import <RZTransitions/RZTransitionsManager.h>
 
@@ -45,12 +46,15 @@
     self.tabBarOriginalFrame = self.tabBarController.tabBar.frame;
     
     [self.navigationController setDelegate:[RZTransitionsManager shared]];
-    [self.tabBarController.tabBar setTranslucent:YES];
+    //[self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.041 green:0.792 blue:0.403 alpha:0.815]];
     
+    [self.tabBarController.tabBar setTranslucent:YES];
     self.tabBarController.view.layer.shadowOffset = CGSizeMake(1, 0);
     self.tabBarController.view.layer.shadowColor = [[UIColor blackColor] CGColor];
     self.tabBarController.view.layer.shadowRadius = 5;
     self.tabBarController.view.layer.shadowOpacity = .25;
+    
+    [[self.tabBarController.tabBar.items objectAtIndex:0] setTitle:_(@"titleShamengoTab")];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +78,7 @@
 - (void)loadJSONData {
     
     SVInnovationsManager *manager = [SVInnovationsManager sharedManager];
+    
     if (manager.innovationsList == nil) {
         [manager loadInnovations];
     }

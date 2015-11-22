@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIView             *bottomContainerView;
 @property (weak, nonatomic) IBOutlet UIButton           *playMovieButton;
 @property (weak, nonatomic) IBOutlet UIImageView        *innovPictureImageView;
+@property (weak, nonatomic) IBOutlet UIButton           *moreInfosButton;
 
 - (void)buildUI;
 - (void)doneButtonClicked:(NSNotification *)notification;
@@ -125,6 +126,8 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                                            target:self
                                                                                            action:@selector(shareAction)];
+    // More infos button
+    [self.moreInfosButton setTitle:_(@"innov_card_more_button") forState:UIControlStateNormal];
 }
 
 

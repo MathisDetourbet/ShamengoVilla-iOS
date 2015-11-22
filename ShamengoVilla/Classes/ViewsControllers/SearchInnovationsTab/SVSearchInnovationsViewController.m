@@ -31,6 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_innovations")];
+    
     // Search button
     UIBarButtonItem *search = [[UIBarButtonItem alloc]
                                initWithBarButtonSystemItem:UIBarButtonSystemItemSearch

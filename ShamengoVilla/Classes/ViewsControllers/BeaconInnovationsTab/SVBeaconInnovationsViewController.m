@@ -11,6 +11,7 @@
 #import "SVInnovation.h"
 #import <EstimoteSDK/EstimoteSDK.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "SVConstants.h"
 
 @interface SVBeaconInnovationsViewController () <ESTBeaconManagerDelegate, CBCentralManagerDelegate, UIAlertViewDelegate>
 
@@ -36,6 +37,7 @@
     [super viewDidLoad];
     
     //[self buildUI];
+    [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_beacon")];
     
     self.resultInnovList = nil;
     [self.tableView reloadData];

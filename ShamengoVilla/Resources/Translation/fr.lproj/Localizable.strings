@@ -14,3 +14,12 @@
 "thirdLabelShamengoTab" = "Rejoignez dès maintenant la communauté : ";
 "linkSignUp" = "http://www.shamengo.com/fr/inscription/s-inscrire-choix-formules";
 
+/*************** Tab Bar ******************/
+"titleShamengoTab" = "A proximité";
+
+/*************** Nav Bar ******************/
+"nav_title_beacon" = "A proximité";
+"nav_title_innovations" = "Les innovations";
+
+/*************** Innovation Card ******************/
+"innov_card_more_button" = "En savoir plus";
