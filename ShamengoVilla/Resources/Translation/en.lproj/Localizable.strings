@@ -23,3 +23,7 @@
 /*************** Innovation Card ******************/
 "innov_card_more_button" = "Learn more";
 "innov_card_share_text" = "%@'s innovation on #villashamengo at #COP21 is amazing! Check it out : %@";
+
+/*************** Beacon Tab ******************/
+"beacon_noBeaconView_first_label" = "No Beacon detected";
+"beacon_noBeaconView_second_label" = "1. Make sure your Bluetooth is enabled.\n2. If you are on the Villa Shamengo and that the problem persists, feel free to ask a member of staff for any enquiries";

@@ -20,6 +20,8 @@
 @property (nonatomic) CBCentralManager      *bluetoothManager;
 
 @property (weak, nonatomic) IBOutlet UIView *noBeaconView;
+@property (weak, nonatomic) IBOutlet UILabel *noBeaconFirstLabel;
+@property (weak, nonatomic) IBOutlet UILabel *noBeaconSecondLabel;
 
 - (void)initBeaconManager;
 - (NSArray *)innovationsNearBeacon:(CLBeacon *)beacon;
@@ -38,6 +40,8 @@
     
     //[self buildUI];
     [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_beacon")];
+    [self.noBeaconFirstLabel setText:_(@"beacon_noBeaconView_first_label")];
+    [self.noBeaconSecondLabel setText:_(@"beacon_noBeaconView_second_label")];
     
     self.resultInnovList = nil;
     [self.tableView reloadData];

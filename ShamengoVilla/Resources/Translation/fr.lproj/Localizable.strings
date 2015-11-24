@@ -24,3 +24,7 @@
 /*************** Innovation Card ******************/
 "innov_card_more_button" = "En savoir plus";
 "innov_card_share_text" = "L'innovation de %@ sur la #villashamengo à la #COP21 est incroyable !\nPlus d'informations : %@";
+
+/*************** Beacon Tab ******************/
+"beacon_noBeaconView_first_label" = "Aucune balise à proximité";
+"beacon_noBeaconView_second_label" = "1. Assurez-vous d’avoir le Bluetooth d’activé.\n2. Si vous vous trouvez sur le stand de la Villa Shamengo et que le problème persiste, merci de vous adresser à une personne de l’équipe";

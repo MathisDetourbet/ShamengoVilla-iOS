@@ -352,6 +352,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="A proximité" id="OZn-lL-wuo"/>
                     <connections>
+                        <outlet property="noBeaconFirstLabel" destination="XCV-Wm-Uxe" id="sWQ-KO-GSu"/>
+                        <outlet property="noBeaconSecondLabel" destination="bIe-fk-Iv8" id="xQa-RP-h0j"/>
                         <outlet property="noBeaconView" destination="huH-wD-yAk" id="MKV-Lu-5em"/>
                         <outlet property="tableView" destination="fA7-Ay-PA0" id="ehz-Fk-qKE"/>
                     </connections>
