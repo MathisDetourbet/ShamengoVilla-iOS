@@ -54,7 +54,7 @@
     self.tabBarController.view.layer.shadowRadius = 5;
     self.tabBarController.view.layer.shadowOpacity = .25;
     
-    [[self.tabBarController.tabBar.items objectAtIndex:0] setTitle:_(@"titleShamengoTab")];
+    [[self.tabBarController.tabBar.items objectAtIndex:0] setTitle:_(@"titleBeaconTab")];
 }
 
 - (void)didReceiveMemoryWarning {

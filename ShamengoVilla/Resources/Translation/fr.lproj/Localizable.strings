@@ -15,7 +15,7 @@
 "linkSignUp" = "http://www.shamengo.com/fr/inscription/s-inscrire-choix-formules";
 
 /*************** Tab Bar ******************/
-"titleShamengoTab" = "A proximité";
+"titleBeaconTab" = "A proximité";
 
 /*************** Nav Bar ******************/
 "nav_title_beacon" = "A proximité";

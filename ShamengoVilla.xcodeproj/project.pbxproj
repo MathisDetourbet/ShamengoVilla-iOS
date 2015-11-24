@@ -231,6 +231,7 @@
 		6740E5E51C051C8D00627A5F /* Miriam Turner VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Miriam Turner VF.mp4"; sourceTree = "<group>"; };
 		6740E5E81C051CA200627A5F /* Jeni Saeyang VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jeni Saeyang VA.mp4"; sourceTree = "<group>"; };
 		6740E5E91C051CA200627A5F /* Jeni Saeyang VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jeni Saeyang VF.mp4"; sourceTree = "<group>"; };
+		6740E5EC1C051FB400627A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
 		6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
 		6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVShamengoTabViewController.h; sourceTree = "<group>"; };
@@ -895,6 +896,7 @@
 			children = (
 				670216AD1B879E4D00EF0840 /* en */,
 				67B9EE421BE28FEC009992E4 /* fr */,
+				6740E5EC1C051FB400627A5F /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -989,13 +991,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shamengo.shamengovillacop21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "35680868-b794-47c6-b322-d8ca99fd4f11";
 			};
 			name = Debug;
 		};
@@ -1005,13 +1007,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shamengo.shamengovillacop21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "35680868-b794-47c6-b322-d8ca99fd4f11";
 			};
 			name = Release;
 		};
