@@ -23,7 +23,7 @@
 
 /*************** Innovation Card ******************/
 "innov_card_more_button" = "En savoir plus";
-"innov_card_share_text" = "L'innovation de %@ sur la #villashamengo à la #COP21 est incroyable !\nPlus d'informations : %@";
+"innov_card_share_text" = "L'innovation de %@ sur la @villashamengo à la #COP21 est incroyable !\nPlus d'informations : %@";
 
 /*************** Beacon Tab ******************/
 "beacon_noBeaconView_first_label" = "Aucune balise à proximité";
