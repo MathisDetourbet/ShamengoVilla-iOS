@@ -100,6 +100,10 @@
 		6740E5E11C04E7FE00627A5F /* Tom Szaky VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5911C04E7FE00627A5F /* Tom Szaky VF.mp4 */; };
 		6740E5E21C04E7FE00627A5F /* Valerie Pache VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5921C04E7FE00627A5F /* Valerie Pache VA.mp4 */; };
 		6740E5E31C04E7FE00627A5F /* Valerie Pache VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5931C04E7FE00627A5F /* Valerie Pache VF.mp4 */; };
+		6740E5E61C051C8D00627A5F /* Miriam Turner VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5E41C051C8D00627A5F /* Miriam Turner VA.mp4 */; };
+		6740E5E71C051C8D00627A5F /* Miriam Turner VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5E51C051C8D00627A5F /* Miriam Turner VF.mp4 */; };
+		6740E5EA1C051CA200627A5F /* Jeni Saeyang VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5E81C051CA200627A5F /* Jeni Saeyang VA.mp4 */; };
+		6740E5EB1C051CA200627A5F /* Jeni Saeyang VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6740E5E91C051CA200627A5F /* Jeni Saeyang VF.mp4 */; };
 		6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */; };
 		6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */; };
 		676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A21BAC1CA60016854B /* MediaPlayer.framework */; };
@@ -223,6 +227,10 @@
 		6740E5911C04E7FE00627A5F /* Tom Szaky VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tom Szaky VF.mp4"; sourceTree = "<group>"; };
 		6740E5921C04E7FE00627A5F /* Valerie Pache VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valerie Pache VA.mp4"; sourceTree = "<group>"; };
 		6740E5931C04E7FE00627A5F /* Valerie Pache VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valerie Pache VF.mp4"; sourceTree = "<group>"; };
+		6740E5E41C051C8D00627A5F /* Miriam Turner VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Miriam Turner VA.mp4"; sourceTree = "<group>"; };
+		6740E5E51C051C8D00627A5F /* Miriam Turner VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Miriam Turner VF.mp4"; sourceTree = "<group>"; };
+		6740E5E81C051CA200627A5F /* Jeni Saeyang VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jeni Saeyang VA.mp4"; sourceTree = "<group>"; };
+		6740E5E91C051CA200627A5F /* Jeni Saeyang VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jeni Saeyang VF.mp4"; sourceTree = "<group>"; };
 		6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
 		6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
 		6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVShamengoTabViewController.h; sourceTree = "<group>"; };
@@ -466,6 +474,8 @@
 				6740E5671C04E7FE00627A5F /* Jaquenoud et Lo Chai VF.mp4 */,
 				6740E5681C04E7FE00627A5F /* Jason Chen VA.mp4 */,
 				6740E5691C04E7FE00627A5F /* Jason Chen VF.mp4 */,
+				6740E5E81C051CA200627A5F /* Jeni Saeyang VA.mp4 */,
+				6740E5E91C051CA200627A5F /* Jeni Saeyang VF.mp4 */,
 				6740E56A1C04E7FE00627A5F /* Jose Carlos Vargas VA.mp4 */,
 				6740E56B1C04E7FE00627A5F /* Jose Carlos Vargas VF.mp4 */,
 				6740E56C1C04E7FE00627A5F /* Manshuk Prajapati VA.mp4 */,
@@ -480,6 +490,8 @@
 				6740E5751C04E7FE00627A5F /* Martine Le Lu VF.mp4 */,
 				6740E5761C04E7FE00627A5F /* Mary Delano VA.mp4 */,
 				6740E5771C04E7FE00627A5F /* Mary Delano VF.mp4 */,
+				6740E5E41C051C8D00627A5F /* Miriam Turner VA.mp4 */,
+				6740E5E51C051C8D00627A5F /* Miriam Turner VF.mp4 */,
 				6740E5781C04E7FE00627A5F /* Nicolas Chabanne VA.mp4 */,
 				6740E5791C04E7FE00627A5F /* Nicolas Chabanne VF.mp4 */,
 				6740E57A1C04E7FE00627A5F /* Peggy Pascal VA.mp4 */,
@@ -703,6 +715,7 @@
 				6740E5951C04E7FE00627A5F /* Anita Ahuja VF.mp4 in Resources */,
 				6740E5B31C04E7FE00627A5F /* Illac Diaz VF.mp4 in Resources */,
 				6740E5B41C04E7FE00627A5F /* Janos Terbe VA.mp4 in Resources */,
+				6740E5E71C051C8D00627A5F /* Miriam Turner VF.mp4 in Resources */,
 				6740E5C21C04E7FE00627A5F /* Martha Delgado VA.mp4 in Resources */,
 				6740E5B81C04E7FE00627A5F /* Jason Chen VA.mp4 in Resources */,
 				6740E5CF1C04E7FE00627A5F /* Philippe Brousseau VF.mp4 in Resources */,
@@ -712,6 +725,7 @@
 				6740E5A21C04E7FE00627A5F /* Cedric Pechard VA.mp4 in Resources */,
 				6740E5C51C04E7FE00627A5F /* Martine Le Lu VF.mp4 in Resources */,
 				6740E5E31C04E7FE00627A5F /* Valerie Pache VF.mp4 in Resources */,
+				6740E5E61C051C8D00627A5F /* Miriam Turner VA.mp4 in Resources */,
 				6740E5961C04E7FE00627A5F /* Awen Delaval VA.mp4 in Resources */,
 				6740E5411C04E55B00627A5F /* jsoncop21_en.json in Resources */,
 				6740E5B51C04E7FE00627A5F /* Janos Terbe VF.mp4 in Resources */,
@@ -730,6 +744,7 @@
 				6740E5C41C04E7FE00627A5F /* Martine Le Lu VA.mp4 in Resources */,
 				6740E5D21C04E7FE00627A5F /* PierFrancesco Maran VA.mp4 in Resources */,
 				6740E5991C04E7FE00627A5F /* Benoit Paget VF.mp4 in Resources */,
+				6740E5EA1C051CA200627A5F /* Jeni Saeyang VA.mp4 in Resources */,
 				6740E5BE1C04E7FE00627A5F /* Manuel Aldrete VA.mp4 in Resources */,
 				6740E5E21C04E7FE00627A5F /* Valerie Pache VA.mp4 in Resources */,
 				6740E59B1C04E7FE00627A5F /* Beverly Blum VF.mp4 in Resources */,
@@ -756,6 +771,7 @@
 				678009AD1C03DE8500B4AD26 /* Images.xcassets in Resources */,
 				6740E5C01C04E7FE00627A5F /* Marcelo Villegas VA.mp4 in Resources */,
 				6740E5DD1C04E7FE00627A5F /* Thierry Jacquet VF.mp4 in Resources */,
+				6740E5EB1C051CA200627A5F /* Jeni Saeyang VF.mp4 in Resources */,
 				6740E5DE1C04E7FE00627A5F /* Thomas et Clement VA.mp4 in Resources */,
 				6740E5D01C04E7FE00627A5F /* Philippe Ouaki VA.mp4 in Resources */,
 				6740E59E1C04E7FE00627A5F /* Catia Bastioli VA.mp4 in Resources */,
