@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton           *playMovieButton;
 @property (weak, nonatomic) IBOutlet UIImageView        *innovPictureImageView;
 @property (weak, nonatomic) IBOutlet UIButton           *moreInfosButton;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 - (void)buildUI;
 - (void)doneButtonClicked:(NSNotification *)notification;
@@ -57,6 +58,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0.f, 0.f, self.view.frame.size.height, self.view.frame.size.height)];
+    scrollView.contentSize = 
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.bottomContainerView.frame.size.height);
     
     NSString *movieNameJSON = [[NSString alloc] initWithFormat:@"%@", self.innovation.innovationMoviePath];
     NSString *videoPath = [[NSBundle mainBundle] pathForResource:movieNameJSON ofType:@""];
