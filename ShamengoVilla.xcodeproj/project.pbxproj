@@ -18,11 +18,13 @@
 		670D9FEC1BF600D0000995F0 /* TitilliumText22(title).otf in Resources */ = {isa = PBXBuildFile; fileRef = 670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */; };
 		67357C5C1B7B3F3600E39187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */; };
 		67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5B1B7B3F3600E39187 /* Main.storyboard */; };
-		67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67357C5E1B7B3F6100E39187 /* Images.xcassets */; };
 		6757B8EA1BA5D9BB002B6912 /* SVSearchInnovationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */; };
 		6757B8F11BA63489002B6912 /* SVShamengoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */; };
 		676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A21BAC1CA60016854B /* MediaPlayer.framework */; };
 		676BE3A51BAC1CAE0016854B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676BE3A41BAC1CAE0016854B /* CoreLocation.framework */; };
+		678009AA1C03DD6400B4AD26 /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 678009A81C03DD6400B4AD26 /* jsoncop21_en.json */; };
+		678009AB1C03DD6400B4AD26 /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 678009A91C03DD6400B4AD26 /* jsoncop21_fr.json */; };
+		678009AD1C03DE8500B4AD26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678009AC1C03DE8500B4AD26 /* Images.xcassets */; };
 		678A0B521BFE4B670036FADD /* Anita Ahuja VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B041BFE4B670036FADD /* Anita Ahuja VA.mp4 */; };
 		678A0B531BFE4B670036FADD /* Anita Ahuja VF.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B051BFE4B670036FADD /* Anita Ahuja VF.mp4 */; };
 		678A0B541BFE4B670036FADD /* Awen Delaval VA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 678A0B061BFE4B670036FADD /* Awen Delaval VA.mp4 */; };
@@ -104,8 +106,6 @@
 		679297CB1B77CC7600703F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CA1B77CC7600703F1B /* main.m */; };
 		679297CE1B77CC7600703F1B /* SVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297CD1B77CC7600703F1B /* SVAppDelegate.m */; };
 		679297E51B77CC7600703F1B /* ShamengoVillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679297E41B77CC7600703F1B /* ShamengoVillaTests.m */; };
-		6795AE1D1C025D4600F06DCE /* jsoncop21_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6795AE1B1C025D4600F06DCE /* jsoncop21_en.json */; };
-		6795AE1E1C025D4600F06DCE /* jsoncop21_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 6795AE1C1C025D4600F06DCE /* jsoncop21_fr.json */; };
 		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
 		67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
@@ -139,13 +139,19 @@
 		670D9FEA1BF6004F000995F0 /* TitilliumText22(title).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumText22(title).otf"; sourceTree = "<group>"; };
 		67357C5A1B7B3F3600E39187 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		67357C5B1B7B3F3600E39187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		67357C5E1B7B3F6100E39187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6757B8E81BA5D9BB002B6912 /* SVSearchInnovationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSearchInnovationsViewController.h; sourceTree = "<group>"; };
 		6757B8E91BA5D9BB002B6912 /* SVSearchInnovationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSearchInnovationsViewController.m; sourceTree = "<group>"; };
 		6757B8EF1BA63489002B6912 /* SVShamengoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVShamengoTabViewController.h; sourceTree = "<group>"; };
 		6757B8F01BA63489002B6912 /* SVShamengoTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVShamengoTabViewController.m; sourceTree = "<group>"; };
 		676BE3A21BAC1CA60016854B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		676BE3A41BAC1CAE0016854B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		678009A41C03DC3A00B4AD26 /* Jason Chen VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jason Chen VA.mp4"; sourceTree = "<group>"; };
+		678009A51C03DC3A00B4AD26 /* Jason Chen VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jason Chen VF.mp4"; sourceTree = "<group>"; };
+		678009A61C03DC3A00B4AD26 /* PierFrancesco Maran VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PierFrancesco Maran VA.mp4"; sourceTree = "<group>"; };
+		678009A71C03DC3A00B4AD26 /* PierFrancesco Maran VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PierFrancesco Maran VF.mp4"; sourceTree = "<group>"; };
+		678009A81C03DD6400B4AD26 /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
+		678009A91C03DD6400B4AD26 /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
+		678009AC1C03DE8500B4AD26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		678A0B041BFE4B670036FADD /* Anita Ahuja VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anita Ahuja VA.mp4"; sourceTree = "<group>"; };
 		678A0B051BFE4B670036FADD /* Anita Ahuja VF.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anita Ahuja VF.mp4"; sourceTree = "<group>"; };
 		678A0B061BFE4B670036FADD /* Awen Delaval VA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Awen Delaval VA.mp4"; sourceTree = "<group>"; };
@@ -232,8 +238,6 @@
 		679297DE1B77CC7600703F1B /* ShamengoVillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamengoVillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		679297E31B77CC7600703F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679297E41B77CC7600703F1B /* ShamengoVillaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShamengoVillaTests.m; sourceTree = "<group>"; };
-		6795AE1B1C025D4600F06DCE /* jsoncop21_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_en.json; sourceTree = "<group>"; };
-		6795AE1C1C025D4600F06DCE /* jsoncop21_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsoncop21_fr.json; sourceTree = "<group>"; };
 		679B06F91BA7410400AFF21A /* SVInnovationCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationCardViewController.h; sourceTree = "<group>"; };
 		679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationCardViewController.m; sourceTree = "<group>"; };
 		67A9D8151BAC896800E57AC1 /* SVNavSChemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVNavSChemeManager.h; sourceTree = "<group>"; };
@@ -392,6 +396,10 @@
 				678A0B241BFE4B670036FADD /* Illac Diaz VA.mp4 */,
 				678A0B251BFE4B670036FADD /* Illac Diaz VF.mp4 */,
 				678A0B261BFE4B670036FADD /* Janos Terbe VA.mp4 */,
+				678009A41C03DC3A00B4AD26 /* Jason Chen VA.mp4 */,
+				678009A51C03DC3A00B4AD26 /* Jason Chen VF.mp4 */,
+				678009A61C03DC3A00B4AD26 /* PierFrancesco Maran VA.mp4 */,
+				678009A71C03DC3A00B4AD26 /* PierFrancesco Maran VF.mp4 */,
 				678A0B271BFE4B670036FADD /* Janos Terbe VF.mp4 */,
 				678A0B281BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 */,
 				678A0B291BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 */,
@@ -483,7 +491,7 @@
 		67357C581B7B3E9000E39187 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				67357C5E1B7B3F6100E39187 /* Images.xcassets */,
+				678009AC1C03DE8500B4AD26 /* Images.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -500,8 +508,8 @@
 		67357C601B7B3FD200E39187 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				6795AE1B1C025D4600F06DCE /* jsoncop21_en.json */,
-				6795AE1C1C025D4600F06DCE /* jsoncop21_fr.json */,
+				678009A81C03DD6400B4AD26 /* jsoncop21_en.json */,
+				678009A91C03DD6400B4AD26 /* jsoncop21_fr.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -712,9 +720,8 @@
 				678A0B991BFE4B670036FADD /* Thierry Jacquet VF.mp4 in Resources */,
 				670216AA1B879E4900EF0840 /* Localizable.strings in Resources */,
 				678A0B6B1BFE4B670036FADD /* Francisco da Silva VF.mp4 in Resources */,
-				6795AE1E1C025D4600F06DCE /* jsoncop21_fr.json in Resources */,
+				678009AB1C03DD6400B4AD26 /* jsoncop21_fr.json in Resources */,
 				678A0B771BFE4B670036FADD /* Jaquenoud et Lo Chai VF.mp4 in Resources */,
-				67357C5F1B7B3F6100E39187 /* Images.xcassets in Resources */,
 				67357C5D1B7B3F3600E39187 /* Main.storyboard in Resources */,
 				678A0B7C1BFE4B670036FADD /* Manuel Aldrete VA.mp4 in Resources */,
 				678A0B6A1BFE4B670036FADD /* Francisco da Silva VA.mp4 in Resources */,
@@ -749,6 +756,7 @@
 				678A0B801BFE4B670036FADD /* Martine Le Lu VA.mp4 in Resources */,
 				678A0B871BFE4B670036FADD /* Peggy Pascal VF.mp4 in Resources */,
 				678A0B761BFE4B670036FADD /* Jaquenoud et Lo Chai VA.mp4 in Resources */,
+				678009AD1C03DE8500B4AD26 /* Images.xcassets in Resources */,
 				678A0B691BFE4B670036FADD /* Eric Scotto VF.mp4 in Resources */,
 				678A0B931BFE4B670036FADD /* Shane Chen VF.mp4 in Resources */,
 				678A0B571BFE4B670036FADD /* Benoit Paget VF.mp4 in Resources */,
@@ -766,7 +774,7 @@
 				678A0B8C1BFE4B670036FADD /* Philippe Ouaki VA.mp4 in Resources */,
 				678A0B731BFE4B670036FADD /* Illac Diaz VF.mp4 in Resources */,
 				678A0B791BFE4B670036FADD /* Jose Carlos Vargas VF.mp4 in Resources */,
-				6795AE1D1C025D4600F06DCE /* jsoncop21_en.json in Resources */,
+				678009AA1C03DD6400B4AD26 /* jsoncop21_en.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -396,7 +396,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="167" id="b5z-0e-6Oe"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -511,6 +511,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-xB-cqm" userLabel="topContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultInnovationPicture" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-Td-RB1" userLabel="movieImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                                        <animations/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uts-3d-HFv" userLabel="playVideoButton">
                                         <rect key="frame" x="128" y="36" width="64" height="64"/>
                                         <animations/>
@@ -518,15 +522,11 @@
                                             <constraint firstAttribute="width" constant="64" id="PTG-1T-gDJ"/>
                                             <constraint firstAttribute="height" constant="64" id="cZE-or-McZ"/>
                                         </constraints>
-                                        <state key="normal" image="play_circle"/>
+                                        <state key="normal" image="Play"/>
                                         <connections>
                                             <action selector="playVideo:" destination="80L-CK-VS0" eventType="touchUpInside" id="m88-Wv-slS"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultInnovationPicture" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-Td-RB1" userLabel="movieImageView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
-                                        <animations/>
-                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
@@ -733,6 +733,7 @@
         <image name="Inscription_fr" width="117" height="40"/>
         <image name="MenuStarredOff" width="22" height="22"/>
         <image name="NoBeacon" width="150" height="150"/>
+        <image name="Play" width="64" height="64"/>
         <image name="SeparationBar" width="150" height="2"/>
         <image name="ShamengoVilla" width="300" height="210"/>
         <image name="StarOff" width="30" height="30"/>
@@ -740,7 +741,6 @@
         <image name="country_icon" width="15" height="15"/>
         <image name="defaultInnovationPicture" width="545" height="301"/>
         <image name="numbers_background" width="93" height="47"/>
-        <image name="play_circle" width="200" height="200"/>
         <image name="shamengo_tab" width="30" height="30"/>
     </resources>
 </document>
