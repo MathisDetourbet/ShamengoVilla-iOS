@@ -15,6 +15,7 @@
 #import <RZTransitions/RZCirclePushAnimationController.h>
 #import <RZZoomAlphaAnimationController.h>
 #import <RZBaseSwipeInteractionController.h>
+#import "CapptainAgent.h"
 
 @interface SVAppDelegate ()
 
@@ -24,6 +25,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Capptain Agent
+    [CapptainAgent registerApp:@"sha000004" identifiedBy:@"c9c1ad7bc2a94f8e82ec35ba7e9c43a6"];
+    [[CapptainAgent shared] sendEvent:@"Start session" extras:nil];
     
     // Load innovations in the memory
     [[SVInnovationsManager sharedManager] loadInnovations];
@@ -67,6 +72,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[CapptainAgent shared] sendEvent:@"EndSession" extras:nil];
 }
 
 @end

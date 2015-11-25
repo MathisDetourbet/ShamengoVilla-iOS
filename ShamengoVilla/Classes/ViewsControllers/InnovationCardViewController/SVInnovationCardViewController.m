@@ -10,6 +10,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "SVAppDelegate.h"
 #import "SVConstants.h"
+#import "CapptainAgent.h"
 
 @interface SVInnovationCardViewController () <UIActivityItemSource>
 
@@ -59,8 +60,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0.f, 0.f, self.view.frame.size.height, self.view.frame.size.height)];
-    scrollView.contentSize = 
+    [[CapptainAgent shared] sendEvent:@"innovation_displayed" extras:nil];
+    
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.bottomContainerView.frame.size.height);
     
     NSString *movieNameJSON = [[NSString alloc] initWithFormat:@"%@", self.innovation.innovationMoviePath];
@@ -142,6 +143,8 @@
 
 - (IBAction)playVideo:(UIButton *)sender {
     
+    [[CapptainAgent shared] sendEvent:@"play_video" extras:nil];
+    
     NSString *movieNameJSON = [[NSString alloc] initWithFormat:@"%@", self.innovation.innovationMoviePath];
     NSString *videoPath = [[NSBundle mainBundle] pathForResource:movieNameJSON ofType:@""];
     NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
@@ -203,12 +206,16 @@
 
 - (void)shareAction {
     
+    [[CapptainAgent shared] sendEvent:@"share_button_clicked" extras:nil];
+    
     NSArray *activityItems = @[[NSString stringWithFormat:_(@"innov_card_share_text"), self.innovation.pionnerName ,self.innovation.shamengoPath]];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 - (IBAction)moreInfosButtonClicked:(UIButton *)sender {
+    
+    [[CapptainAgent shared] sendEvent:@"more_infos_button_clicked" extras:nil];
     
     NSString *shamengoPath = self.innovation.shamengoPath;
     

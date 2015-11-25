@@ -8,6 +8,7 @@
 
 #import "SVShamengoTabViewController.h"
 #import "SVConstants.h"
+#import "CapptainAgent.h"
 
 @interface SVShamengoTabViewController ()
 
@@ -29,6 +30,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [[CapptainAgent shared] sendEvent:@"shamengo_tab" extras:nil];
+    
     self.firstLabel.text = _(@"firstLabelShamengoTab");
     self.secondLabel.text = _(@"secondLabelShamengoTab");
     self.thirdLabel.text = _(@"thirdLabelShamengoTab");
@@ -47,6 +50,8 @@
 
 - (IBAction)signUpButtonClicked:(UIButton *)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_(@"linkSignUp")]];
+    
+    [[CapptainAgent shared] sendEvent:@"signUp_button_clicked" extras:nil];
 }
 
 @end

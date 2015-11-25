@@ -12,6 +12,7 @@
 #import <EstimoteSDK/EstimoteSDK.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "SVConstants.h"
+#import "CapptainAgent.h"
 
 @interface SVBeaconInnovationsViewController () <ESTBeaconManagerDelegate, CBCentralManagerDelegate, UIAlertViewDelegate>
 
@@ -37,6 +38,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[CapptainAgent shared] sendEvent:@"beacon_tab" extras:nil];
     
     //[self buildUI];
     [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_beacon")];
@@ -137,6 +140,8 @@
                     self.tableView.hidden = NO;
                 }
             }];
+            
+            [[CapptainAgent shared] sendEvent:@"detect new beacon" extras:nil];
         }
         
         NSSet *setNow = [NSSet setWithArray:innovBeaconList];
@@ -160,6 +165,8 @@
                     self.tableView.hidden = NO;
                 }
             }];
+            
+            [[CapptainAgent shared] sendEvent:@"detect new beacon" extras:nil];
         }
         
     } else {

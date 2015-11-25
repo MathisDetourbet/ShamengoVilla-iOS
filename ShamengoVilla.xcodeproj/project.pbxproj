@@ -115,6 +115,13 @@
 		679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */; };
 		67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A9D8161BAC896800E57AC1 /* SVNavSChemeManager.m */; };
 		67B260D71B94D1F600A74474 /* SVInnovationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */; };
+		67E1C6FC1C052D58008435C0 /* CPIdfaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E1C6F11C052D58008435C0 /* CPIdfaProvider.m */; };
+		67E1C6FD1C052D58008435C0 /* libcapptain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1C6FB1C052D58008435C0 /* libcapptain.a */; };
+		67E1C6FF1C052D88008435C0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1C6FE1C052D88008435C0 /* AdSupport.framework */; };
+		67E1C7011C052D92008435C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1C7001C052D92008435C0 /* SystemConfiguration.framework */; };
+		67E1C7031C052D9C008435C0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1C7021C052D9C008435C0 /* CoreTelephony.framework */; };
+		67E1C7051C052DA3008435C0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1C7041C052DA3008435C0 /* CFNetwork.framework */; };
+		67E1C7071C052DBF008435C0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1C7061C052DBF008435C0 /* libxml2.tbd */; };
 		67F908871BD6812B003E1D47 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F908861BD6812B003E1D47 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -254,6 +261,22 @@
 		67B260D41B94D1F600A74474 /* SVInnovationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVInnovationTableViewCell.h; sourceTree = "<group>"; };
 		67B260D51B94D1F600A74474 /* SVInnovationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVInnovationTableViewCell.m; sourceTree = "<group>"; };
 		67B9EE421BE28FEC009992E4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		67E1C6F01C052D58008435C0 /* CPIdfaProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPIdfaProvider.h; sourceTree = "<group>"; };
+		67E1C6F11C052D58008435C0 /* CPIdfaProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPIdfaProvider.m; sourceTree = "<group>"; };
+		67E1C6F31C052D58008435C0 /* CapptainAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapptainAgent.h; sourceTree = "<group>"; };
+		67E1C6F41C052D58008435C0 /* CapptainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapptainTableViewController.h; sourceTree = "<group>"; };
+		67E1C6F51C052D58008435C0 /* CapptainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapptainViewController.h; sourceTree = "<group>"; };
+		67E1C6F61C052D58008435C0 /* CPModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPModule.h; sourceTree = "<group>"; };
+		67E1C6F71C052D58008435C0 /* CPPushDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPushDelegate.h; sourceTree = "<group>"; };
+		67E1C6F81C052D58008435C0 /* CPPushMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPushMessage.h; sourceTree = "<group>"; };
+		67E1C6F91C052D58008435C0 /* CPStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPStorage.h; sourceTree = "<group>"; };
+		67E1C6FA1C052D58008435C0 /* CPTrackModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTrackModule.h; sourceTree = "<group>"; };
+		67E1C6FB1C052D58008435C0 /* libcapptain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcapptain.a; sourceTree = "<group>"; };
+		67E1C6FE1C052D88008435C0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		67E1C7001C052D92008435C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		67E1C7021C052D9C008435C0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		67E1C7041C052DA3008435C0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		67E1C7061C052DBF008435C0 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		67F908861BD6812B003E1D47 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7B1851889EEFE0924154C6FB /* Pods-ShamengoVilla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.release.xcconfig"; sourceTree = "<group>"; };
 		B2A66B287B220D83D4EB0092 /* Pods-ShamengoVilla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShamengoVilla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShamengoVilla/Pods-ShamengoVilla.debug.xcconfig"; sourceTree = "<group>"; };
@@ -265,9 +288,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E1C7071C052DBF008435C0 /* libxml2.tbd in Frameworks */,
+				67E1C7051C052DA3008435C0 /* CFNetwork.framework in Frameworks */,
+				67E1C7031C052D9C008435C0 /* CoreTelephony.framework in Frameworks */,
+				67E1C7011C052D92008435C0 /* SystemConfiguration.framework in Frameworks */,
+				67E1C6FF1C052D88008435C0 /* AdSupport.framework in Frameworks */,
 				67F908871BD6812B003E1D47 /* CoreBluetooth.framework in Frameworks */,
 				676BE3A51BAC1CAE0016854B /* CoreLocation.framework in Frameworks */,
 				676BE3A31BAC1CA60016854B /* MediaPlayer.framework in Frameworks */,
+				67E1C6FD1C052D58008435C0 /* libcapptain.a in Frameworks */,
 				4DCE3DFB96D55B739DCF05E8 /* libPods-ShamengoVilla.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +323,11 @@
 		4431261F12F5F2B67AD72E5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67E1C7061C052DBF008435C0 /* libxml2.tbd */,
+				67E1C7041C052DA3008435C0 /* CFNetwork.framework */,
+				67E1C7021C052D9C008435C0 /* CoreTelephony.framework */,
+				67E1C7001C052D92008435C0 /* SystemConfiguration.framework */,
+				67E1C6FE1C052D88008435C0 /* AdSupport.framework */,
 				FD1CF616EF8ED6F7CD32E769 /* libPods-ShamengoVilla.a */,
 			);
 			name = Frameworks;
@@ -537,14 +571,15 @@
 		679297BC1B77CC7600703F1B = {
 			isa = PBXGroup;
 			children = (
-				67F908861BD6812B003E1D47 /* CoreBluetooth.framework */,
-				676BE3A41BAC1CAE0016854B /* CoreLocation.framework */,
-				676BE3A21BAC1CA60016854B /* MediaPlayer.framework */,
+				67E1C6EE1C052D58008435C0 /* CapptainSDK */,
 				679297C71B77CC7600703F1B /* ShamengoVilla */,
 				679297E11B77CC7600703F1B /* ShamengoVillaTests */,
 				679297C61B77CC7600703F1B /* Products */,
 				39927095816D7CD11FB2A0F1 /* Pods */,
 				4431261F12F5F2B67AD72E5A /* Frameworks */,
+				67F908861BD6812B003E1D47 /* CoreBluetooth.framework */,
+				676BE3A41BAC1CAE0016854B /* CoreLocation.framework */,
+				676BE3A21BAC1CA60016854B /* MediaPlayer.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -613,6 +648,40 @@
 				679B06FA1BA7410400AFF21A /* SVInnovationCardViewController.m */,
 			);
 			path = InnovationCardViewController;
+			sourceTree = "<group>";
+		};
+		67E1C6EE1C052D58008435C0 /* CapptainSDK */ = {
+			isa = PBXGroup;
+			children = (
+				67E1C6EF1C052D58008435C0 /* Classes */,
+				67E1C6F21C052D58008435C0 /* Headers */,
+				67E1C6FB1C052D58008435C0 /* libcapptain.a */,
+			);
+			path = CapptainSDK;
+			sourceTree = "<group>";
+		};
+		67E1C6EF1C052D58008435C0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				67E1C6F01C052D58008435C0 /* CPIdfaProvider.h */,
+				67E1C6F11C052D58008435C0 /* CPIdfaProvider.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		67E1C6F21C052D58008435C0 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				67E1C6F31C052D58008435C0 /* CapptainAgent.h */,
+				67E1C6F41C052D58008435C0 /* CapptainTableViewController.h */,
+				67E1C6F51C052D58008435C0 /* CapptainViewController.h */,
+				67E1C6F61C052D58008435C0 /* CPModule.h */,
+				67E1C6F71C052D58008435C0 /* CPPushDelegate.h */,
+				67E1C6F81C052D58008435C0 /* CPPushMessage.h */,
+				67E1C6F91C052D58008435C0 /* CPStorage.h */,
+				67E1C6FA1C052D58008435C0 /* CPTrackModule.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -858,6 +927,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				670216B11B87A1E400EF0840 /* SVInnovationsListingViewController.m in Sources */,
+				67E1C6FC1C052D58008435C0 /* CPIdfaProvider.m in Sources */,
 				67A9D8171BAC896800E57AC1 /* SVNavSChemeManager.m in Sources */,
 				670216C71B87AE4C00EF0840 /* NSDictionary+Utils.m in Sources */,
 				679B06FB1BA7410400AFF21A /* SVInnovationCardViewController.m in Sources */,
@@ -991,10 +1061,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: mathis.detourbet@efrei.net (7688NQW4CF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mathis.detourbet@efrei.net (7688NQW4CF)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CapptainSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shamengo.shamengovillacop21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "35680868-b794-47c6-b322-d8ca99fd4f11";
@@ -1009,8 +1084,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: shamengo (R9HU3SEP6Z)";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ShamengoVilla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CapptainSDK",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shamengo.shamengovillacop21;
 				PRODUCT_NAME = "$(TARGET_NAME)";

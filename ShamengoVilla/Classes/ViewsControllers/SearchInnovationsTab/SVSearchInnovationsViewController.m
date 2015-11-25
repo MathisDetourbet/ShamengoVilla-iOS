@@ -11,6 +11,7 @@
 #import "SVInnovation.h"
 #import "SVInnovationCardViewController.h"
 #import "SVConstants.h"
+#import "CapptainAgent.h"
 
 @interface SVSearchInnovationsViewController ()
 
@@ -30,6 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[CapptainAgent shared] sendEvent:@"searchInnov_tab" extras:nil];
     
     [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_innovations")];
     
@@ -97,6 +100,8 @@
 
 - (void)showSearch {
     
+    [[CapptainAgent shared] sendEvent:@"show_searchBar" extras:nil];
+    
     self.isHiddenSearchBar = NO;
     self.navigationController.navigationBar.topItem.leftBarButtonItem = nil;
     self.navigationController.navigationBar.topItem.rightBarButtonItem = nil;
@@ -137,6 +142,8 @@
 }
 
 - (void)showFavorites {
+    
+    [[CapptainAgent shared] sendEvent:@"show_favorites" extras:nil];
     
     UIButton *favoritesButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [favoritesButton setImage:[UIImage imageNamed:_isDisplayingFavorites ? @"MenuStarredOff" : @"MenuStarredOn"] forState:UIControlStateNormal];
