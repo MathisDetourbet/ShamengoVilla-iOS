@@ -69,6 +69,16 @@
     [super viewWillAppear:animated];
     
     if (_isDisplayingFavorites) {
+        
+        UIButton *favoritesButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [favoritesButton setImage:[UIImage imageNamed:@"MenuStarredOn"] forState:UIControlStateNormal];
+        [favoritesButton addTarget:self action:@selector(showFavorites) forControlEvents:UIControlEventTouchUpInside];
+        [favoritesButton setFrame:CGRectMake(0.f, 0.f, 32.f, 32.f)];
+        
+        UIBarButtonItem *favoritesBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:favoritesButton];
+        
+        self.navigationController.navigationBar.topItem.leftBarButtonItem = favoritesBarButtonItem;
+        
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         NSArray *favoritesDefaultList = [userDefaults arrayForKey:kUserFavoritesArray];
         NSArray *innovList = [NSArray arrayWithArray:[[SVInnovationsManager sharedManager] innovationsList]];
@@ -157,8 +167,11 @@
     if (_isDisplayingFavorites) {
         self.resultInnovList = [[SVInnovationsManager sharedManager] innovationsList];
         _isDisplayingFavorites = NO;
+        [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_innovations")];
         
     } else {
+        
+        [self.navigationController.navigationBar.topItem setTitle:_(@"nav_title_innovations_favorites")];
         
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         NSArray *favoritesDefaultList = [userDefaults arrayForKey:kUserFavoritesArray];

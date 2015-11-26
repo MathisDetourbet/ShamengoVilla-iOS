@@ -19,6 +19,7 @@
 /*************** Nav Bar ******************/
 "nav_title_beacon" = "Around me";
 "nav_title_innovations" = "Innovations";
+"nav_title_innovations_favorites" = "Starred";
 
 /*************** Innovation Card ******************/
 "innov_card_more_button" = "Learn more";

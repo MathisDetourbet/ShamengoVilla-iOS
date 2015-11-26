@@ -20,6 +20,7 @@
 /*************** Nav Bar ******************/
 "nav_title_beacon" = "A proximité";
 "nav_title_innovations" = "Les innovations";
+"nav_title_innovations_favorites" = "Mes favoris";
 
 /*************** Innovation Card ******************/
 "innov_card_more_button" = "En savoir plus";
